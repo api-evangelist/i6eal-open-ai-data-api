@@ -1,0 +1,60 @@
+name: i6eal Open AI Data API
+description: >-
+  A free, no-authentication open-data REST API from i6eal (a German AI studio) exposing 16 AI-related datasets and
+  monitors for Germany and the EU as static JSON/CSV/JSON-LD/Atom files served over HTTPS/CDN. Backed by a live OpenAPI
+  3.0.3 contract and a DCAT-AP JSON-LD catalogue.
+url: https://i6eal-open-ai-data-api.apievangelist.com/apis.yml
+created: '2026-08-05'
+modified: '2026-08-05'
+specificationVersion: '0.21'
+tags:
+  - Artificial Intelligence
+  - Open Data
+  - Public Policy
+  - Regulation
+  - Compliance
+  - EU AI Act
+  - Government
+  - Public Sector
+  - Legal
+  - Case Law
+  - Public Procurement
+  - Germany
+  - European Union
+apis:
+  - name: i6eal Open AI Data API
+    description: >-
+      REST-style open-data API serving 16 AI-related datasets for Germany and the EU as static JSON/CSV/JSON-LD/Atom
+      files over HTTPS/CDN. No authentication, no rate limits, CORS open. 83 GET endpoints described by a validated
+      OpenAPI 3.0.3 document, with programmatic discovery via a DCAT-AP JSON-LD catalogue.
+    humanURL: https://i6eal.de/en/tools/data/
+    baseURL: https://i6eal.de
+    tags:
+      - Artificial Intelligence
+      - Open Data
+      - Public Policy
+      - Regulation
+      - Compliance
+      - EU AI Act
+      - Government
+      - Public Sector
+      - Legal
+      - Case Law
+      - Public Procurement
+      - Germany
+      - European Union
+    properties:
+      - type: OpenAPI
+        url: https://i6eal.de/openapi.json
+      - type: Documentation
+        url: https://i6eal.de/en/tools/data/
+      - type: Documentation
+        url: https://i6eal.de/data/catalog/dcat.jsonld
+maintainers:
+  - FN: i6eal
+    url: https://i6eal.de/kontakt/
+generated:
+  by: apis.io/add
+  model: claude-opus-4-8
+  confidence: 95
+  at: '2026-08-05T13:36:22.361Z'
