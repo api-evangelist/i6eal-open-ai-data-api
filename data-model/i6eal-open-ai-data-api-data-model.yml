@@ -1,0 +1,160 @@
+generated: '2026-08-09'
+method: derived
+source: openapi/i6eal-open-ai-data-api-openapi.json
+also_derived_from:
+  - json-ld/i6eal-open-ai-data-api-dcat.jsonld
+  - examples/i6eal-open-ai-data-api-supervision-methodology.json
+summary: >-
+  The model is a two-level publishing graph, not a transactional object graph. A single
+  Catalogue holds 16 Datasets; each Dataset holds one or more Distributions (a JSON index,
+  zero-or-more CSV tables, an optional Atom change feed, a methodology document). There are
+  no ids to POST, no foreign keys between API resources, and no query parameters — the
+  "primary key" of the whole API is the distribution URL, and the DCAT catalogue is the
+  authoritative map of those URLs.
+entities:
+  - name: Catalogue
+    type: dcat:Catalog
+    schema: DcatCatalogue
+    operation: getOpenDataCatalogue
+    url: https://i6eal.de/data/catalog/dcat.jsonld
+    identifier: '@id'
+    description: >-
+      The DCAT JSON-LD catalogue. Root discovery document; carries dct:title,
+      dct:description, dct:publisher (i6eal, foaf:Organization), dct:modified, dct:rights
+      (de + en) and i6eal:compilationLicense.
+    count: 1
+  - name: Dataset
+    type: dcat:Dataset
+    identifier: 'dct:identifier'
+    count: 16
+    description: >-
+      One tracked evidence collection (procurement chronicle, budget monitor, case-law
+      monitor, …). Every dataset carries bilingual dct:title/dct:description, dct:modified,
+      dcat:landingPage, dct:source (the official upstream hosts), dct:rights, dct:provenance,
+      schema:creditText and the i6eal-private observedSince / collectionState /
+      collectionCadence / sourceRightsStatus. 12 of 16 also carry dct:temporal +
+      schema:temporalCoverage; the four without it state that source coverage varies.
+    key_fields:
+      - dct:identifier
+      - i6eal:observedSince
+      - i6eal:collectionState
+      - i6eal:collectionCadence
+      - dct:temporal
+  - name: Distribution
+    type: dcat:Distribution
+    identifier: dcat:accessURL
+    count: 82
+    description: >-
+      A concrete downloadable file. Each carries dct:title (de + en), dct:format,
+      dcat:mediaType, dcat:accessURL and dcat:downloadURL — and every one of them is also an
+      OpenAPI operation, which is why the catalogue and the OpenAPI describe the same 82/83
+      URL set from two directions.
+  - name: DatasetIndex
+    schema: DatasetIndex
+    media_type: application/json
+    description: >-
+      The full JSON projection of a dataset. Shared envelope: schemaVersion (payload
+      contract, integer 1 observed on every dataset), generatedAt (build timestamp),
+      trackingSince (observation start), methodology (how it is collected and what it does
+      not claim), downloads (named sibling distribution paths). All remaining top-level keys
+      are dataset-specific — observed examples include counts, sourcePolicy (officialOnly +
+      allowedHosts), sourceCollection, collectionStatus, sourceHealth, graph, events,
+      dossierSlugs, materialFingerprint and sourceFingerprint.
+    operations: 16
+  - name: CsvTable
+    schema: CsvTable
+    media_type: text/csv
+    description: >-
+      RFC 4180, header row, UTF-8. The relational face of a dataset — the flat tables an
+      analyst joins. Table names are dataset-specific (events, changes, titles, series,
+      revisions, systems, links, entities, edges, decisions, passages, authorities,
+      instruments, relationships, work-items, providers, evidence, countries, observations,
+      questions, answers, platforms, flows, timeline, devices, actions, studies).
+    operations: 37
+  - name: AtomFeed
+    schema: AtomFeed
+    media_type: application/atom+xml
+    description: >-
+      Atom 1.0 feed of observed material changes to a dataset. Published by 11 of the 16
+      datasets, under two path spellings — atom.xml (5) and feed.atom (6). Entry ids follow
+      the pattern urn:i6eal:<dataset>:event:<date>:<kind>-<hash>.
+    operations: 11
+  - name: Methodology
+    media_type: application/json
+    description: >-
+      Per-dataset statement of how the data is collected and what it does and does not
+      claim. Published by all 16 datasets as methodology.json.
+    operations: 16
+  - name: ArchiveDocument
+    media_type: application/json
+    description: >-
+      Rolling archive of superseded observations, published by one dataset only
+      (ki-auftragsaenderungen via getProcurementObservedChangesArchive).
+    operations: 1
+  - name: DatasetSchema
+    media_type: application/json
+    description: >-
+      Explicit payload schema, published by one dataset only (ki-laender-lagebild via
+      getGermanStateAiEvidenceLayersSchema). The other 15 datasets describe their shape in
+      prose inside methodology.json plus the DCAT entry.
+    operations: 1
+relationships:
+  - from: Catalogue
+    to: Dataset
+    kind: has_many
+    via: dcat:dataset
+    cardinality: 1..16
+  - from: Dataset
+    to: Distribution
+    kind: has_many
+    via: dcat:distribution
+    cardinality: 1..N
+  - from: Dataset
+    to: DatasetIndex
+    kind: has_one
+    via: index.json distribution
+  - from: Dataset
+    to: CsvTable
+    kind: has_many
+    via: '*.csv distributions'
+  - from: Dataset
+    to: AtomFeed
+    kind: has_one
+    via: atom.xml | feed.atom
+    optional: true
+    note: present on 11 of 16 datasets
+  - from: Dataset
+    to: Methodology
+    kind: has_one
+    via: methodology.json
+  - from: DatasetIndex
+    to: Distribution
+    kind: has_many
+    via: downloads
+    note: the index names its own sibling distributions, so one fetch reveals the rest
+  - from: Dataset
+    to: Publisher
+    kind: belongs_to
+    via: 'dct:publisher -> https://i6eal.de/#organization'
+  - from: Distribution
+    to: Operation
+    kind: has_one
+    via: dcat:accessURL == OpenAPI path
+    note: >-
+      The join between the two machine-readable surfaces. Resolving a DCAT
+      dcat:accessURL against the OpenAPI paths object yields the operationId for that file.
+identifier_conventions:
+  dataset_id: >-
+    Lowercase hyphenated English slug in DCAT (procurement-chronicle, …) but a German slug in
+    the URL path (/data/ki-auftragschronik/) and a third form in the payload datasetId
+    (ki-aufsichtsmonitor-de-eu). All three are stable; do not assume they match.
+  atom_entry_id: 'urn:i6eal:<dataset>:event:<YYYY-MM-DD>:<kind>-<hash16>'
+  integrity: materialFingerprint and sourceFingerprint are SHA-256 hex digests per index
+  joining_rule: >-
+    From llms.txt — records are joined on exact official identifiers only (TED/OCDS notice
+    ids, MaKI record ids, CORDIS PIC, ECLI, federal budget title numbers). A shared or
+    similar name never creates a link between two records.
+cross_links:
+  conventions: conventions/i6eal-open-ai-data-api-conventions.yml
+  json_ld: json-ld/i6eal-open-ai-data-api-dcat.jsonld
+  examples: examples/i6eal-open-ai-data-api-examples.yml

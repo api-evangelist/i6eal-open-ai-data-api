@@ -1,0 +1,105 @@
+overlay: 1.0.0
+info:
+  title: API Evangelist enhancements for the i6eal Open AI Data API
+  version: 1.0.0
+extends: openapi/i6eal-open-ai-data-api-openapi.json
+x-apievangelist:
+  generated: '2026-08-09'
+  method: generated
+  source: >-
+    Derived from live probes of https://i6eal.de on 2026-08-09 plus the provider's
+    llms.txt and DCAT catalogue. Records facts that are true of the deployed API but absent
+    from the published description. The original document is never mutated.
+actions:
+  - target: $.info
+    description: Record the catalogue rating context and the machine-readable siblings of this spec.
+    update:
+      x-apievangelist-slug: i6eal-open-ai-data-api
+      x-apievangelist-profile: https://apis.io/provider/i6eal-open-ai-data-api/
+      x-machine-readable-siblings:
+        dcat_catalogue: https://i6eal.de/data/catalog/dcat.jsonld
+        llms_txt: https://i6eal.de/llms.txt
+        datapackage: https://github.com/i6eal/open-ai-data-catalogue
+
+  - target: $.info
+    description: >-
+      Make the read-only, unauthenticated posture explicit as structured data rather than
+      prose buried in the description.
+    update:
+      x-access-model:
+        authentication: none
+        registration_required: false
+        rate_limits_published: false
+        write_operations: 0
+        cors: '*'
+      x-agentic-access:
+        action-class: read
+        consequence: read
+        human-in-the-loop: not-required
+        audit: not-required
+        note: >-
+          Every operation is a safe, unauthenticated GET of a public static file. Generated
+          by API Evangelist as a governance starting point; not an i6eal claim.
+
+  - target: $.servers[0]
+    description: Record the observed delivery characteristics of the production host.
+    update:
+      x-observed:
+        probed: '2026-08-09'
+        cdn: Amazon CloudFront over Amazon S3
+        tls_version: TLSv1.3
+        hsts: max-age=31536000; includeSubDomains
+        cache_control: public,max-age=0,must-revalidate
+        conditional_requests: ETag + Last-Modified (304 confirmed)
+        security_headers:
+          - x-content-type-options: nosniff
+          - x-frame-options: DENY
+          - referrer-policy: strict-origin-when-cross-origin
+          - permissions-policy: 'camera=(), microphone=(), geolocation=()'
+
+  - target: $.components.responses.NotFound
+    description: >-
+      Record what a 404 actually returns on the wire, so generated clients do not attempt to
+      parse a JSON error body that is never sent.
+    update:
+      x-observed-media-type: text/html
+      x-observed-note: >-
+        Probing a nonexistent distribution returns the site's HTML 404 page, not a
+        machine-readable error document. Branch on the status code and Content-Type.
+
+  - target: $.components.schemas.DatasetIndex
+    description: Name the shared envelope fields observed across all 16 dataset indexes.
+    update:
+      x-observed-common-fields:
+        - schemaVersion
+        - datasetId
+        - generatedAt
+        - trackingSince
+        - license
+        - materialFingerprint
+        - sourceFingerprint
+        - sourcePolicy
+        - collectionStatus
+        - sourceHealth
+        - counts
+        - downloads
+      x-integrity: >-
+        materialFingerprint and sourceFingerprint are SHA-256 digests; compare them across
+        fetches to detect a real content change without diffing the payload.
+
+  - target: $.components.schemas.AtomFeed
+    description: Record the two path spellings the change feeds actually use.
+    update:
+      x-observed-paths: [atom.xml, feed.atom]
+      x-observed-coverage: 11 of 16 datasets publish a change feed
+      x-entry-id-pattern: 'urn:i6eal:<dataset>:event:<YYYY-MM-DD>:<kind>-<hash16>'
+
+  - target: $.tags[?(@.name=='Catalogue')]
+    description: >-
+      Flag the catalogue tag as the entry point an agent should call first, since it is the
+      only operation that reveals the URL set.
+    update:
+      x-entry-point: true
+      x-note: >-
+        getOpenDataCatalogue resolves 16 datasets and 82 distributions; every other
+        operation's path can be derived from its dcat:accessURL.

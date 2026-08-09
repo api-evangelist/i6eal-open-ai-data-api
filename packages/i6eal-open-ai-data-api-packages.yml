@@ -1,0 +1,68 @@
+generated: '2026-08-09'
+method: searched
+source: public package registries + the i6eal GitHub account
+summary: >-
+  No first-party client libraries exist. i6eal ships no SDK in any language, and none is
+  needed to call the API — every one of the 83 operations is an unauthenticated GET of a
+  static JSON, CSV, JSON-LD or Atom file, so a plain HTTP client (or curl, pandas
+  read_csv, or a feed reader) is the whole integration surface. Recorded as a searched
+  zero so a later round does not re-run the same probes.
+packages: []
+official_sdk_count: 0
+registries_searched:
+  - registry: npm
+    query: i6eal
+    results: 0
+    url: https://registry.npmjs.org/-/v1/search?text=i6eal
+  - registry: pypi
+    query: i6eal
+    results: 0
+    status: 404
+    url: https://pypi.org/pypi/i6eal/json
+  - registry: github
+    query: i6eal
+    results: 2
+    note: >-
+      github.com/i6eal (a User account, not an Organization — /orgs/i6eal returns 404) with
+      13 public repositories. None is a client library. The two relevant ones are
+      i6eal/open-ai-data-catalogue (a Frictionless datapackage README plus a config.json,
+      linking to the same DCAT catalogue and OpenAPI) and i6eal/i6eal-research-notes-oer
+      (OER teaching guides + OERSI metadata). The rest are curated "awesome-*" lists.
+  - registry: maven-central
+    results: 0
+  - registry: nuget
+    results: 0
+  - registry: pkg.go.dev
+    results: 0
+  - registry: rubygems
+    results: 0
+  - registry: packagist
+    results: 0
+  - registry: crates.io
+    results: 0
+related_repositories:
+  - name: i6eal/open-ai-data-catalogue
+    url: https://github.com/i6eal/open-ai-data-catalogue
+    kind: metadata
+    official: true
+    description: >-
+      Machine-readable metadata for the 16 datasets, published as a Frictionless
+      datapackage front-matter README pointing at https://i6eal.de/data/catalog/dcat.jsonld
+      and https://i6eal.de/openapi.json. Not a client library.
+  - name: i6eal/i6eal-research-notes-oer
+    url: https://github.com/i6eal/i6eal-research-notes-oer
+    kind: content
+    official: true
+    description: Open teaching guides and OERSI metadata for the i6eal Research Notes.
+x-evidence:
+  - fetched: '2026-08-09'
+    url: https://registry.npmjs.org/-/v1/search?text=i6eal
+    http_status: 200
+    result: 'total: 0'
+  - fetched: '2026-08-09'
+    url: https://pypi.org/pypi/i6eal/json
+    http_status: 404
+  - fetched: '2026-08-09'
+    url: https://api.github.com/orgs/i6eal
+    http_status: 404
+    note: individual account, not an organization

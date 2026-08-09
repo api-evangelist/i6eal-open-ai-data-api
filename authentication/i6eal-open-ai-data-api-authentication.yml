@@ -1,0 +1,43 @@
+generated: '2026-08-09'
+method: searched
+source: https://i6eal.de/openapi.json
+docs: https://i6eal.de/en/tools/data/
+summary:
+  types: []
+  api_key_in: []
+  oauth2_flows: []
+  model: none
+  statement: >-
+    The API requires no authentication of any kind. The OpenAPI 3.0.3 document declares a
+    document-level `security: []` (explicitly no security applied) and defines no
+    `components.securitySchemes`. Every one of the 83 GET operations is an anonymously
+    readable static file served from CloudFront. The provider states this posture in the
+    OpenAPI `info.description` verbatim: "No authentication, no registration, no rate limit,
+    no quota."
+schemes: []
+observed:
+  document_level_security: []
+  security_schemes_declared: 0
+  operations_requiring_auth: 0
+  operations_total: 83
+  registration_required: false
+  api_key_required: false
+  cors:
+    access_control_allow_origin: '*'
+    access_control_expose_headers: Content-Length,Last-Modified
+    note: >-
+      Confirmed live on 2026-08-09 with an Origin: https://example.com request against
+      https://i6eal.de/data/ki-aufsichtsmonitor/index.json — browser-side fetches are
+      permitted from any origin without credentials.
+x-evidence:
+  - fetched: '2026-08-09'
+    url: https://i6eal.de/openapi.json
+    http_status: 200
+    note: 'security: [] at document level; components.securitySchemes absent'
+  - fetched: '2026-08-09'
+    url: https://i6eal.de/data/ki-aufsichtsmonitor/index.json
+    http_status: 200
+    note: anonymous GET returned a full 82,726-byte JSON payload with no credentials
+cross_links:
+  conventions: conventions/i6eal-open-ai-data-api-conventions.yml
+  conformance: conformance/i6eal-open-ai-data-api-conformance.yml

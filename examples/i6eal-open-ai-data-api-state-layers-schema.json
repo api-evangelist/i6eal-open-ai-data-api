@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://i6eal.de/data/ki-laender-lagebild/schema.json",
+  "title": "KI-Länder-Lagebild public projection",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "dataset",
+    "generatedAt",
+    "temporal",
+    "materialFingerprint",
+    "stateTableVersion",
+    "summary",
+    "methodology",
+    "states"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "ki-laender-lagebild/v2"
+    },
+    "dataset": {
+      "const": "german-state-ai-evidence-layers"
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "trackingSince": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "temporal": {
+      "type": "object"
+    },
+    "materialFingerprint": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "stateTableVersion": {
+      "const": "bkg-land-code+iso-3166-2/v2"
+    },
+    "summary": {
+      "type": "object"
+    },
+    "coverage": {
+      "type": "object"
+    },
+    "methodology": {
+      "type": "object"
+    },
+    "semantics": {
+      "type": "object"
+    },
+    "sources": {
+      "type": "array"
+    },
+    "federalContext": {
+      "type": "object"
+    },
+    "excludedProcurement": {
+      "type": "object"
+    },
+    "states": {
+      "type": "array",
+      "minItems": 16,
+      "maxItems": 16,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "code",
+          "bkgStateCode",
+          "iso3166_2",
+          "slug",
+          "names",
+          "procurementLabel",
+          "profilePath",
+          "dossier",
+          "layers"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^state:(?:0[1-9]|1[0-6])$"
+          },
+          "code": {
+            "type": "string",
+            "pattern": "^(?:0[1-9]|1[0-6])$"
+          },
+          "bkgStateCode": {
+            "type": "string",
+            "pattern": "^(?:0[1-9]|1[0-6])$"
+          },
+          "iso3166_2": {
+            "type": "string",
+            "pattern": "^DE-[A-Z]{2}$"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "names": {
+            "type": "object"
+          },
+          "procurementLabel": {
+            "type": "string"
+          },
+          "profilePath": {
+            "type": "string"
+          },
+          "dossier": {
+            "type": "string"
+          },
+          "layers": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

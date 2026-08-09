@@ -1,0 +1,82 @@
+generated: '2026-08-09'
+method: searched
+source: https://i6eal.de/openapi.json
+docs:
+  - https://i6eal.de/en/tools/data/
+  - https://i6eal.de/llms.txt
+versioning:
+  scheme: per-dataset payload version
+  api_version: 1.0.0
+  payload_version_field: schemaVersion
+  uri_versioning: false
+  header_versioning: false
+  docs: https://i6eal.de/tools/daten/
+  policy_verbatim: >-
+    Distribution URLs are treated as permanent. Payload shapes are versioned per dataset
+    through the `schemaVersion` field in each index.
+  note: >-
+    Quoted from the OpenAPI info.description "Stability" section. Assert on the dataset's own
+    schemaVersion (integer 1 on every index observed 2026-08-09), not on a global API version.
+url_stability:
+  permanent_urls: true
+  scope: distribution URLs (index.json, *.csv, atom feeds, methodology.json)
+  discovery_of_record: https://i6eal.de/data/catalog/dcat.jsonld
+deprecation:
+  policy_url: null
+  policy_published: false
+  sunset_header: false
+  deprecation_header: false
+  deprecated_operations: []
+  note: >-
+    No deprecation or sunset policy is published, and no operation in the OpenAPI carries
+    `deprecated: true`. The stability statement covers URL permanence but does not say what
+    happens when a dataset is retired or a schemaVersion is incremented. RFC 8594
+    Sunset/Deprecation headers were not observed on any probed response.
+sla:
+  url: null
+  uptime_target: null
+  note: >-
+    No SLA is published. The provider explicitly declines uptime claims: from llms.txt,
+    "No live-uptime claims. A dataset's state is its operating model (automated collection,
+    derived projection, reviewed baseline, collector paused), not a health signal."
+status_page:
+  url: null
+  present: false
+  note: >-
+    No status page exists; probes of https://i6eal.de/status returned 404 on 2026-08-09.
+    The nearest first-party health signal is per-dataset — `collectionStatus` and
+    `sourceHealth` blocks inside each dataset index.json — which report the state of the
+    collector, not of the HTTP service.
+data_freshness:
+  build_signal: generatedAt (ISO 8601, per dataset index)
+  observation_start: trackingSince (per dataset)
+  observed_cadence: >-
+    Daily. Index documents fetched on 2026-08-09 carried generatedAt timestamps of
+    2026-08-09T04:05:00Z (supervision monitor) and 2026-08-09T04:18:00Z (standardisation
+    monitor), and the llms.txt reports a data state of 2026-08-09 for 12 of the 16 datasets.
+  change_feeds: 10 Atom 1.0 feeds; remaining datasets publish revisions.csv tables
+  integrity: materialFingerprint + sourceFingerprint (SHA-256) per dataset index
+  caveat: >-
+    Source coverage (when the official record happened) and observation period (since when
+    i6eal has been watching) are separate dates and are reported separately.
+change_log:
+  api_change_log: null
+  note: >-
+    There is no API changelog page (https://i6eal.de/changelog returned 404 on 2026-08-09).
+    Data-level change is published instead, per dataset, as Atom feeds and revision tables —
+    see conventions/i6eal-open-ai-data-api-conventions.yml#change_notification.
+  editorial_feed: https://i6eal.de/newsroom/
+support:
+  contact: ai@i6eal.de
+  contact_page: https://i6eal.de/kontakt/
+x-evidence:
+  - fetched: '2026-08-09'
+    url: https://i6eal.de/status
+    http_status: 404
+  - fetched: '2026-08-09'
+    url: https://i6eal.de/changelog
+    http_status: 404
+  - fetched: '2026-08-09'
+    url: https://i6eal.de/data/ki-aufsichtsmonitor/index.json
+    http_status: 200
+    note: generatedAt 2026-08-09T04:05:00.000Z, trackingSince 2024-07-12, schemaVersion 1

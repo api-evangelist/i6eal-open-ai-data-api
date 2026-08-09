@@ -1,0 +1,55 @@
+generated: '2026-08-09'
+method: searched
+source: live GETs against https://i6eal.de on 2026-08-09
+summary: >-
+  Four real response payloads fetched from the production API and saved verbatim — one per
+  media type the API serves. The OpenAPI declares no in-spec examples, so these are the
+  concrete artifacts a client author or agent can test against. Nothing here is synthesised.
+examples:
+  - file: i6eal-open-ai-data-api-supervision-methodology.json
+    operation: getAiSupervisionMonitorMethodology
+    url: https://i6eal.de/data/ki-aufsichtsmonitor/methodology.json
+    media_type: application/json
+    bytes: 6690
+    http_status: 200
+    shows: >-
+      The methodology document every dataset publishes — how the collection works, which
+      official hosts are allowed as sources, and what the dataset explicitly does not claim.
+      This is the document an agent should read before quoting any figure.
+  - file: i6eal-open-ai-data-api-state-layers-schema.json
+    operation: getGermanStateAiEvidenceLayersSchema
+    url: https://i6eal.de/data/ki-laender-lagebild/schema.json
+    media_type: application/json
+    bytes: 2597
+    http_status: 200
+    shows: >-
+      The only explicit payload schema i6eal publishes for a dataset (German State AI
+      Evidence Layers). Useful as the shape reference the other 15 datasets lack.
+  - file: i6eal-open-ai-data-api-enforcement-actions.csv
+    operation: getGermanyEuAiEnforcementMonitorActions
+    url: https://i6eal.de/data/ki-durchsetzungsmonitor/actions.csv
+    media_type: text/csv
+    bytes: 4105
+    http_status: 200
+    shows: >-
+      A representative CSV table — RFC 4180, header row, UTF-8 — from the AI Enforcement
+      Monitor. Demonstrates the flat, joinable face of a dataset.
+  - file: i6eal-open-ai-data-api-standardisation-feed.atom
+    operation: getAiStandardisationMonitorFeed
+    url: https://i6eal.de/data/ki-normungsmonitor/feed.atom
+    media_type: application/atom+xml
+    bytes: 12983
+    http_status: 200
+    shows: >-
+      An Atom 1.0 change feed with feed-level id/title/updated/author/link and per-entry
+      id/title/updated/link/summary. Entry ids follow
+      urn:i6eal:<dataset>:event:<date>:<kind>-<hash>. This is the change-detection surface.
+not_saved:
+  - reason: size
+    note: >-
+      Full dataset indexes (82 KB–145 KB observed) are not mirrored here; fetch them live.
+      json-ld/i6eal-open-ai-data-api-dcat.jsonld (142 KB) is the one large document kept,
+      because it is the discovery root for every other URL.
+cross_links:
+  openapi: openapi/i6eal-open-ai-data-api-openapi.json
+  data_model: data-model/i6eal-open-ai-data-api-data-model.yml

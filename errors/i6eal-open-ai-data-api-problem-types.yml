@@ -1,0 +1,52 @@
+generated: '2026-08-09'
+method: derived
+source: openapi/i6eal-open-ai-data-api-openapi.json
+format: none
+format_note: >-
+  Not RFC 9457. No `application/problem+json` media type appears anywhere in the description,
+  and the single declared error response carries no schema. A live probe of a nonexistent
+  distribution returned the site's HTML 404 page.
+summary:
+  declared_error_responses: 1
+  distinct_status_codes: [404]
+  operations_covered: 83
+  operations_with_5xx_declared: 0
+  error_body_schema: none
+problems:
+  - status: 404
+    title: No distribution exists at this path.
+    component: '#/components/responses/NotFound'
+    applies_to: all 83 GET operations (declared on every path)
+    media_type_observed: text/html
+    body: >-
+      The static site's HTML 404 page (16,118 bytes observed on 2026-08-09). There is no
+      machine-readable error document — clients must branch on the status line and
+      Content-Type, not on a parsed body.
+    remediation: >-
+      Re-resolve the distribution URL from the DCAT-AP catalogue
+      (https://i6eal.de/data/catalog/dcat.jsonld, operationId getOpenDataCatalogue) or from
+      the dataset's own index.json `downloads` block, which names the sibling distributions
+      published with that dataset. Distribution URLs are stated to be permanent, so a 404 on
+      a previously working URL is a defect worth reporting to ai@i6eal.de rather than a
+      routine retirement.
+    source_operation: openapi/i6eal-open-ai-data-api-openapi.json#components/responses/NotFound
+undeclared_but_possible:
+  - status: 304
+    note: >-
+      Not declared in the description but confirmed live — a conditional GET with
+      If-None-Match against https://i6eal.de/openapi.json returned 304 Not Modified on
+      2026-08-09. Treat 304 as expected and successful when polling.
+  - status: 5xx
+    note: >-
+      No 5xx responses are declared. Origin is Amazon S3 behind CloudFront, so transient
+      502/503/504 from the CDN edge are possible and should be retried with backoff; a GET is
+      safe to retry unconditionally.
+gaps_for_the_provider:
+  - The 404 returns text/html rather than a machine-readable body; an
+    `application/problem+json` (RFC 9457) response would let agents distinguish "wrong path"
+    from "dataset retired" without HTML parsing.
+  - No 5xx responses are described, so a client generated from the spec has no declared
+    failure path for CDN or origin errors.
+cross_links:
+  conventions: conventions/i6eal-open-ai-data-api-conventions.yml
+  lifecycle: lifecycle/i6eal-open-ai-data-api-lifecycle.yml

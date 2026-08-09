@@ -1,0 +1,120 @@
+generated: '2026-08-09'
+method: derived
+source: openapi/i6eal-open-ai-data-api-openapi.json
+also_derived_from:
+  - json-ld/i6eal-open-ai-data-api-dcat.jsonld
+  - live HTTP probes on 2026-08-09
+summary: >-
+  i6eal is a publishing/open-data API, not a regulated transactional one, so the
+  cross-cutting standards that apply are description, catalogue, serialisation and HTTP
+  standards rather than OAuth/FAPI/PSD2-class security profiles. It conforms to the
+  description and serialisation standards it claims; the one gap is that the JSON-LD
+  catalogue calls itself DCAT-AP but asserts no dct:conformsTo profile URI.
+standards:
+  - id: openapi-3.0.3
+    conforms: true
+    evidence: >-
+      https://i6eal.de/openapi.json parses as OpenAPI 3.0.3 with 83 paths, 83 GET
+      operations, a unique operationId on every operation, a summary and description on
+      every operation, 17 declared tags all of which are used, and 5 reusable
+      components.schemas plus 1 components.responses.
+  - id: w3c-dcat
+    conforms: true
+    evidence: >-
+      https://i6eal.de/data/catalog/dcat.jsonld is a dcat:Catalog with 16 dcat:Dataset
+      entries and 82 dcat:Distribution entries; every distribution carries dcat:accessURL,
+      dcat:downloadURL, dct:format and dcat:mediaType, and every dataset carries
+      dct:identifier, dct:title, dct:description, dct:publisher, dct:modified,
+      dcat:landingPage, dct:source and dct:rights.
+  - id: dcat-ap
+    conforms: false
+    claimed: true
+    evidence: >-
+      The provider calls it "the DCAT-AP catalogue" in the OpenAPI description, in llms.txt
+      and on the data hub, and the mandatory DCAT-AP dataset/distribution properties are in
+      fact present. But the document asserts no dct:conformsTo profile URI (e.g.
+      http://data.europa.eu/r5r/), declares no DCAT-AP version, and uses a private
+      https://i6eal.de/vocab/ namespace for observedSince/collectionState/collectionCadence/
+      sourceRightsStatus/compilationLicense. A validator cannot confirm the profile from the
+      document alone, so the claim is recorded as unverified rather than met.
+    remediation: >-
+      Add dct:conformsTo to the catalogue node naming the DCAT-AP profile URI and version,
+      and publish the i6eal: vocabulary terms at https://i6eal.de/vocab/.
+  - id: json-ld-1.1
+    conforms: true
+    evidence: >-
+      Served as application/ld+json with an @context binding dcat, dct, foaf, schema, xsd and
+      a private i6eal namespace; @id/@type used throughout; multilingual literals expressed
+      as @value/@language pairs (de + en).
+  - id: rfc4287-atom
+    conforms: true
+    evidence: >-
+      10 datasets publish an Atom 1.0 change feed; the harvested sample
+      (examples/i6eal-open-ai-data-api-standardisation-feed.atom) declares
+      xmlns="http://www.w3.org/2005/Atom" with feed-level id/title/updated/author/link and
+      per-entry id/title/updated/link/summary.
+  - id: rfc4180-csv
+    conforms: true
+    evidence: >-
+      The CsvTable schema in the OpenAPI states "RFC 4180 CSV with a header row, UTF-8
+      encoded"; confirmed against the harvested sample
+      examples/i6eal-open-ai-data-api-enforcement-actions.csv.
+  - id: rfc9110-http-semantics
+    conforms: true
+    evidence: >-
+      Read-only GET surface with correct 200/404 semantics; ETag and Last-Modified validators
+      served on every response.
+  - id: rfc9111-http-caching
+    conforms: true
+    evidence: >-
+      Cache-Control public,max-age=0,must-revalidate with ETag; a conditional GET of
+      https://i6eal.de/openapi.json with If-None-Match returned 304 on 2026-08-09.
+  - id: cors
+    conforms: true
+    evidence: >-
+      Access-Control-Allow-Origin "*" and Access-Control-Expose-Headers
+      "Content-Length,Last-Modified" observed against an Origin: https://example.com request.
+  - id: cc-by-4.0
+    conforms: true
+    evidence: >-
+      Licence declared in OpenAPI info.license, in llms.txt, in the DCAT dct:rights (de + en)
+      and per dataset via i6eal:compilationLicense — consistently scoped to the i6eal
+      compilation only, with source records retaining source-specific rights.
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: >-
+      No application/problem+json anywhere in the description; the live 404 returns the
+      site's HTML error page. See errors/i6eal-open-ai-data-api-problem-types.yml.
+  - id: rfc8594-sunset-header
+    conforms: false
+    evidence: No Sunset or Deprecation headers observed; no deprecation policy published.
+  - id: oauth2
+    conforms: false
+    evidence: 'No securitySchemes; document-level security: [] — the API is unauthenticated by design.'
+  - id: openid-connect
+    conforms: false
+    evidence: /.well-known/openid-configuration returned 404 on i6eal.de (2026-08-09).
+  - id: rfc9116-security-txt
+    conforms: false
+    evidence: /.well-known/security.txt returned 404 on i6eal.de (2026-08-09).
+  - id: rfc8615-well-known
+    conforms: false
+    evidence: >-
+      Every /.well-known/ path probed (security.txt, openid-configuration,
+      oauth-authorization-server, oauth-protected-resource, api-catalog, ai-plugin.json,
+      agent-card.json, agent.json) returned 404. See
+      well-known/i6eal-open-ai-data-api-well-known.yml.
+  - id: asyncapi
+    conforms: false
+    evidence: >-
+      No AsyncAPI document is published. The event surface is pull-based Atom feeds, not a
+      broker or webhook surface, so this is a description gap rather than a missing capability.
+compliance_program:
+  published: false
+  certifications: []
+  note: >-
+    No trust centre, no named certifications (SOC 2 / ISO 27001 / PCI / HIPAA / FedRAMP) and
+    no compliance page were found — see security/. The publisher is a German entity (Syka
+    Ventures UG) and publishes an Impressum (https://i6eal.de/impressum/) and a Datenschutz
+    page (https://i6eal.de/datenschutz/) per German law, but neither constitutes a published
+    certification programme, so no `Compliance` pointer is emitted.

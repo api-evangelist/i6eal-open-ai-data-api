@@ -1,0 +1,2312 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "i6eal Open AI Data API",
+    "version": "1.0.0",
+    "description": "Open datasets on artificial intelligence in Germany and the EU — public procurement, federal budget lines, case law, supervision, standardisation, medical devices, enforcement and more.\n\n**No authentication, no registration, no rate limit, no quota.** Every endpoint is a static file served from a CDN and answers plain `GET` requests. Cross-origin requests are permitted (`Access-Control-Allow-Origin: *`), so the data can be fetched directly from a browser.\n\nEach dataset publishes a full JSON index, one or more CSV tables, and — where the dataset tracks change over time — an Atom change feed. `methodology.json` states how a dataset is collected and what it does and does not claim.\n\nStart at the [DCAT-AP catalogue](https://i6eal.de/data/catalog/dcat.jsonld) to discover everything programmatically.\n\n### Licensing\n\nThe i6eal compilation, structure and original descriptions are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). This is **not** a blanket licence over the data itself: underlying records remain subject to the rights and reuse terms of each named official source. Every dataset carries its own source list and rights statement — see the per-operation descriptions and `dct:rights` in the catalogue.\n\nFull terms: https://i6eal.de/tools/daten/\n\n### Stability\n\nDistribution URLs are treated as permanent. Payload shapes are versioned per dataset through the `schemaVersion` field in each index.",
+    "termsOfService": "https://i6eal.de/tools/daten/",
+    "contact": {
+      "name": "i6eal",
+      "url": "https://i6eal.de/kontakt/",
+      "email": "ai@i6eal.de"
+    },
+    "license": {
+      "name": "CC BY 4.0 — i6eal compilation only; source records retain source-specific rights",
+      "url": "https://i6eal.de/tools/daten/"
+    },
+    "x-logo": {
+      "url": "https://i6eal.de/publisher-logo.png",
+      "altText": "i6eal"
+    }
+  },
+  "externalDocs": {
+    "description": "Open data hub, licensing and citation guidance",
+    "url": "https://i6eal.de/tools/daten/"
+  },
+  "servers": [
+    {
+      "url": "https://i6eal.de",
+      "description": "Production — static files behind CloudFront"
+    }
+  ],
+  "security": [],
+  "tags": [
+    {
+      "name": "Catalogue",
+      "description": "Machine-readable index of every published dataset."
+    },
+    {
+      "name": "German & EU AI Procurement Chronicle",
+      "description": "Official procurement signals as durable procedure chains, separating exactly linked procedures from isolated notices.",
+      "externalDocs": {
+        "description": "Dataset documentation and methodology",
+        "url": "https://i6eal.de/ki-vergabe/"
+      }
+    },
+    {
+      "name": "Observed AI Procurement Changes",
+      "description": "Revision trail for newly published and materially changed procedure dossiers; retrieval timestamps alone never create an event.",
+      "externalDocs": {
+        "description": "Dataset documentation and methodology",
+        "url": "https://i6eal.de/ki-vergabe/"
+      }
+    },
+    {
+      "name": "German Federal AI Budget Monitor",
+      "description": "Machine-readable federal budget titles with explicit AI references, keeping appropriations, supplements, actuals and official revisions separate.",
+      "externalDocs": {
+        "description": "Dataset documentation and methodology",
+        "url": "https://i6eal.de/tools/ki-haushaltsmonitor/"
+      }
+    },
+    {
+      "name": "Public AI System Evidence Pass",
+      "description": "Inspectable system profiles and source-evidenced links to repositories and technical inventories only.",
+      "externalDocs": {
+        "description": "Dataset documentation and methodology",
+        "url": "https://i6eal.de/tools/ki-systempass/"
+      }
+    },
+    {
+      "name": "German AI Evidence Network",
+      "description": "Source-evidenced edges between actors, projects, outputs, systems, repositories, packages, procurements and budget titles.",
+      "externalDocs": {
+        "description": "Dataset documentation and methodology",
+        "url": "https://i6eal.de/tools/ki-evidenznetz/"
+      }
+    },
+    {
+      "name": "German AI Case-Law Monitor",
+      "description": "Observed official federal corpus with decisions, exact passages and a material-change chronicle.",
+      "externalDocs": {
+        "description": "Dataset documentation and methodology",
+        "url": "https://i6eal.de/tools/ki-rechtsprechungsmonitor/"
+      }
+    },
+    {
+      "name": "German & EU AI Supervision Monitor",
+      "description": "Officially evidenced responsibilities, legal instruments and observations, without a compliance or effectiveness score.",
+      "externalDocs": {
+        "description": "Dataset documentation and methodology",
+        "url": "https://i6eal.de/tools/ki-aufsichtsmonitor/"
+      }
+    },
+    {
+      "name": "German & EU AI Standardisation Monitor",
+      "description": "Standardisation request, work items, lifecycle events and EU references as separate inspectable evidence lanes.",
+      "externalDocs": {
+        "description": "Dataset documentation and methodology",
+        "url": "https://i6eal.de/tools/ki-normungsmonitor/"
+      }
+    },
+    {
+      "name": "EU AI Transparency Evidence Monitor",
+      "description": "Provider and document evidence for Articles 50 and 53; visibility and review progress remain explicitly separate from conformity.",
+      "externalDocs": {
+        "description": "Dataset documentation and methodology",
+        "url": "https://i6eal.de/tools/ki-transparenznachweis/"
+      }
+    },
+    {
+      "name": "German & EU AI Adoption Atlas",
+      "description": "Official Eurostat observations of AI adoption by enterprises and individuals; statistical universes remain separate.",
+      "externalDocs": {
+        "description": "Dataset documentation and methodology",
+        "url": "https://i6eal.de/tools/ki-nutzungsatlas/"
+      }
+    },
+    {
+      "name": "AI Parliamentary Accountability Monitor",
+      "description": "Parliamentary questions, answers and exactly linked proceedings from the Bundestag documentation system.",
+      "externalDocs": {
+        "description": "Dataset documentation and methodology",
+        "url": "https://i6eal.de/tools/ki-rechenschaftsmonitor/"
+      }
+    },
+    {
+      "name": "German State AI Evidence Layers",
+      "description": "State dossiers assembled from three separate evidence layers: infrastructure, public systems and procurement signals.",
+      "externalDocs": {
+        "description": "Dataset documentation and methodology",
+        "url": "https://i6eal.de/tools/ki-laender-lagebild/"
+      }
+    },
+    {
+      "name": "EU Platform Automation Monitor",
+      "description": "Monthly DSA statements on automated detection, decision automation and reported restrictions by platform; automation is not relabelled as AI.",
+      "externalDocs": {
+        "description": "Dataset documentation and methodology",
+        "url": "https://i6eal.de/tools/plattformautomationsmonitor/"
+      }
+    },
+    {
+      "name": "EU AI Medical-Device Lifecycle Monitor",
+      "description": "Exact AI text evidence from the public EUDAMED software corpus with manufacturer, risk, version and registry attributes; software alone is never treated as AI evidence.",
+      "externalDocs": {
+        "description": "Dataset documentation and methodology",
+        "url": "https://i6eal.de/tools/ki-medizinproduktmonitor/"
+      }
+    },
+    {
+      "name": "AI Enforcement Monitor Germany & EU",
+      "description": "Officially published AI-related investigations, orders, fines and remedies with separate procedural stages and exact technology evidence.",
+      "externalDocs": {
+        "description": "Dataset documentation and methodology",
+        "url": "https://i6eal.de/tools/ki-durchsetzungsmonitor/"
+      }
+    },
+    {
+      "name": "EU AI Studies Monitor",
+      "description": "Official CTIS lifecycles of medicinal clinical trials with exact AI text evidence and separate application, country-status, recruitment, safety and results events.",
+      "externalDocs": {
+        "description": "Dataset documentation and methodology",
+        "url": "https://i6eal.de/tools/ki-studienmonitor/"
+      }
+    }
+  ],
+  "paths": {
+    "/data/ki-auftragschronik/index.json": {
+      "get": {
+        "tags": [
+          "German & EU AI Procurement Chronicle"
+        ],
+        "operationId": "getProcurementChronicleIndex",
+        "summary": "Full index — German & EU AI Procurement Chronicle",
+        "description": "Official procurement signals as durable procedure chains, separating exactly linked procedures from isolated notices.\n\nAttribution: i6eal compilation based on the German Public Procurement Data Service and TED.\n\nReuse: Procurement records remain subject to the reuse terms of each official source.",
+        "responses": {
+          "200": {
+            "description": "Full index of German & EU AI Procurement Chronicle.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetIndex"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-auftragschronik/events.csv": {
+      "get": {
+        "tags": [
+          "German & EU AI Procurement Chronicle"
+        ],
+        "operationId": "getProcurementChronicleEvents",
+        "summary": "Events — German & EU AI Procurement Chronicle",
+        "description": "Official procurement signals as durable procedure chains, separating exactly linked procedures from isolated notices.\n\nAttribution: i6eal compilation based on the German Public Procurement Data Service and TED.\n\nReuse: Procurement records remain subject to the reuse terms of each official source.",
+        "responses": {
+          "200": {
+            "description": "Events of German & EU AI Procurement Chronicle.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-auftragschronik/atom.xml": {
+      "get": {
+        "tags": [
+          "German & EU AI Procurement Chronicle"
+        ],
+        "operationId": "getProcurementChronicleAtom",
+        "summary": "Change feed — German & EU AI Procurement Chronicle",
+        "description": "Official procurement signals as durable procedure chains, separating exactly linked procedures from isolated notices.\n\nAttribution: i6eal compilation based on the German Public Procurement Data Service and TED.\n\nReuse: Procurement records remain subject to the reuse terms of each official source.",
+        "responses": {
+          "200": {
+            "description": "Change feed of German & EU AI Procurement Chronicle.",
+            "content": {
+              "application/atom+xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/AtomFeed"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-auftragschronik/methodology.json": {
+      "get": {
+        "tags": [
+          "German & EU AI Procurement Chronicle"
+        ],
+        "operationId": "getProcurementChronicleMethodology",
+        "summary": "Methodology — German & EU AI Procurement Chronicle",
+        "description": "Official procurement signals as durable procedure chains, separating exactly linked procedures from isolated notices.\n\nAttribution: i6eal compilation based on the German Public Procurement Data Service and TED.\n\nReuse: Procurement records remain subject to the reuse terms of each official source.",
+        "responses": {
+          "200": {
+            "description": "Methodology of German & EU AI Procurement Chronicle.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetResource"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-auftragsaenderungen/index.json": {
+      "get": {
+        "tags": [
+          "Observed AI Procurement Changes"
+        ],
+        "operationId": "getProcurementObservedChangesIndex",
+        "summary": "Change index — Observed AI Procurement Changes",
+        "description": "Revision trail for newly published and materially changed procedure dossiers; retrieval timestamps alone never create an event.\n\nAttribution: i6eal revision trail for the AI Procurement Chronicle.\n\nReuse: The i6eal revision metadata is an original compilation; included procurement facts retain their original source terms.",
+        "responses": {
+          "200": {
+            "description": "Change index of Observed AI Procurement Changes.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetIndex"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-auftragsaenderungen/archive.json": {
+      "get": {
+        "tags": [
+          "Observed AI Procurement Changes"
+        ],
+        "operationId": "getProcurementObservedChangesArchive",
+        "summary": "Revision archive — Observed AI Procurement Changes",
+        "description": "Revision trail for newly published and materially changed procedure dossiers; retrieval timestamps alone never create an event.\n\nAttribution: i6eal revision trail for the AI Procurement Chronicle.\n\nReuse: The i6eal revision metadata is an original compilation; included procurement facts retain their original source terms.",
+        "responses": {
+          "200": {
+            "description": "Revision archive of Observed AI Procurement Changes.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetResource"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-auftragsaenderungen/changes.csv": {
+      "get": {
+        "tags": [
+          "Observed AI Procurement Changes"
+        ],
+        "operationId": "getProcurementObservedChangesChanges",
+        "summary": "Changes — Observed AI Procurement Changes",
+        "description": "Revision trail for newly published and materially changed procedure dossiers; retrieval timestamps alone never create an event.\n\nAttribution: i6eal revision trail for the AI Procurement Chronicle.\n\nReuse: The i6eal revision metadata is an original compilation; included procurement facts retain their original source terms.",
+        "responses": {
+          "200": {
+            "description": "Changes of Observed AI Procurement Changes.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-auftragsaenderungen/atom.xml": {
+      "get": {
+        "tags": [
+          "Observed AI Procurement Changes"
+        ],
+        "operationId": "getProcurementObservedChangesAtom",
+        "summary": "Change feed — Observed AI Procurement Changes",
+        "description": "Revision trail for newly published and materially changed procedure dossiers; retrieval timestamps alone never create an event.\n\nAttribution: i6eal revision trail for the AI Procurement Chronicle.\n\nReuse: The i6eal revision metadata is an original compilation; included procurement facts retain their original source terms.",
+        "responses": {
+          "200": {
+            "description": "Change feed of Observed AI Procurement Changes.",
+            "content": {
+              "application/atom+xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/AtomFeed"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-auftragsaenderungen/methodology.json": {
+      "get": {
+        "tags": [
+          "Observed AI Procurement Changes"
+        ],
+        "operationId": "getProcurementObservedChangesMethodology",
+        "summary": "Methodology — Observed AI Procurement Changes",
+        "description": "Revision trail for newly published and materially changed procedure dossiers; retrieval timestamps alone never create an event.\n\nAttribution: i6eal revision trail for the AI Procurement Chronicle.\n\nReuse: The i6eal revision metadata is an original compilation; included procurement facts retain their original source terms.",
+        "responses": {
+          "200": {
+            "description": "Methodology of Observed AI Procurement Changes.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetResource"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-haushaltsmonitor/index.json": {
+      "get": {
+        "tags": [
+          "German Federal AI Budget Monitor"
+        ],
+        "operationId": "getFederalAiBudgetMonitorIndex",
+        "summary": "Full dataset — German Federal AI Budget Monitor",
+        "description": "Machine-readable federal budget titles with explicit AI references, keeping appropriations, supplements, actuals and official revisions separate.\n\nAttribution: i6eal compilation based on official German federal budget data.\n\nReuse: The machine-readable budget documents remain subject to the notices and terms of the federal budget portal.",
+        "responses": {
+          "200": {
+            "description": "Full dataset of German Federal AI Budget Monitor.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetIndex"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-haushaltsmonitor/titles.csv": {
+      "get": {
+        "tags": [
+          "German Federal AI Budget Monitor"
+        ],
+        "operationId": "getFederalAiBudgetMonitorTitles",
+        "summary": "Budget titles — German Federal AI Budget Monitor",
+        "description": "Machine-readable federal budget titles with explicit AI references, keeping appropriations, supplements, actuals and official revisions separate.\n\nAttribution: i6eal compilation based on official German federal budget data.\n\nReuse: The machine-readable budget documents remain subject to the notices and terms of the federal budget portal.",
+        "responses": {
+          "200": {
+            "description": "Budget titles of German Federal AI Budget Monitor.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-haushaltsmonitor/series.csv": {
+      "get": {
+        "tags": [
+          "German Federal AI Budget Monitor"
+        ],
+        "operationId": "getFederalAiBudgetMonitorSeries",
+        "summary": "Time series — German Federal AI Budget Monitor",
+        "description": "Machine-readable federal budget titles with explicit AI references, keeping appropriations, supplements, actuals and official revisions separate.\n\nAttribution: i6eal compilation based on official German federal budget data.\n\nReuse: The machine-readable budget documents remain subject to the notices and terms of the federal budget portal.",
+        "responses": {
+          "200": {
+            "description": "Time series of German Federal AI Budget Monitor.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-haushaltsmonitor/revisions.csv": {
+      "get": {
+        "tags": [
+          "German Federal AI Budget Monitor"
+        ],
+        "operationId": "getFederalAiBudgetMonitorRevisions",
+        "summary": "Revisions — German Federal AI Budget Monitor",
+        "description": "Machine-readable federal budget titles with explicit AI references, keeping appropriations, supplements, actuals and official revisions separate.\n\nAttribution: i6eal compilation based on official German federal budget data.\n\nReuse: The machine-readable budget documents remain subject to the notices and terms of the federal budget portal.",
+        "responses": {
+          "200": {
+            "description": "Revisions of German Federal AI Budget Monitor.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-haushaltsmonitor/methodology.json": {
+      "get": {
+        "tags": [
+          "German Federal AI Budget Monitor"
+        ],
+        "operationId": "getFederalAiBudgetMonitorMethodology",
+        "summary": "Methodology — German Federal AI Budget Monitor",
+        "description": "Machine-readable federal budget titles with explicit AI references, keeping appropriations, supplements, actuals and official revisions separate.\n\nAttribution: i6eal compilation based on official German federal budget data.\n\nReuse: The machine-readable budget documents remain subject to the notices and terms of the federal budget portal.",
+        "responses": {
+          "200": {
+            "description": "Methodology of German Federal AI Budget Monitor.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetResource"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-systempass/index.json": {
+      "get": {
+        "tags": [
+          "Public AI System Evidence Pass"
+        ],
+        "operationId": "getPublicAiSystemEvidencePassIndex",
+        "summary": "Full dataset — Public AI System Evidence Pass",
+        "description": "Inspectable system profiles and source-evidenced links to repositories and technical inventories only.\n\nAttribution: i6eal evidence pass assembled from MaKI, openCode and dependency data.\n\nReuse: The redistribution terms of the underlying MaKI dataset have not been verified. Check the original source before reuse; CC BY does not automatically apply to these system records.",
+        "responses": {
+          "200": {
+            "description": "Full dataset of Public AI System Evidence Pass.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetIndex"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-systempass/systems.csv": {
+      "get": {
+        "tags": [
+          "Public AI System Evidence Pass"
+        ],
+        "operationId": "getPublicAiSystemEvidencePassSystems",
+        "summary": "Systems — Public AI System Evidence Pass",
+        "description": "Inspectable system profiles and source-evidenced links to repositories and technical inventories only.\n\nAttribution: i6eal evidence pass assembled from MaKI, openCode and dependency data.\n\nReuse: The redistribution terms of the underlying MaKI dataset have not been verified. Check the original source before reuse; CC BY does not automatically apply to these system records.",
+        "responses": {
+          "200": {
+            "description": "Systems of Public AI System Evidence Pass.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-systempass/links.csv": {
+      "get": {
+        "tags": [
+          "Public AI System Evidence Pass"
+        ],
+        "operationId": "getPublicAiSystemEvidencePassLinks",
+        "summary": "Links — Public AI System Evidence Pass",
+        "description": "Inspectable system profiles and source-evidenced links to repositories and technical inventories only.\n\nAttribution: i6eal evidence pass assembled from MaKI, openCode and dependency data.\n\nReuse: The redistribution terms of the underlying MaKI dataset have not been verified. Check the original source before reuse; CC BY does not automatically apply to these system records.",
+        "responses": {
+          "200": {
+            "description": "Links of Public AI System Evidence Pass.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-systempass/atom.xml": {
+      "get": {
+        "tags": [
+          "Public AI System Evidence Pass"
+        ],
+        "operationId": "getPublicAiSystemEvidencePassAtom",
+        "summary": "Revision feed — Public AI System Evidence Pass",
+        "description": "Inspectable system profiles and source-evidenced links to repositories and technical inventories only.\n\nAttribution: i6eal evidence pass assembled from MaKI, openCode and dependency data.\n\nReuse: The redistribution terms of the underlying MaKI dataset have not been verified. Check the original source before reuse; CC BY does not automatically apply to these system records.",
+        "responses": {
+          "200": {
+            "description": "Revision feed of Public AI System Evidence Pass.",
+            "content": {
+              "application/atom+xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/AtomFeed"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-systempass/methodology.json": {
+      "get": {
+        "tags": [
+          "Public AI System Evidence Pass"
+        ],
+        "operationId": "getPublicAiSystemEvidencePassMethodology",
+        "summary": "Methodology — Public AI System Evidence Pass",
+        "description": "Inspectable system profiles and source-evidenced links to repositories and technical inventories only.\n\nAttribution: i6eal evidence pass assembled from MaKI, openCode and dependency data.\n\nReuse: The redistribution terms of the underlying MaKI dataset have not been verified. Check the original source before reuse; CC BY does not automatically apply to these system records.",
+        "responses": {
+          "200": {
+            "description": "Methodology of Public AI System Evidence Pass.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetResource"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-evidenznetz/index.json": {
+      "get": {
+        "tags": [
+          "German AI Evidence Network"
+        ],
+        "operationId": "getGermanAiEvidenceNetworkIndex",
+        "summary": "Full index — German AI Evidence Network",
+        "description": "Source-evidenced edges between actors, projects, outputs, systems, repositories, packages, procurements and budget titles.\n\nAttribution: i6eal evidence network assembled from separately identified public datasets.\n\nReuse: The network combines datasets with different or, in some cases, unverified source rights. The referenced source terms remain decisive for every edge.",
+        "responses": {
+          "200": {
+            "description": "Full index of German AI Evidence Network.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetIndex"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-evidenznetz/entities.csv": {
+      "get": {
+        "tags": [
+          "German AI Evidence Network"
+        ],
+        "operationId": "getGermanAiEvidenceNetworkEntities",
+        "summary": "Entities — German AI Evidence Network",
+        "description": "Source-evidenced edges between actors, projects, outputs, systems, repositories, packages, procurements and budget titles.\n\nAttribution: i6eal evidence network assembled from separately identified public datasets.\n\nReuse: The network combines datasets with different or, in some cases, unverified source rights. The referenced source terms remain decisive for every edge.",
+        "responses": {
+          "200": {
+            "description": "Entities of German AI Evidence Network.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-evidenznetz/edges.csv": {
+      "get": {
+        "tags": [
+          "German AI Evidence Network"
+        ],
+        "operationId": "getGermanAiEvidenceNetworkEdges",
+        "summary": "Evidence edges — German AI Evidence Network",
+        "description": "Source-evidenced edges between actors, projects, outputs, systems, repositories, packages, procurements and budget titles.\n\nAttribution: i6eal evidence network assembled from separately identified public datasets.\n\nReuse: The network combines datasets with different or, in some cases, unverified source rights. The referenced source terms remain decisive for every edge.",
+        "responses": {
+          "200": {
+            "description": "Evidence edges of German AI Evidence Network.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-evidenznetz/methodology.json": {
+      "get": {
+        "tags": [
+          "German AI Evidence Network"
+        ],
+        "operationId": "getGermanAiEvidenceNetworkMethodology",
+        "summary": "Methodology — German AI Evidence Network",
+        "description": "Source-evidenced edges between actors, projects, outputs, systems, repositories, packages, procurements and budget titles.\n\nAttribution: i6eal evidence network assembled from separately identified public datasets.\n\nReuse: The network combines datasets with different or, in some cases, unverified source rights. The referenced source terms remain decisive for every edge.",
+        "responses": {
+          "200": {
+            "description": "Methodology of German AI Evidence Network.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetResource"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-rechtsprechungsmonitor/index.json": {
+      "get": {
+        "tags": [
+          "German AI Case-Law Monitor"
+        ],
+        "operationId": "getFederalAiCaseLawObservatoryIndex",
+        "summary": "Full index — German AI Case-Law Monitor",
+        "description": "Observed official federal corpus with decisions, exact passages and a material-change chronicle.\n\nAttribution: i6eal compilation based on the Federal Legal Information API preview.\n\nReuse: Decision texts and metadata remain subject to the official preview corpus terms; coverage is incomplete.",
+        "responses": {
+          "200": {
+            "description": "Full index of German AI Case-Law Monitor.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetIndex"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-rechtsprechungsmonitor/decisions.csv": {
+      "get": {
+        "tags": [
+          "German AI Case-Law Monitor"
+        ],
+        "operationId": "getFederalAiCaseLawObservatoryDecisions",
+        "summary": "Decisions — German AI Case-Law Monitor",
+        "description": "Observed official federal corpus with decisions, exact passages and a material-change chronicle.\n\nAttribution: i6eal compilation based on the Federal Legal Information API preview.\n\nReuse: Decision texts and metadata remain subject to the official preview corpus terms; coverage is incomplete.",
+        "responses": {
+          "200": {
+            "description": "Decisions of German AI Case-Law Monitor.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-rechtsprechungsmonitor/passages.csv": {
+      "get": {
+        "tags": [
+          "German AI Case-Law Monitor"
+        ],
+        "operationId": "getFederalAiCaseLawObservatoryPassages",
+        "summary": "Passages — German AI Case-Law Monitor",
+        "description": "Observed official federal corpus with decisions, exact passages and a material-change chronicle.\n\nAttribution: i6eal compilation based on the Federal Legal Information API preview.\n\nReuse: Decision texts and metadata remain subject to the official preview corpus terms; coverage is incomplete.",
+        "responses": {
+          "200": {
+            "description": "Passages of German AI Case-Law Monitor.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-rechtsprechungsmonitor/atom.xml": {
+      "get": {
+        "tags": [
+          "German AI Case-Law Monitor"
+        ],
+        "operationId": "getFederalAiCaseLawObservatoryAtom",
+        "summary": "Change feed — German AI Case-Law Monitor",
+        "description": "Observed official federal corpus with decisions, exact passages and a material-change chronicle.\n\nAttribution: i6eal compilation based on the Federal Legal Information API preview.\n\nReuse: Decision texts and metadata remain subject to the official preview corpus terms; coverage is incomplete.",
+        "responses": {
+          "200": {
+            "description": "Change feed of German AI Case-Law Monitor.",
+            "content": {
+              "application/atom+xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/AtomFeed"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-rechtsprechungsmonitor/methodology.json": {
+      "get": {
+        "tags": [
+          "German AI Case-Law Monitor"
+        ],
+        "operationId": "getFederalAiCaseLawObservatoryMethodology",
+        "summary": "Methodology — German AI Case-Law Monitor",
+        "description": "Observed official federal corpus with decisions, exact passages and a material-change chronicle.\n\nAttribution: i6eal compilation based on the Federal Legal Information API preview.\n\nReuse: Decision texts and metadata remain subject to the official preview corpus terms; coverage is incomplete.",
+        "responses": {
+          "200": {
+            "description": "Methodology of German AI Case-Law Monitor.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetResource"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-aufsichtsmonitor/index.json": {
+      "get": {
+        "tags": [
+          "German & EU AI Supervision Monitor"
+        ],
+        "operationId": "getAiSupervisionMonitorIndex",
+        "summary": "Full index — German & EU AI Supervision Monitor",
+        "description": "Officially evidenced responsibilities, legal instruments and observations, without a compliance or effectiveness score.\n\nAttribution: i6eal compilation of officially evidenced supervision and governance signals.\n\nReuse: Legal instruments, authority records and official publications retain their respective source terms.",
+        "responses": {
+          "200": {
+            "description": "Full index of German & EU AI Supervision Monitor.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetIndex"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-aufsichtsmonitor/authorities.csv": {
+      "get": {
+        "tags": [
+          "German & EU AI Supervision Monitor"
+        ],
+        "operationId": "getAiSupervisionMonitorAuthorities",
+        "summary": "Authorities — German & EU AI Supervision Monitor",
+        "description": "Officially evidenced responsibilities, legal instruments and observations, without a compliance or effectiveness score.\n\nAttribution: i6eal compilation of officially evidenced supervision and governance signals.\n\nReuse: Legal instruments, authority records and official publications retain their respective source terms.",
+        "responses": {
+          "200": {
+            "description": "Authorities of German & EU AI Supervision Monitor.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-aufsichtsmonitor/instruments.csv": {
+      "get": {
+        "tags": [
+          "German & EU AI Supervision Monitor"
+        ],
+        "operationId": "getAiSupervisionMonitorInstruments",
+        "summary": "Instruments — German & EU AI Supervision Monitor",
+        "description": "Officially evidenced responsibilities, legal instruments and observations, without a compliance or effectiveness score.\n\nAttribution: i6eal compilation of officially evidenced supervision and governance signals.\n\nReuse: Legal instruments, authority records and official publications retain their respective source terms.",
+        "responses": {
+          "200": {
+            "description": "Instruments of German & EU AI Supervision Monitor.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-aufsichtsmonitor/relationships.csv": {
+      "get": {
+        "tags": [
+          "German & EU AI Supervision Monitor"
+        ],
+        "operationId": "getAiSupervisionMonitorRelationships",
+        "summary": "Relationships — German & EU AI Supervision Monitor",
+        "description": "Officially evidenced responsibilities, legal instruments and observations, without a compliance or effectiveness score.\n\nAttribution: i6eal compilation of officially evidenced supervision and governance signals.\n\nReuse: Legal instruments, authority records and official publications retain their respective source terms.",
+        "responses": {
+          "200": {
+            "description": "Relationships of German & EU AI Supervision Monitor.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-aufsichtsmonitor/methodology.json": {
+      "get": {
+        "tags": [
+          "German & EU AI Supervision Monitor"
+        ],
+        "operationId": "getAiSupervisionMonitorMethodology",
+        "summary": "Methodology — German & EU AI Supervision Monitor",
+        "description": "Officially evidenced responsibilities, legal instruments and observations, without a compliance or effectiveness score.\n\nAttribution: i6eal compilation of officially evidenced supervision and governance signals.\n\nReuse: Legal instruments, authority records and official publications retain their respective source terms.",
+        "responses": {
+          "200": {
+            "description": "Methodology of German & EU AI Supervision Monitor.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetResource"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-normungsmonitor/index.json": {
+      "get": {
+        "tags": [
+          "German & EU AI Standardisation Monitor"
+        ],
+        "operationId": "getAiStandardisationMonitorIndex",
+        "summary": "Full index — German & EU AI Standardisation Monitor",
+        "description": "Standardisation request, work items, lifecycle events and EU references as separate inspectable evidence lanes.\n\nAttribution: i6eal compilation based on the EU standardisation request, CEN-CENELEC work programme, EU references and DIN mirrors.\n\nReuse: Only metadata and evidence references are published, not standards text. CEN-CENELEC, DIN and EU content retain their respective rights and terms.",
+        "responses": {
+          "200": {
+            "description": "Full index of German & EU AI Standardisation Monitor.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetIndex"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-normungsmonitor/work-items.csv": {
+      "get": {
+        "tags": [
+          "German & EU AI Standardisation Monitor"
+        ],
+        "operationId": "getAiStandardisationMonitorWorkItems",
+        "summary": "Work items — German & EU AI Standardisation Monitor",
+        "description": "Standardisation request, work items, lifecycle events and EU references as separate inspectable evidence lanes.\n\nAttribution: i6eal compilation based on the EU standardisation request, CEN-CENELEC work programme, EU references and DIN mirrors.\n\nReuse: Only metadata and evidence references are published, not standards text. CEN-CENELEC, DIN and EU content retain their respective rights and terms.",
+        "responses": {
+          "200": {
+            "description": "Work items of German & EU AI Standardisation Monitor.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-normungsmonitor/events.csv": {
+      "get": {
+        "tags": [
+          "German & EU AI Standardisation Monitor"
+        ],
+        "operationId": "getAiStandardisationMonitorEvents",
+        "summary": "Chronicle — German & EU AI Standardisation Monitor",
+        "description": "Standardisation request, work items, lifecycle events and EU references as separate inspectable evidence lanes.\n\nAttribution: i6eal compilation based on the EU standardisation request, CEN-CENELEC work programme, EU references and DIN mirrors.\n\nReuse: Only metadata and evidence references are published, not standards text. CEN-CENELEC, DIN and EU content retain their respective rights and terms.",
+        "responses": {
+          "200": {
+            "description": "Chronicle of German & EU AI Standardisation Monitor.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-normungsmonitor/feed.atom": {
+      "get": {
+        "tags": [
+          "German & EU AI Standardisation Monitor"
+        ],
+        "operationId": "getAiStandardisationMonitorFeed",
+        "summary": "Change feed — German & EU AI Standardisation Monitor",
+        "description": "Standardisation request, work items, lifecycle events and EU references as separate inspectable evidence lanes.\n\nAttribution: i6eal compilation based on the EU standardisation request, CEN-CENELEC work programme, EU references and DIN mirrors.\n\nReuse: Only metadata and evidence references are published, not standards text. CEN-CENELEC, DIN and EU content retain their respective rights and terms.",
+        "responses": {
+          "200": {
+            "description": "Change feed of German & EU AI Standardisation Monitor.",
+            "content": {
+              "application/atom+xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/AtomFeed"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-normungsmonitor/methodology.json": {
+      "get": {
+        "tags": [
+          "German & EU AI Standardisation Monitor"
+        ],
+        "operationId": "getAiStandardisationMonitorMethodology",
+        "summary": "Methodology — German & EU AI Standardisation Monitor",
+        "description": "Standardisation request, work items, lifecycle events and EU references as separate inspectable evidence lanes.\n\nAttribution: i6eal compilation based on the EU standardisation request, CEN-CENELEC work programme, EU references and DIN mirrors.\n\nReuse: Only metadata and evidence references are published, not standards text. CEN-CENELEC, DIN and EU content retain their respective rights and terms.",
+        "responses": {
+          "200": {
+            "description": "Methodology of German & EU AI Standardisation Monitor.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetResource"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-transparenznachweis-monitor/index.json": {
+      "get": {
+        "tags": [
+          "EU AI Transparency Evidence Monitor"
+        ],
+        "operationId": "getEuAiTransparencyEvidenceMonitorIndex",
+        "summary": "Full index — EU AI Transparency Evidence Monitor",
+        "description": "Provider and document evidence for Articles 50 and 53; visibility and review progress remain explicitly separate from conformity.\n\nAttribution: i6eal evidence monitor based on AI Office registers and linked provider sources.\n\nReuse: Official register entries and provider documents retain their respective rights. i6eal publishes only metadata, review states and links, not archived document bodies.",
+        "responses": {
+          "200": {
+            "description": "Full index of EU AI Transparency Evidence Monitor.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetIndex"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-transparenznachweis-monitor/providers.csv": {
+      "get": {
+        "tags": [
+          "EU AI Transparency Evidence Monitor"
+        ],
+        "operationId": "getEuAiTransparencyEvidenceMonitorProviders",
+        "summary": "Providers — EU AI Transparency Evidence Monitor",
+        "description": "Provider and document evidence for Articles 50 and 53; visibility and review progress remain explicitly separate from conformity.\n\nAttribution: i6eal evidence monitor based on AI Office registers and linked provider sources.\n\nReuse: Official register entries and provider documents retain their respective rights. i6eal publishes only metadata, review states and links, not archived document bodies.",
+        "responses": {
+          "200": {
+            "description": "Providers of EU AI Transparency Evidence Monitor.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-transparenznachweis-monitor/evidence.csv": {
+      "get": {
+        "tags": [
+          "EU AI Transparency Evidence Monitor"
+        ],
+        "operationId": "getEuAiTransparencyEvidenceMonitorEvidence",
+        "summary": "Evidence — EU AI Transparency Evidence Monitor",
+        "description": "Provider and document evidence for Articles 50 and 53; visibility and review progress remain explicitly separate from conformity.\n\nAttribution: i6eal evidence monitor based on AI Office registers and linked provider sources.\n\nReuse: Official register entries and provider documents retain their respective rights. i6eal publishes only metadata, review states and links, not archived document bodies.",
+        "responses": {
+          "200": {
+            "description": "Evidence of EU AI Transparency Evidence Monitor.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-transparenznachweis-monitor/feed.atom": {
+      "get": {
+        "tags": [
+          "EU AI Transparency Evidence Monitor"
+        ],
+        "operationId": "getEuAiTransparencyEvidenceMonitorFeed",
+        "summary": "Change feed — EU AI Transparency Evidence Monitor",
+        "description": "Provider and document evidence for Articles 50 and 53; visibility and review progress remain explicitly separate from conformity.\n\nAttribution: i6eal evidence monitor based on AI Office registers and linked provider sources.\n\nReuse: Official register entries and provider documents retain their respective rights. i6eal publishes only metadata, review states and links, not archived document bodies.",
+        "responses": {
+          "200": {
+            "description": "Change feed of EU AI Transparency Evidence Monitor.",
+            "content": {
+              "application/atom+xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/AtomFeed"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-transparenznachweis-monitor/methodology.json": {
+      "get": {
+        "tags": [
+          "EU AI Transparency Evidence Monitor"
+        ],
+        "operationId": "getEuAiTransparencyEvidenceMonitorMethodology",
+        "summary": "Methodology — EU AI Transparency Evidence Monitor",
+        "description": "Provider and document evidence for Articles 50 and 53; visibility and review progress remain explicitly separate from conformity.\n\nAttribution: i6eal evidence monitor based on AI Office registers and linked provider sources.\n\nReuse: Official register entries and provider documents retain their respective rights. i6eal publishes only metadata, review states and links, not archived document bodies.",
+        "responses": {
+          "200": {
+            "description": "Methodology of EU AI Transparency Evidence Monitor.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetResource"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-nutzungsatlas/index.json": {
+      "get": {
+        "tags": [
+          "German & EU AI Adoption Atlas"
+        ],
+        "operationId": "getGermanEuAiAdoptionAtlasIndex",
+        "summary": "Full index — German & EU AI Adoption Atlas",
+        "description": "Official Eurostat observations of AI adoption by enterprises and individuals; statistical universes remain separate.\n\nAttribution: i6eal compilation based on Eurostat datasets with supplementary Destatis validation.\n\nReuse: Eurostat data is governed by the linked Eurostat copyright notice; supplementary Destatis data retains its source terms.",
+        "responses": {
+          "200": {
+            "description": "Full index of German & EU AI Adoption Atlas.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetIndex"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-nutzungsatlas/countries.csv": {
+      "get": {
+        "tags": [
+          "German & EU AI Adoption Atlas"
+        ],
+        "operationId": "getGermanEuAiAdoptionAtlasCountries",
+        "summary": "Country comparison — German & EU AI Adoption Atlas",
+        "description": "Official Eurostat observations of AI adoption by enterprises and individuals; statistical universes remain separate.\n\nAttribution: i6eal compilation based on Eurostat datasets with supplementary Destatis validation.\n\nReuse: Eurostat data is governed by the linked Eurostat copyright notice; supplementary Destatis data retains its source terms.",
+        "responses": {
+          "200": {
+            "description": "Country comparison of German & EU AI Adoption Atlas.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-nutzungsatlas/observations.csv": {
+      "get": {
+        "tags": [
+          "German & EU AI Adoption Atlas"
+        ],
+        "operationId": "getGermanEuAiAdoptionAtlasObservations",
+        "summary": "Observations — German & EU AI Adoption Atlas",
+        "description": "Official Eurostat observations of AI adoption by enterprises and individuals; statistical universes remain separate.\n\nAttribution: i6eal compilation based on Eurostat datasets with supplementary Destatis validation.\n\nReuse: Eurostat data is governed by the linked Eurostat copyright notice; supplementary Destatis data retains its source terms.",
+        "responses": {
+          "200": {
+            "description": "Observations of German & EU AI Adoption Atlas.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-nutzungsatlas/revisions.csv": {
+      "get": {
+        "tags": [
+          "German & EU AI Adoption Atlas"
+        ],
+        "operationId": "getGermanEuAiAdoptionAtlasRevisions",
+        "summary": "Revisions — German & EU AI Adoption Atlas",
+        "description": "Official Eurostat observations of AI adoption by enterprises and individuals; statistical universes remain separate.\n\nAttribution: i6eal compilation based on Eurostat datasets with supplementary Destatis validation.\n\nReuse: Eurostat data is governed by the linked Eurostat copyright notice; supplementary Destatis data retains its source terms.",
+        "responses": {
+          "200": {
+            "description": "Revisions of German & EU AI Adoption Atlas.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-nutzungsatlas/feed.atom": {
+      "get": {
+        "tags": [
+          "German & EU AI Adoption Atlas"
+        ],
+        "operationId": "getGermanEuAiAdoptionAtlasFeed",
+        "summary": "Change feed — German & EU AI Adoption Atlas",
+        "description": "Official Eurostat observations of AI adoption by enterprises and individuals; statistical universes remain separate.\n\nAttribution: i6eal compilation based on Eurostat datasets with supplementary Destatis validation.\n\nReuse: Eurostat data is governed by the linked Eurostat copyright notice; supplementary Destatis data retains its source terms.",
+        "responses": {
+          "200": {
+            "description": "Change feed of German & EU AI Adoption Atlas.",
+            "content": {
+              "application/atom+xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/AtomFeed"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-nutzungsatlas/methodology.json": {
+      "get": {
+        "tags": [
+          "German & EU AI Adoption Atlas"
+        ],
+        "operationId": "getGermanEuAiAdoptionAtlasMethodology",
+        "summary": "Methodology — German & EU AI Adoption Atlas",
+        "description": "Official Eurostat observations of AI adoption by enterprises and individuals; statistical universes remain separate.\n\nAttribution: i6eal compilation based on Eurostat datasets with supplementary Destatis validation.\n\nReuse: Eurostat data is governed by the linked Eurostat copyright notice; supplementary Destatis data retains its source terms.",
+        "responses": {
+          "200": {
+            "description": "Methodology of German & EU AI Adoption Atlas.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetResource"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-rechenschaftsmonitor/index.json": {
+      "get": {
+        "tags": [
+          "AI Parliamentary Accountability Monitor"
+        ],
+        "operationId": "getParliamentaryAiAccountabilityMonitorIndex",
+        "summary": "Full index — AI Parliamentary Accountability Monitor",
+        "description": "Parliamentary questions, answers and exactly linked proceedings from the Bundestag documentation system.\n\nAttribution: i6eal compilation based on the DIP API and exactly linked Systempass data.\n\nReuse: Parliamentary documents and DIP metadata retain the German Bundestag terms; linked system records may have unverified redistribution terms.",
+        "responses": {
+          "200": {
+            "description": "Full index of AI Parliamentary Accountability Monitor.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetIndex"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-rechenschaftsmonitor/questions.csv": {
+      "get": {
+        "tags": [
+          "AI Parliamentary Accountability Monitor"
+        ],
+        "operationId": "getParliamentaryAiAccountabilityMonitorQuestions",
+        "summary": "Questions — AI Parliamentary Accountability Monitor",
+        "description": "Parliamentary questions, answers and exactly linked proceedings from the Bundestag documentation system.\n\nAttribution: i6eal compilation based on the DIP API and exactly linked Systempass data.\n\nReuse: Parliamentary documents and DIP metadata retain the German Bundestag terms; linked system records may have unverified redistribution terms.",
+        "responses": {
+          "200": {
+            "description": "Questions of AI Parliamentary Accountability Monitor.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-rechenschaftsmonitor/answers.csv": {
+      "get": {
+        "tags": [
+          "AI Parliamentary Accountability Monitor"
+        ],
+        "operationId": "getParliamentaryAiAccountabilityMonitorAnswers",
+        "summary": "Answers — AI Parliamentary Accountability Monitor",
+        "description": "Parliamentary questions, answers and exactly linked proceedings from the Bundestag documentation system.\n\nAttribution: i6eal compilation based on the DIP API and exactly linked Systempass data.\n\nReuse: Parliamentary documents and DIP metadata retain the German Bundestag terms; linked system records may have unverified redistribution terms.",
+        "responses": {
+          "200": {
+            "description": "Answers of AI Parliamentary Accountability Monitor.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-rechenschaftsmonitor/atom.xml": {
+      "get": {
+        "tags": [
+          "AI Parliamentary Accountability Monitor"
+        ],
+        "operationId": "getParliamentaryAiAccountabilityMonitorAtom",
+        "summary": "Change feed — AI Parliamentary Accountability Monitor",
+        "description": "Parliamentary questions, answers and exactly linked proceedings from the Bundestag documentation system.\n\nAttribution: i6eal compilation based on the DIP API and exactly linked Systempass data.\n\nReuse: Parliamentary documents and DIP metadata retain the German Bundestag terms; linked system records may have unverified redistribution terms.",
+        "responses": {
+          "200": {
+            "description": "Change feed of AI Parliamentary Accountability Monitor.",
+            "content": {
+              "application/atom+xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/AtomFeed"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-rechenschaftsmonitor/methodology.json": {
+      "get": {
+        "tags": [
+          "AI Parliamentary Accountability Monitor"
+        ],
+        "operationId": "getParliamentaryAiAccountabilityMonitorMethodology",
+        "summary": "Methodology — AI Parliamentary Accountability Monitor",
+        "description": "Parliamentary questions, answers and exactly linked proceedings from the Bundestag documentation system.\n\nAttribution: i6eal compilation based on the DIP API and exactly linked Systempass data.\n\nReuse: Parliamentary documents and DIP metadata retain the German Bundestag terms; linked system records may have unverified redistribution terms.",
+        "responses": {
+          "200": {
+            "description": "Methodology of AI Parliamentary Accountability Monitor.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetResource"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-laender-lagebild/index.json": {
+      "get": {
+        "tags": [
+          "German State AI Evidence Layers"
+        ],
+        "operationId": "getGermanStateAiEvidenceLayersIndex",
+        "summary": "Full index — German State AI Evidence Layers",
+        "description": "State dossiers assembled from three separate evidence layers: infrastructure, public systems and procurement signals.\n\nAttribution: i6eal state dossiers assembled from BNetzA, MaKI and official procurement data.\n\nReuse: The three evidence layers have separate rights: broadband data identifies DL-DE/BY-2.0, procurement sources have their own terms, and MaKI redistribution has not been verified.",
+        "responses": {
+          "200": {
+            "description": "Full index of German State AI Evidence Layers.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetIndex"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-laender-lagebild/methodology.json": {
+      "get": {
+        "tags": [
+          "German State AI Evidence Layers"
+        ],
+        "operationId": "getGermanStateAiEvidenceLayersMethodology",
+        "summary": "Methodology — German State AI Evidence Layers",
+        "description": "State dossiers assembled from three separate evidence layers: infrastructure, public systems and procurement signals.\n\nAttribution: i6eal state dossiers assembled from BNetzA, MaKI and official procurement data.\n\nReuse: The three evidence layers have separate rights: broadband data identifies DL-DE/BY-2.0, procurement sources have their own terms, and MaKI redistribution has not been verified.",
+        "responses": {
+          "200": {
+            "description": "Methodology of German State AI Evidence Layers.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetResource"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-laender-lagebild/schema.json": {
+      "get": {
+        "tags": [
+          "German State AI Evidence Layers"
+        ],
+        "operationId": "getGermanStateAiEvidenceLayersSchema",
+        "summary": "Data schema — German State AI Evidence Layers",
+        "description": "State dossiers assembled from three separate evidence layers: infrastructure, public systems and procurement signals.\n\nAttribution: i6eal state dossiers assembled from BNetzA, MaKI and official procurement data.\n\nReuse: The three evidence layers have separate rights: broadband data identifies DL-DE/BY-2.0, procurement sources have their own terms, and MaKI redistribution has not been verified.",
+        "responses": {
+          "200": {
+            "description": "Data schema of German State AI Evidence Layers.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetResource"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/plattformautomationsmonitor/index.json": {
+      "get": {
+        "tags": [
+          "EU Platform Automation Monitor"
+        ],
+        "operationId": "getEuPlatformAutomationMonitorIndex",
+        "summary": "Full index — EU Platform Automation Monitor",
+        "description": "Monthly DSA statements on automated detection, decision automation and reported restrictions by platform; automation is not relabelled as AI.\n\nAttribution: i6eal analysis of the European Commission DSA Transparency Database monthly aggregated-simple data.\n\nReuse: The DSA Transparency Database is licensed under CC BY 4.0. The i6eal compilation attributes the European Commission and documents each transformation.",
+        "responses": {
+          "200": {
+            "description": "Full index of EU Platform Automation Monitor.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetIndex"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/plattformautomationsmonitor/platforms.csv": {
+      "get": {
+        "tags": [
+          "EU Platform Automation Monitor"
+        ],
+        "operationId": "getEuPlatformAutomationMonitorPlatforms",
+        "summary": "Platforms — EU Platform Automation Monitor",
+        "description": "Monthly DSA statements on automated detection, decision automation and reported restrictions by platform; automation is not relabelled as AI.\n\nAttribution: i6eal analysis of the European Commission DSA Transparency Database monthly aggregated-simple data.\n\nReuse: The DSA Transparency Database is licensed under CC BY 4.0. The i6eal compilation attributes the European Commission and documents each transformation.",
+        "responses": {
+          "200": {
+            "description": "Platforms of EU Platform Automation Monitor.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/plattformautomationsmonitor/flows.csv": {
+      "get": {
+        "tags": [
+          "EU Platform Automation Monitor"
+        ],
+        "operationId": "getEuPlatformAutomationMonitorFlows",
+        "summary": "Automation flows — EU Platform Automation Monitor",
+        "description": "Monthly DSA statements on automated detection, decision automation and reported restrictions by platform; automation is not relabelled as AI.\n\nAttribution: i6eal analysis of the European Commission DSA Transparency Database monthly aggregated-simple data.\n\nReuse: The DSA Transparency Database is licensed under CC BY 4.0. The i6eal compilation attributes the European Commission and documents each transformation.",
+        "responses": {
+          "200": {
+            "description": "Automation flows of EU Platform Automation Monitor.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/plattformautomationsmonitor/timeline.csv": {
+      "get": {
+        "tags": [
+          "EU Platform Automation Monitor"
+        ],
+        "operationId": "getEuPlatformAutomationMonitorTimeline",
+        "summary": "Monthly timeline — EU Platform Automation Monitor",
+        "description": "Monthly DSA statements on automated detection, decision automation and reported restrictions by platform; automation is not relabelled as AI.\n\nAttribution: i6eal analysis of the European Commission DSA Transparency Database monthly aggregated-simple data.\n\nReuse: The DSA Transparency Database is licensed under CC BY 4.0. The i6eal compilation attributes the European Commission and documents each transformation.",
+        "responses": {
+          "200": {
+            "description": "Monthly timeline of EU Platform Automation Monitor.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/plattformautomationsmonitor/revisions.csv": {
+      "get": {
+        "tags": [
+          "EU Platform Automation Monitor"
+        ],
+        "operationId": "getEuPlatformAutomationMonitorRevisions",
+        "summary": "Revisions — EU Platform Automation Monitor",
+        "description": "Monthly DSA statements on automated detection, decision automation and reported restrictions by platform; automation is not relabelled as AI.\n\nAttribution: i6eal analysis of the European Commission DSA Transparency Database monthly aggregated-simple data.\n\nReuse: The DSA Transparency Database is licensed under CC BY 4.0. The i6eal compilation attributes the European Commission and documents each transformation.",
+        "responses": {
+          "200": {
+            "description": "Revisions of EU Platform Automation Monitor.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/plattformautomationsmonitor/feed.atom": {
+      "get": {
+        "tags": [
+          "EU Platform Automation Monitor"
+        ],
+        "operationId": "getEuPlatformAutomationMonitorFeed",
+        "summary": "Change feed — EU Platform Automation Monitor",
+        "description": "Monthly DSA statements on automated detection, decision automation and reported restrictions by platform; automation is not relabelled as AI.\n\nAttribution: i6eal analysis of the European Commission DSA Transparency Database monthly aggregated-simple data.\n\nReuse: The DSA Transparency Database is licensed under CC BY 4.0. The i6eal compilation attributes the European Commission and documents each transformation.",
+        "responses": {
+          "200": {
+            "description": "Change feed of EU Platform Automation Monitor.",
+            "content": {
+              "application/atom+xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/AtomFeed"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/plattformautomationsmonitor/methodology.json": {
+      "get": {
+        "tags": [
+          "EU Platform Automation Monitor"
+        ],
+        "operationId": "getEuPlatformAutomationMonitorMethodology",
+        "summary": "Methodology — EU Platform Automation Monitor",
+        "description": "Monthly DSA statements on automated detection, decision automation and reported restrictions by platform; automation is not relabelled as AI.\n\nAttribution: i6eal analysis of the European Commission DSA Transparency Database monthly aggregated-simple data.\n\nReuse: The DSA Transparency Database is licensed under CC BY 4.0. The i6eal compilation attributes the European Commission and documents each transformation.",
+        "responses": {
+          "200": {
+            "description": "Methodology of EU Platform Automation Monitor.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetResource"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-medizinproduktmonitor/index.json": {
+      "get": {
+        "tags": [
+          "EU AI Medical-Device Lifecycle Monitor"
+        ],
+        "operationId": "getEuAiMedicalDeviceLifecycleMonitorIndex",
+        "summary": "Full index — EU AI Medical-Device Lifecycle Monitor",
+        "description": "Exact AI text evidence from the public EUDAMED software corpus with manufacturer, risk, version and registry attributes; software alone is never treated as AI evidence.\n\nAttribution: i6eal analysis of the European Commission EUDAMED Public API with disclosed text-evidence and observation rules.\n\nReuse: European Commission EUDAMED public data, transformed by i6eal. The Commission legal notice and source API terms govern reuse; no unqualified dataset-specific CC licence is asserted.",
+        "responses": {
+          "200": {
+            "description": "Full index of EU AI Medical-Device Lifecycle Monitor.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetIndex"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-medizinproduktmonitor/devices.csv": {
+      "get": {
+        "tags": [
+          "EU AI Medical-Device Lifecycle Monitor"
+        ],
+        "operationId": "getEuAiMedicalDeviceLifecycleMonitorDevices",
+        "summary": "Devices — EU AI Medical-Device Lifecycle Monitor",
+        "description": "Exact AI text evidence from the public EUDAMED software corpus with manufacturer, risk, version and registry attributes; software alone is never treated as AI evidence.\n\nAttribution: i6eal analysis of the European Commission EUDAMED Public API with disclosed text-evidence and observation rules.\n\nReuse: European Commission EUDAMED public data, transformed by i6eal. The Commission legal notice and source API terms govern reuse; no unqualified dataset-specific CC licence is asserted.",
+        "responses": {
+          "200": {
+            "description": "Devices of EU AI Medical-Device Lifecycle Monitor.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-medizinproduktmonitor/evidence.csv": {
+      "get": {
+        "tags": [
+          "EU AI Medical-Device Lifecycle Monitor"
+        ],
+        "operationId": "getEuAiMedicalDeviceLifecycleMonitorEvidence",
+        "summary": "Text evidence — EU AI Medical-Device Lifecycle Monitor",
+        "description": "Exact AI text evidence from the public EUDAMED software corpus with manufacturer, risk, version and registry attributes; software alone is never treated as AI evidence.\n\nAttribution: i6eal analysis of the European Commission EUDAMED Public API with disclosed text-evidence and observation rules.\n\nReuse: European Commission EUDAMED public data, transformed by i6eal. The Commission legal notice and source API terms govern reuse; no unqualified dataset-specific CC licence is asserted.",
+        "responses": {
+          "200": {
+            "description": "Text evidence of EU AI Medical-Device Lifecycle Monitor.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-medizinproduktmonitor/events.csv": {
+      "get": {
+        "tags": [
+          "EU AI Medical-Device Lifecycle Monitor"
+        ],
+        "operationId": "getEuAiMedicalDeviceLifecycleMonitorEvents",
+        "summary": "Lifecycle events — EU AI Medical-Device Lifecycle Monitor",
+        "description": "Exact AI text evidence from the public EUDAMED software corpus with manufacturer, risk, version and registry attributes; software alone is never treated as AI evidence.\n\nAttribution: i6eal analysis of the European Commission EUDAMED Public API with disclosed text-evidence and observation rules.\n\nReuse: European Commission EUDAMED public data, transformed by i6eal. The Commission legal notice and source API terms govern reuse; no unqualified dataset-specific CC licence is asserted.",
+        "responses": {
+          "200": {
+            "description": "Lifecycle events of EU AI Medical-Device Lifecycle Monitor.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-medizinproduktmonitor/methodology.json": {
+      "get": {
+        "tags": [
+          "EU AI Medical-Device Lifecycle Monitor"
+        ],
+        "operationId": "getEuAiMedicalDeviceLifecycleMonitorMethodology",
+        "summary": "Methodology — EU AI Medical-Device Lifecycle Monitor",
+        "description": "Exact AI text evidence from the public EUDAMED software corpus with manufacturer, risk, version and registry attributes; software alone is never treated as AI evidence.\n\nAttribution: i6eal analysis of the European Commission EUDAMED Public API with disclosed text-evidence and observation rules.\n\nReuse: European Commission EUDAMED public data, transformed by i6eal. The Commission legal notice and source API terms govern reuse; no unqualified dataset-specific CC licence is asserted.",
+        "responses": {
+          "200": {
+            "description": "Methodology of EU AI Medical-Device Lifecycle Monitor.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetResource"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-durchsetzungsmonitor/index.json": {
+      "get": {
+        "tags": [
+          "AI Enforcement Monitor Germany & EU"
+        ],
+        "operationId": "getGermanyEuAiEnforcementMonitorIndex",
+        "summary": "Full index — AI Enforcement Monitor Germany & EU",
+        "description": "Officially published AI-related investigations, orders, fines and remedies with separate procedural stages and exact technology evidence.\n\nAttribution: i6eal compilation of officially published AI-related enforcement actions with primary sources.\n\nReuse: The metadata compilation is licensed under CC BY 4.0. Official source texts and documents remain subject to the notices of their respective primary sources.",
+        "responses": {
+          "200": {
+            "description": "Full index of AI Enforcement Monitor Germany & EU.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetIndex"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-durchsetzungsmonitor/actions.csv": {
+      "get": {
+        "tags": [
+          "AI Enforcement Monitor Germany & EU"
+        ],
+        "operationId": "getGermanyEuAiEnforcementMonitorActions",
+        "summary": "Actions — AI Enforcement Monitor Germany & EU",
+        "description": "Officially published AI-related investigations, orders, fines and remedies with separate procedural stages and exact technology evidence.\n\nAttribution: i6eal compilation of officially published AI-related enforcement actions with primary sources.\n\nReuse: The metadata compilation is licensed under CC BY 4.0. Official source texts and documents remain subject to the notices of their respective primary sources.",
+        "responses": {
+          "200": {
+            "description": "Actions of AI Enforcement Monitor Germany & EU.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-durchsetzungsmonitor/events.csv": {
+      "get": {
+        "tags": [
+          "AI Enforcement Monitor Germany & EU"
+        ],
+        "operationId": "getGermanyEuAiEnforcementMonitorEvents",
+        "summary": "Chronicle — AI Enforcement Monitor Germany & EU",
+        "description": "Officially published AI-related investigations, orders, fines and remedies with separate procedural stages and exact technology evidence.\n\nAttribution: i6eal compilation of officially published AI-related enforcement actions with primary sources.\n\nReuse: The metadata compilation is licensed under CC BY 4.0. Official source texts and documents remain subject to the notices of their respective primary sources.",
+        "responses": {
+          "200": {
+            "description": "Chronicle of AI Enforcement Monitor Germany & EU.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-durchsetzungsmonitor/evidence.csv": {
+      "get": {
+        "tags": [
+          "AI Enforcement Monitor Germany & EU"
+        ],
+        "operationId": "getGermanyEuAiEnforcementMonitorEvidence",
+        "summary": "Official evidence — AI Enforcement Monitor Germany & EU",
+        "description": "Officially published AI-related investigations, orders, fines and remedies with separate procedural stages and exact technology evidence.\n\nAttribution: i6eal compilation of officially published AI-related enforcement actions with primary sources.\n\nReuse: The metadata compilation is licensed under CC BY 4.0. Official source texts and documents remain subject to the notices of their respective primary sources.",
+        "responses": {
+          "200": {
+            "description": "Official evidence of AI Enforcement Monitor Germany & EU.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-durchsetzungsmonitor/feed.atom": {
+      "get": {
+        "tags": [
+          "AI Enforcement Monitor Germany & EU"
+        ],
+        "operationId": "getGermanyEuAiEnforcementMonitorFeed",
+        "summary": "Change feed — AI Enforcement Monitor Germany & EU",
+        "description": "Officially published AI-related investigations, orders, fines and remedies with separate procedural stages and exact technology evidence.\n\nAttribution: i6eal compilation of officially published AI-related enforcement actions with primary sources.\n\nReuse: The metadata compilation is licensed under CC BY 4.0. Official source texts and documents remain subject to the notices of their respective primary sources.",
+        "responses": {
+          "200": {
+            "description": "Change feed of AI Enforcement Monitor Germany & EU.",
+            "content": {
+              "application/atom+xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/AtomFeed"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-durchsetzungsmonitor/methodology.json": {
+      "get": {
+        "tags": [
+          "AI Enforcement Monitor Germany & EU"
+        ],
+        "operationId": "getGermanyEuAiEnforcementMonitorMethodology",
+        "summary": "Methodology — AI Enforcement Monitor Germany & EU",
+        "description": "Officially published AI-related investigations, orders, fines and remedies with separate procedural stages and exact technology evidence.\n\nAttribution: i6eal compilation of officially published AI-related enforcement actions with primary sources.\n\nReuse: The metadata compilation is licensed under CC BY 4.0. Official source texts and documents remain subject to the notices of their respective primary sources.",
+        "responses": {
+          "200": {
+            "description": "Methodology of AI Enforcement Monitor Germany & EU.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetResource"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-studienmonitor/index.json": {
+      "get": {
+        "tags": [
+          "EU AI Studies Monitor"
+        ],
+        "operationId": "getEuAiClinicalTrialLifecycleMonitorIndex",
+        "summary": "Full index — EU AI Studies Monitor",
+        "description": "Official CTIS lifecycles of medicinal clinical trials with exact AI text evidence and separate application, country-status, recruitment, safety and results events.\n\nAttribution: i6eal analysis of the public Clinical Trials Information System (CTIS) with disclosed evidence, time and privacy rules.\n\nReuse: Public CTIS data from the European Medicines Agency, transformed by i6eal with data minimisation. EMA and source-platform terms govern the underlying data and documents; no unqualified dataset-specific CC licence is asserted.",
+        "responses": {
+          "200": {
+            "description": "Full index of EU AI Studies Monitor.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetIndex"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-studienmonitor/studies.csv": {
+      "get": {
+        "tags": [
+          "EU AI Studies Monitor"
+        ],
+        "operationId": "getEuAiClinicalTrialLifecycleMonitorStudies",
+        "summary": "Trials — EU AI Studies Monitor",
+        "description": "Official CTIS lifecycles of medicinal clinical trials with exact AI text evidence and separate application, country-status, recruitment, safety and results events.\n\nAttribution: i6eal analysis of the public Clinical Trials Information System (CTIS) with disclosed evidence, time and privacy rules.\n\nReuse: Public CTIS data from the European Medicines Agency, transformed by i6eal with data minimisation. EMA and source-platform terms govern the underlying data and documents; no unqualified dataset-specific CC licence is asserted.",
+        "responses": {
+          "200": {
+            "description": "Trials of EU AI Studies Monitor.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-studienmonitor/evidence.csv": {
+      "get": {
+        "tags": [
+          "EU AI Studies Monitor"
+        ],
+        "operationId": "getEuAiClinicalTrialLifecycleMonitorEvidence",
+        "summary": "AI text evidence — EU AI Studies Monitor",
+        "description": "Official CTIS lifecycles of medicinal clinical trials with exact AI text evidence and separate application, country-status, recruitment, safety and results events.\n\nAttribution: i6eal analysis of the public Clinical Trials Information System (CTIS) with disclosed evidence, time and privacy rules.\n\nReuse: Public CTIS data from the European Medicines Agency, transformed by i6eal with data minimisation. EMA and source-platform terms govern the underlying data and documents; no unqualified dataset-specific CC licence is asserted.",
+        "responses": {
+          "200": {
+            "description": "AI text evidence of EU AI Studies Monitor.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-studienmonitor/events.csv": {
+      "get": {
+        "tags": [
+          "EU AI Studies Monitor"
+        ],
+        "operationId": "getEuAiClinicalTrialLifecycleMonitorEvents",
+        "summary": "Official events — EU AI Studies Monitor",
+        "description": "Official CTIS lifecycles of medicinal clinical trials with exact AI text evidence and separate application, country-status, recruitment, safety and results events.\n\nAttribution: i6eal analysis of the public Clinical Trials Information System (CTIS) with disclosed evidence, time and privacy rules.\n\nReuse: Public CTIS data from the European Medicines Agency, transformed by i6eal with data minimisation. EMA and source-platform terms govern the underlying data and documents; no unqualified dataset-specific CC licence is asserted.",
+        "responses": {
+          "200": {
+            "description": "Official events of EU AI Studies Monitor.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-studienmonitor/observations.csv": {
+      "get": {
+        "tags": [
+          "EU AI Studies Monitor"
+        ],
+        "operationId": "getEuAiClinicalTrialLifecycleMonitorObservations",
+        "summary": "Observation changes — EU AI Studies Monitor",
+        "description": "Official CTIS lifecycles of medicinal clinical trials with exact AI text evidence and separate application, country-status, recruitment, safety and results events.\n\nAttribution: i6eal analysis of the public Clinical Trials Information System (CTIS) with disclosed evidence, time and privacy rules.\n\nReuse: Public CTIS data from the European Medicines Agency, transformed by i6eal with data minimisation. EMA and source-platform terms govern the underlying data and documents; no unqualified dataset-specific CC licence is asserted.",
+        "responses": {
+          "200": {
+            "description": "Observation changes of EU AI Studies Monitor.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "$ref": "#/components/schemas/CsvTable"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-studienmonitor/feed.atom": {
+      "get": {
+        "tags": [
+          "EU AI Studies Monitor"
+        ],
+        "operationId": "getEuAiClinicalTrialLifecycleMonitorFeed",
+        "summary": "Change feed — EU AI Studies Monitor",
+        "description": "Official CTIS lifecycles of medicinal clinical trials with exact AI text evidence and separate application, country-status, recruitment, safety and results events.\n\nAttribution: i6eal analysis of the public Clinical Trials Information System (CTIS) with disclosed evidence, time and privacy rules.\n\nReuse: Public CTIS data from the European Medicines Agency, transformed by i6eal with data minimisation. EMA and source-platform terms govern the underlying data and documents; no unqualified dataset-specific CC licence is asserted.",
+        "responses": {
+          "200": {
+            "description": "Change feed of EU AI Studies Monitor.",
+            "content": {
+              "application/atom+xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/AtomFeed"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/ki-studienmonitor/methodology.json": {
+      "get": {
+        "tags": [
+          "EU AI Studies Monitor"
+        ],
+        "operationId": "getEuAiClinicalTrialLifecycleMonitorMethodology",
+        "summary": "Methodology — EU AI Studies Monitor",
+        "description": "Official CTIS lifecycles of medicinal clinical trials with exact AI text evidence and separate application, country-status, recruitment, safety and results events.\n\nAttribution: i6eal analysis of the public Clinical Trials Information System (CTIS) with disclosed evidence, time and privacy rules.\n\nReuse: Public CTIS data from the European Medicines Agency, transformed by i6eal with data minimisation. EMA and source-platform terms govern the underlying data and documents; no unqualified dataset-specific CC licence is asserted.",
+        "responses": {
+          "200": {
+            "description": "Methodology of EU AI Studies Monitor.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetResource"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/data/catalog/dcat.jsonld": {
+      "get": {
+        "tags": [
+          "Catalogue"
+        ],
+        "operationId": "getOpenDataCatalogue",
+        "summary": "DCAT-AP catalogue of every published dataset",
+        "description": "Machine-readable index of all datasets described by this API, as DCAT-AP in JSON-LD. Start here to discover distributions, temporal coverage, sources and per-dataset rights.",
+        "responses": {
+          "200": {
+            "description": "DCAT-AP catalogue document.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DcatCatalogue"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "responses": {
+      "NotFound": {
+        "description": "No distribution exists at this path."
+      }
+    },
+    "schemas": {
+      "DatasetIndex": {
+        "type": "object",
+        "description": "Every dataset index shares the envelope below. The remaining top-level keys are dataset-specific — consult the `methodology` block and the dataset entry in the DCAT catalogue.",
+        "required": [
+          "schemaVersion"
+        ],
+        "properties": {
+          "schemaVersion": {
+            "description": "Payload contract of this dataset. Changes only on a breaking shape change.",
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ]
+          },
+          "generatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "description": "When this projection was built."
+          },
+          "trackingSince": {
+            "type": "string",
+            "description": "Start of the i6eal observation period — distinct from the coverage of the underlying sources."
+          },
+          "methodology": {
+            "type": "object",
+            "description": "How the dataset is collected and what it does and does not claim."
+          },
+          "downloads": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "Named paths of sibling distributions published with this dataset."
+          }
+        },
+        "additionalProperties": true
+      },
+      "DatasetResource": {
+        "type": "object",
+        "description": "A dataset-specific JSON document. See the dataset entry in the DCAT catalogue for its shape.",
+        "additionalProperties": true
+      },
+      "CsvTable": {
+        "type": "string",
+        "description": "RFC 4180 CSV with a header row, UTF-8 encoded."
+      },
+      "AtomFeed": {
+        "type": "string",
+        "description": "Atom 1.0 feed of observed changes to this dataset."
+      },
+      "DcatCatalogue": {
+        "type": "object",
+        "description": "DCAT-AP catalogue in JSON-LD.",
+        "additionalProperties": true
+      }
+    }
+  }
+}

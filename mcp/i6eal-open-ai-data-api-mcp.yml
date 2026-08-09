@@ -1,0 +1,142 @@
+generated: '2026-08-09'
+method: derived
+status: candidate
+source: openapi/i6eal-open-ai-data-api-openapi.json
+search_result:
+  official_hosted_server: none
+  probes:
+    - url: https://i6eal.de/mcp
+      method: GET
+      status: 404
+    - url: https://i6eal.de/.well-known/oauth-protected-resource
+      method: GET
+      status: 404
+    - url: https://i6eal.de/.well-known/ai-plugin.json
+      method: GET
+      status: 404
+  registries_searched:
+    - npm (@modelcontextprotocol and "i6eal") — 0 results
+    - PyPI "i6eal" — 404
+    - github.com/i6eal (13 public repos) — no MCP server repo
+  finding: >-
+    i6eal publishes no MCP server, first- or third-party. What it does publish for agents is
+    a real, provider-authored llms.txt (harvested verbatim to llms/) that carries the
+    dataset list, the citation format, the licence scoping and — unusually — explicit
+    reading rules about what the data does and does not claim. The candidate tool list below
+    is DERIVED from the OpenAPI and is API Evangelist's proposal, not an i6eal product. It
+    is deliberately collapsed: a naive 1-tool-per-operation mapping would emit 83 tools that
+    differ only by filename, which is unusable for an agent.
+server:
+  name: i6eal-open-ai-data
+  transport: http
+  url: null
+  status: not published
+design_note: >-
+  Because there are no parameters anywhere in the spec, a faithful MCP surface has to
+  introduce its own: the natural tool shape is (dataset, distribution) selectors resolved
+  against the DCAT catalogue, which is exactly what the catalogue exists for. Each candidate
+  tool below therefore names the operationIds it would dispatch to rather than pretending a
+  parameterised endpoint exists.
+tools:
+  - name: list_datasets
+    description: >-
+      List all 16 i6eal datasets with identifier, bilingual title, description, temporal
+      coverage, observation start, collection state and cadence, sources and rights.
+    source_operation: openapi/i6eal-open-ai-data-api-openapi.json#getOpenDataCatalogue
+    backing_url: https://i6eal.de/data/catalog/dcat.jsonld
+    input_schema:
+      type: object
+      properties: {}
+  - name: get_dataset_index
+    description: >-
+      Fetch the full JSON index for one dataset — counts, generatedAt, trackingSince,
+      schemaVersion, collectionStatus, sourceHealth, fingerprints and the named sibling
+      distributions.
+    source_operations:
+      - getProcurementChronicleIndex
+      - getProcurementObservedChangesIndex
+      - getFederalAiBudgetMonitorIndex
+      - getPublicAiSystemEvidencePassIndex
+      - getGermanAiEvidenceNetworkIndex
+      - getFederalAiCaseLawObservatoryIndex
+      - getAiSupervisionMonitorIndex
+      - getAiStandardisationMonitorIndex
+      - getEuAiTransparencyEvidenceMonitorIndex
+      - getGermanEuAiAdoptionAtlasIndex
+      - getParliamentaryAiAccountabilityMonitorIndex
+      - getGermanStateAiEvidenceLayersIndex
+      - getEuPlatformAutomationMonitorIndex
+      - getEuAiMedicalDeviceLifecycleMonitorIndex
+      - getGermanyEuAiEnforcementMonitorIndex
+      - getEuAiClinicalTrialLifecycleMonitorIndex
+    input_schema:
+      type: object
+      required: [dataset]
+      properties:
+        dataset:
+          type: string
+          description: dct:identifier from the DCAT catalogue, or the /data/<slug>/ path segment
+  - name: get_dataset_table
+    description: >-
+      Fetch one CSV table belonging to a dataset (RFC 4180, header row, UTF-8). 37 tables
+      exist across the 16 datasets.
+    source_operations_count: 37
+    input_schema:
+      type: object
+      required: [dataset, table]
+      properties:
+        dataset: {type: string}
+        table:
+          type: string
+          description: >-
+            Table name without extension, e.g. events, changes, titles, series, revisions,
+            systems, links, entities, edges, decisions, passages, authorities, instruments,
+            relationships, work-items, providers, evidence, countries, observations,
+            questions, answers, platforms, flows, timeline, devices, actions, studies.
+  - name: get_dataset_methodology
+    description: >-
+      Fetch a dataset's methodology.json — how it is collected, which official hosts are
+      allowed as sources, and what the dataset explicitly does not claim. An agent should
+      read this before quoting any figure.
+    source_operations_count: 16
+    input_schema:
+      type: object
+      required: [dataset]
+      properties:
+        dataset: {type: string}
+  - name: get_dataset_changes
+    description: >-
+      Fetch a dataset's Atom 1.0 change feed of observed material changes. Available for 11
+      of the 16 datasets (5 at atom.xml, 6 at feed.atom).
+    source_operations_count: 11
+    input_schema:
+      type: object
+      required: [dataset]
+      properties:
+        dataset: {type: string}
+coverage:
+  rest_operations_total: 83
+  candidate_tools: 5
+  operations_reachable_via_candidate_tools: 81
+  operations_not_covered:
+    - getProcurementObservedChangesArchive
+    - getGermanStateAiEvidenceLayersSchema
+  operations_not_covered_note: >-
+      Two one-off distributions (a rolling archive.json and one dataset's explicit
+      schema.json) have no sibling on other datasets, so they do not fold into a generic
+      tool; a get_dataset_distribution escape hatch keyed on the DCAT dcat:accessURL would
+      cover them.
+rating_note: >-
+  No `type: MCPServer` pointer is wired into apis.yml for this file. The artifact is a
+  candidate design derived from the OpenAPI, not a server i6eal operates, and an MCPServer
+  pointer would award mcp_server_present and the agent-readiness mcp_server dimension for a
+  surface that does not exist. Wire the pointer only if and when i6eal publishes a real
+  endpoint that answers tools/list.
+agent_surface_today:
+  llms_txt: https://i6eal.de/llms.txt
+  openapi: https://i6eal.de/openapi.json
+  dcat: https://i6eal.de/data/catalog/dcat.jsonld
+  note: >-
+    Until an MCP server exists, the working agent path is: read llms.txt for the operating
+    rules, resolve URLs from the DCAT catalogue, then GET the distribution with a
+    conditional request. No credentials are required at any step.

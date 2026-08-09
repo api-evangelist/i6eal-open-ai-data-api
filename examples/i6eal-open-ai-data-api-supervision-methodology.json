@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "datasetId": "ki-aufsichtsmonitor-de-eu",
+  "generatedAt": "2026-08-09T04:05:00.000Z",
+  "materialFingerprint": "52fab147c63380f9bb653c35fb7888d80206a43a183ea58296c34dd18be3f26c",
+  "sourcePolicy": {
+    "officialOnly": true,
+    "allowedHosts": [
+      "digital-strategy.ec.europa.eu",
+      "eur-lex.europa.eu",
+      "ai-act-service-desk.ec.europa.eu",
+      "www.bundesregierung.de",
+      "www.bundestag.de",
+      "dserver.bundestag.de",
+      "search.dip.bundestag.de",
+      "www.recht.bund.de",
+      "www.bundesnetzagentur.de",
+      "www.cencenelec.eu",
+      "interoperable-europe.ec.europa.eu"
+    ],
+    "claimBoundary": {
+      "de": "Der Monitor dokumentiert veröffentlichte Zuständigkeiten, Instrumente und Beobachtungen. Er bewertet weder Rechtskonformität noch behördliche Wirksamkeit.",
+      "en": "The monitor documents published responsibilities, instruments and observations. It assesses neither legal compliance nor regulatory effectiveness."
+    },
+    "licenseScope": {
+      "de": "CC BY 4.0 gilt nur für die Zusammenstellung und eigenen Beschreibungen von i6eal. Rechtsakte, Behördenangaben und amtliche Veröffentlichungen behalten ihre jeweiligen Quellenbedingungen.",
+      "en": "CC BY 4.0 applies only to i6eal's compilation and original descriptions. Legal instruments, authority records and official publications retain their respective source terms."
+    }
+  },
+  "methodology": {
+    "officialOnly": true,
+    "identityRule": "official identifier or reviewed canonical official URL",
+    "edgeRule": "explicit official legal basis, designation or authority statement only",
+    "changeRule": "material content fingerprint; observation timestamps do not define a change",
+    "absenceRule": "not observed is recorded as source availability, never as repeal or withdrawal",
+    "automation": "deterministic allowlisted retrieval; no generative AI, fuzzy matching or legal scoring",
+    "materialFingerprintExcludes": [
+      "generatedAt",
+      "lastCheckedAt",
+      "lastObservedAt",
+      "lastVerifiedAt",
+      "observedAt",
+      "retrievedAt"
+    ]
+  },
+  "sourceCollection": {
+    "schemaVersion": 1,
+    "revision": 21,
+    "observedAt": "2026-08-09T04:05:00.000Z",
+    "materialHash": "221eb63d453f85cfcb645900a03946dda07e895136ad6ea893e499db432c177f",
+    "transactionHash": "b9630018949a0babbb917ccdbc33134e7d405c4347d7ca1a1a0599e0f654366d",
+    "sourceCount": 12,
+    "observedSourceCount": 12,
+    "unavailableSourceCount": 0,
+    "changedSourceIds": [
+      "ec-digital-strategy-rss"
+    ],
+    "sources": [
+      {
+        "sourceId": "ai-act-service-desk-timeline",
+        "status": "not_modified",
+        "available": true,
+        "semanticHash": "9d34e5618cbff919c44984a1bb452a58ad967bd1a75a2cdd54d824e857ba8478",
+        "rawHash": "ce50bbf0033ae2f170d71679a6e776c23aa0c2465f79890291a2656664c004a5"
+      },
+      {
+        "sourceId": "bnetza-ai-market-surveillance",
+        "status": "ok",
+        "available": true,
+        "semanticHash": "ccc4d5872734c4f1a86cf6cbe7d40aa4c231976e23a9fcb6577da21f9b839738",
+        "rawHash": "1ccfe953e65befed6d9336a5b33aa7a189744cd1ab8efb4742ead7b223448a8d"
+      },
+      {
+        "sourceId": "bundesgesetzblatt-webservice",
+        "status": "ok",
+        "available": true,
+        "semanticHash": "d14dfd74e66eb772dc40f35d1be8471edb928b0c81950e3b9930a90fdafcbe28",
+        "rawHash": "b3656c21c1873ca2e1fd04a0d8f1bbb0afe9621b90b3eb795770141fd9715705"
+      },
+      {
+        "sourceId": "bundestag-dip-ki-mig",
+        "status": "ok",
+        "available": true,
+        "semanticHash": "55b1a8a77e65bfa78067e416d2173e4273d7a94c890372af46e3f9d994dda5df",
+        "rawHash": "a7882ae0e41064409c02d0d02734e81a95fee121345ccf3fc9e9ef928166551c"
+      },
+      {
+        "sourceId": "ec-ai-act-hub",
+        "status": "ok",
+        "available": true,
+        "semanticHash": "906bcf103a2851ccee74dc2554f04e29c253b17770bbd556c71b77cf82f67c49",
+        "rawHash": "015e13560500c7ed7447b58a3ac25d4299700f77dc73f93c4af017e1c308455a"
+      },
+      {
+        "sourceId": "ec-ai-board",
+        "status": "ok",
+        "available": true,
+        "semanticHash": "90d7695ba2ed41e9c76d7480a50d86a484775311e02f23f033a6160d6a09b08d",
+        "rawHash": "45f93e05c44c61580d452b733e30b6ad5302baeec2e38d66e9c72e5be48b0b00"
+      },
+      {
+        "sourceId": "ec-digital-strategy-rss",
+        "status": "ok",
+        "available": true,
+        "semanticHash": "56d01da231ed980a232c6a73bf97fd2cc74e27fb33ba978fa0accff737d448fa",
+        "rawHash": "612e90f883c58908dfd414d0add044f0466a92f90df4aa323d591fc042b73b1d"
+      },
+      {
+        "sourceId": "ec-expert-group-3966",
+        "status": "ok",
+        "available": true,
+        "semanticHash": "a2112227fc793a79dd0017c0060e6978038deac100c43b18dc6ed752d6d69298",
+        "rawHash": "7998946ea365121d22a57a46709c98d6cf648ce24827dcf26d6f81164a9f4998"
+      },
+      {
+        "sourceId": "ec-fundamental-rights-authorities",
+        "status": "ok",
+        "available": true,
+        "semanticHash": "a516e84241ba23909afdd7aa964cdef633f64c0bff33cab2cc4f448666db23c2",
+        "rawHash": "339326c7a05921ff86c9df220ebb22fcd2e57861b292e5e9082c392f74575cff"
+      },
+      {
+        "sourceId": "ec-governance-enforcement",
+        "status": "ok",
+        "available": true,
+        "semanticHash": "0d68d319dc151684f98832e3bd6a2e47570671a9680052e8ee6c802fe13a6355",
+        "rawHash": "e2efa67e58f78d8edf68ac680b6be30b4dc9bc9e9b3917d416a47b2683fc3e6b"
+      },
+      {
+        "sourceId": "ec-market-surveillance-authorities",
+        "status": "ok",
+        "available": true,
+        "semanticHash": "8b00befdcc6ce1422173d091fb817800d41a005cd7654f0284e2662f39d05c08",
+        "rawHash": "d7e1c1f28c8bbb76c3db5be9862ec5de88ebce1aed9735225b422c03c56933ad"
+      },
+      {
+        "sourceId": "eur-lex-ai-act",
+        "status": "ok",
+        "available": true,
+        "semanticHash": "1fc90a9609182843dead19c91d95a2c3ab57be4c2c8ee1d0dac7f58ffe98da94",
+        "rawHash": "8d147ce42ab164cbe6ab9ebfda780a59148ae053839f264f68922cc2209781cd"
+      }
+    ]
+  },
+  "collectionStatus": {
+    "schemaVersion": 1,
+    "mode": "automated-source-observation",
+    "checkedAt": "2026-08-09T04:05:00.000Z",
+    "legalClaimsReviewedAt": "2026-07-30T08:00:00.000Z",
+    "collectorEndpointCount": 12,
+    "publishedInstrumentSourceCount": 19,
+    "collectorRegistryFingerprint": "e97d35f3c606a109fe327a2d9f14028e0f7e1716ad60bbcf4b745800ceaa3be4",
+    "observedEndpointCount": 12,
+    "unavailableEndpointCount": 0,
+    "changedSourceIds": [
+      "ec-digital-strategy-rss"
+    ],
+    "legalClaimsUpdateMode": "review-required"
+  }
+}

@@ -1,0 +1,128 @@
+generated: '2026-08-09'
+method: searched
+source: https://i6eal.de/openapi.json
+docs:
+  - https://i6eal.de/en/tools/data/
+  - https://i6eal.de/llms.txt
+summary: >-
+  Cross-cutting request/response semantics for the i6eal Open AI Data API, captured from the
+  published OpenAPI 3.0.3 description, the llms.txt operating guidance, and live HTTP probes
+  on 2026-08-09. This is a read-only, static-file open-data API: 83 GET operations, no
+  authentication, no write surface, and therefore no idempotency-key contract, no pagination
+  and no request-body semantics. What it does have — CDN caching with conditional requests,
+  a per-dataset payload version, Atom change feeds, and an explicit data-state discipline —
+  is captured below.
+authentication:
+  style: none
+  see: authentication/i6eal-open-ai-data-api-authentication.yml
+http:
+  methods: [GET]
+  write_operations: 0
+  transport: HTTPS only (HSTS max-age=31536000; includeSubDomains)
+  cdn: Amazon CloudFront in front of Amazon S3
+  content_types:
+    - application/json
+    - application/ld+json
+    - text/csv
+    - application/atom+xml
+cors:
+  enabled: true
+  access_control_allow_origin: '*'
+  access_control_expose_headers: [Content-Length, Last-Modified]
+  credentials: not used (no authentication)
+caching:
+  conditional_requests: true
+  validators: [ETag, Last-Modified]
+  cache_control: public,max-age=0,must-revalidate
+  verified: >-
+    A GET of https://i6eal.de/openapi.json with If-None-Match set to the returned ETag
+    answered 304 Not Modified on 2026-08-09. Agents and pollers should send
+    If-None-Match / If-Modified-Since rather than re-downloading payloads.
+  standard: RFC 9110 / RFC 7232 conditional requests
+idempotency:
+  documented: false
+  idempotency_key_header: none
+  notes: >-
+    No idempotency-key mechanism exists or is needed — the API is read-only. All 83
+    operations are HTTP GET against immutable-per-build static files, which are safe and
+    naturally idempotent under RFC 9110, but the provider publishes no idempotency contract
+    for writes because there are no writes. Do not read this as an idempotency posture.
+pagination:
+  supported: false
+  notes: >-
+    No pagination. Each dataset publishes one complete index.json plus whole CSV tables;
+    responses are full documents (2.5 KB to ~145 KB observed). Use HTTP Range requests
+    (Accept-Ranges: bytes is advertised by S3) if partial retrieval is needed.
+filtering_and_query:
+  query_parameters: 0
+  path_parameters: 0
+  notes: >-
+    There are no query or path parameters anywhere in the description. Selection happens by
+    choosing a distribution URL, not by querying. Discovery of the URL set is via the
+    DCAT-AP JSON-LD catalogue (getOpenDataCatalogue) or the OpenAPI document itself.
+versioning:
+  api_version: 1.0.0 (OpenAPI info.version)
+  scheme: per-payload
+  payload_version_field: schemaVersion
+  notes: >-
+    The provider's stated stability contract: "Distribution URLs are treated as permanent.
+    Payload shapes are versioned per dataset through the `schemaVersion` field in each
+    index." There is no URI-path or header API version — a breaking shape change is signalled
+    by an increment of the dataset's own schemaVersion, so consumers should assert on
+    schemaVersion, not on a global API version.
+  see: lifecycle/i6eal-open-ai-data-api-lifecycle.yml
+error_envelope:
+  shape: none
+  notes: >-
+    The only declared error response is 404 ("No distribution exists at this path"), with no
+    response body schema. Live probing of a nonexistent distribution returned the site's HTML
+    404 page (text/html, 16,118 bytes) — not a JSON or RFC 9457 problem document. Clients
+    must branch on the status code and the Content-Type, never on a parsed error body.
+  see: errors/i6eal-open-ai-data-api-problem-types.yml
+rate_limiting:
+  limits_published: false
+  headers: none observed
+  statement: >-
+    The provider states "No authentication, no registration, no rate limit, no quota" in the
+    OpenAPI description. No RateLimit-* or X-RateLimit-* headers were observed on any probed
+    response. CloudFront may still apply infrastructure-level protections that are not
+    documented.
+request_tracing:
+  request_id_header: none first-party
+  notes: >-
+    Responses carry CloudFront diagnostics (x-amz-cf-id, x-amz-cf-pop, x-cache) which can be
+    quoted when reporting a delivery problem, but there is no provider-issued request id.
+change_notification:
+  style: pull
+  mechanism: Atom 1.0 change feeds
+  feed_operations: 11
+  notes: >-
+    Eleven of the 16 datasets publish an Atom 1.0 feed (5 at atom.xml, 6 at feed.atom) of
+    observed material changes; the remaining datasets publish revision tables
+    (revisions.csv) or a rolling archive.json instead. There is
+    no webhook or push surface, and no AsyncAPI document — polling the Atom feed with a
+    conditional request is the intended change-detection path.
+data_semantics:
+  notes: >-
+    Provider-stated reading rules that govern correct use of every payload, from llms.txt:
+    records are joined on exact official identifiers only (TED/OCDS notice ids, MaKI record
+    ids, CORDIS PIC, ECLI, federal budget title numbers) and a shared name never creates a
+    link; absence is stated rather than inferred (`not_publicly_linked` means no public
+    evidence was found, not that the link does not exist); source coverage and observation
+    period are separate dates and must not be conflated; and every figure carries a data
+    state, so a number must be quoted with its date.
+  citation_format: 'i6eal (YEAR): DATASET NAME, data state YYYY-MM-DD. URL'
+  integrity_fields: [materialFingerprint, sourceFingerprint, generatedAt, trackingSince]
+licensing:
+  compilation: CC BY 4.0 (i6eal compilation, structure and original descriptions only)
+  license_url: https://creativecommons.org/licenses/by/4.0/
+  caveat: >-
+    Not a blanket licence over the underlying records — each dataset names its official
+    sources and states their reuse terms in its own dct:rights.
+  terms: https://i6eal.de/tools/daten/
+cross_links:
+  authentication: authentication/i6eal-open-ai-data-api-authentication.yml
+  errors: errors/i6eal-open-ai-data-api-problem-types.yml
+  lifecycle: lifecycle/i6eal-open-ai-data-api-lifecycle.yml
+  conformance: conformance/i6eal-open-ai-data-api-conformance.yml
+  data_model: data-model/i6eal-open-ai-data-api-data-model.yml

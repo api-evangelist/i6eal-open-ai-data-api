@@ -1,0 +1,4090 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "i6eal": "https://i6eal.de/vocab/"
+  },
+  "@id": "https://i6eal.de/data/catalog/dcat.jsonld",
+  "@type": "dcat:Catalog",
+  "dct:identifier": "i6eal-open-ai-data-catalog",
+  "dct:title": [
+    {
+      "@value": "Offene KI-Datensätze von i6eal",
+      "@language": "de"
+    },
+    {
+      "@value": "i6eal Open AI Data Catalogue",
+      "@language": "en"
+    }
+  ],
+  "dct:description": [
+    {
+      "@value": "Maschinenlesbarer Katalog der öffentlichen i6eal-Datenprojektionen mit getrenntem Quellen- und Beobachtungszeitraum.",
+      "@language": "de"
+    },
+    {
+      "@value": "Machine-readable catalogue of public i6eal data projections with separate source and observation periods.",
+      "@language": "en"
+    }
+  ],
+  "dct:publisher": {
+    "@id": "https://i6eal.de/#organization",
+    "@type": "foaf:Organization",
+    "foaf:name": "i6eal",
+    "foaf:homepage": {
+      "@id": "https://i6eal.de/"
+    }
+  },
+  "dct:modified": {
+    "@value": "2026-08-09",
+    "@type": "xsd:date"
+  },
+  "dct:rights": [
+    {
+      "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen; Ausgangsdaten behalten ihre jeweiligen Quellenrechte.",
+      "@language": "de"
+    },
+    {
+      "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions; underlying data retains its source-specific rights.",
+      "@language": "en"
+    }
+  ],
+  "i6eal:compilationLicense": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "dcat:landingPage": [
+    {
+      "@id": "https://i6eal.de/tools/daten/"
+    },
+    {
+      "@id": "https://i6eal.de/en/tools/data/"
+    }
+  ],
+  "dcat:dataset": [
+    {
+      "@id": "https://i6eal.de/data/catalog/dataset/procurement-chronicle",
+      "@type": "dcat:Dataset",
+      "dct:identifier": "procurement-chronicle",
+      "dct:title": [
+        {
+          "@value": "KI-Auftragschronik Deutschland & EU",
+          "@language": "de"
+        },
+        {
+          "@value": "German & EU AI Procurement Chronicle",
+          "@language": "en"
+        }
+      ],
+      "dct:description": [
+        {
+          "@value": "Amtliche Vergabesignale als dauerhafte Verfahrensketten – getrennt nach exakt verknüpften Verfahren und isolierten Bekanntmachungen.",
+          "@language": "de"
+        },
+        {
+          "@value": "Official procurement signals as durable procedure chains, separating exactly linked procedures from isolated notices.",
+          "@language": "en"
+        }
+      ],
+      "dct:publisher": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:creator": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:modified": {
+        "@value": "2026-08-09",
+        "@type": "xsd:date"
+      },
+      "dct:temporal": {
+        "@type": "dct:PeriodOfTime",
+        "dcat:startDate": {
+          "@value": "2023-11-10",
+          "@type": "xsd:date"
+        },
+        "dcat:endDate": {
+          "@value": "2026-08-07",
+          "@type": "xsd:date"
+        }
+      },
+      "schema:temporalCoverage": "2023-11-10/2026-08-07",
+      "i6eal:observedSince": {
+        "@value": "2026-07-19",
+        "@type": "xsd:date"
+      },
+      "i6eal:collectionState": "active",
+      "i6eal:collectionCadence": "daily",
+      "dcat:landingPage": [
+        {
+          "@id": "https://i6eal.de/ki-vergabe/"
+        },
+        {
+          "@id": "https://i6eal.de/en/ki-vergabe/"
+        }
+      ],
+      "dct:source": [
+        {
+          "@id": "https://www.oeffentlichevergabe.de/api/notice-exports",
+          "@type": "dcat:Resource",
+          "dct:title": "Datenservice Öffentlicher Einkauf · OCDS",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://api.ted.europa.eu/v3/notices/search",
+          "@type": "dcat:Resource",
+          "dct:title": "TED Search API · eForms",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        }
+      ],
+      "dct:rights": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        },
+        {
+          "@value": "Vergabedaten bleiben an die Nachnutzungsbedingungen der jeweiligen amtlichen Quelle gebunden.",
+          "@language": "de"
+        },
+        {
+          "@value": "Procurement records remain subject to the reuse terms of each official source.",
+          "@language": "en"
+        }
+      ],
+      "dct:provenance": [
+        {
+          "@value": "i6eal-Zusammenstellung auf Basis des Datenservice Öffentlicher Einkauf und TED.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal compilation based on the German Public Procurement Data Service and TED.",
+          "@language": "en"
+        }
+      ],
+      "schema:creditText": [
+        {
+          "@value": "i6eal-Zusammenstellung auf Basis des Datenservice Öffentlicher Einkauf und TED.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal compilation based on the German Public Procurement Data Service and TED.",
+          "@language": "en"
+        }
+      ],
+      "i6eal:sourceRightsStatus": "source-specific",
+      "i6eal:compilationLicense": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "i6eal:compilationLicenseScope": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        }
+      ],
+      "dcat:distribution": [
+        {
+          "@id": "https://i6eal.de/data/ki-auftragschronik/index.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Gesamtindex",
+              "@language": "de"
+            },
+            {
+              "@value": "Full index",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-auftragschronik/index.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-auftragschronik/index.json"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-auftragschronik/events.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Ereignisse",
+              "@language": "de"
+            },
+            {
+              "@value": "Events",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-auftragschronik/events.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-auftragschronik/events.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-auftragschronik/atom.xml",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Änderungsfeed",
+              "@language": "de"
+            },
+            {
+              "@value": "Change feed",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/atom+xml",
+          "dcat:mediaType": "application/atom+xml",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-auftragschronik/atom.xml"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-auftragschronik/atom.xml"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-auftragschronik/methodology.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Methodik",
+              "@language": "de"
+            },
+            {
+              "@value": "Methodology",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-auftragschronik/methodology.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-auftragschronik/methodology.json"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://i6eal.de/data/catalog/dataset/procurement-observed-changes",
+      "@type": "dcat:Dataset",
+      "dct:identifier": "procurement-observed-changes",
+      "dct:title": [
+        {
+          "@value": "KI-Auftragsänderungen",
+          "@language": "de"
+        },
+        {
+          "@value": "Observed AI Procurement Changes",
+          "@language": "en"
+        }
+      ],
+      "dct:description": [
+        {
+          "@value": "Revisionsspur für neu erschienene und materiell geänderte Verfahrensdossiers; reine Abrufzeitpunkte erzeugen kein Ereignis.",
+          "@language": "de"
+        },
+        {
+          "@value": "Revision trail for newly published and materially changed procedure dossiers; retrieval timestamps alone never create an event.",
+          "@language": "en"
+        }
+      ],
+      "dct:publisher": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:creator": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:modified": {
+        "@value": "2026-08-09",
+        "@type": "xsd:date"
+      },
+      "dct:temporal": {
+        "@type": "dct:PeriodOfTime",
+        "dcat:startDate": {
+          "@value": "2026-07-20",
+          "@type": "xsd:date"
+        },
+        "dcat:endDate": {
+          "@value": "2026-08-09",
+          "@type": "xsd:date"
+        }
+      },
+      "schema:temporalCoverage": "2026-07-20/2026-08-09",
+      "i6eal:observedSince": {
+        "@value": "2026-07-19",
+        "@type": "xsd:date"
+      },
+      "i6eal:collectionState": "active",
+      "i6eal:collectionCadence": "daily",
+      "dcat:landingPage": [
+        {
+          "@id": "https://i6eal.de/ki-vergabe/?view=changes"
+        },
+        {
+          "@id": "https://i6eal.de/en/ki-vergabe/?view=changes"
+        }
+      ],
+      "dct:source": [
+        {
+          "@id": "https://i6eal.de/data/ki-auftragschronik/index.json",
+          "@type": "dcat:Resource",
+          "dct:title": "KI-Auftragschronik · öffentlicher Index",
+          "dct:rights": "mixed",
+          "i6eal:sourceRightsStatus": "mixed"
+        }
+      ],
+      "dct:rights": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        },
+        {
+          "@value": "Die i6eal-Revisionsmetadaten sind eigene Zusammenstellung; enthaltene Vergabefakten behalten ihre ursprünglichen Quellenbedingungen.",
+          "@language": "de"
+        },
+        {
+          "@value": "The i6eal revision metadata is an original compilation; included procurement facts retain their original source terms.",
+          "@language": "en"
+        }
+      ],
+      "dct:provenance": [
+        {
+          "@value": "i6eal-Revisionsspur der KI-Auftragschronik.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal revision trail for the AI Procurement Chronicle.",
+          "@language": "en"
+        }
+      ],
+      "schema:creditText": [
+        {
+          "@value": "i6eal-Revisionsspur der KI-Auftragschronik.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal revision trail for the AI Procurement Chronicle.",
+          "@language": "en"
+        }
+      ],
+      "i6eal:sourceRightsStatus": "mixed",
+      "i6eal:compilationLicense": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "i6eal:compilationLicenseScope": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        }
+      ],
+      "dcat:distribution": [
+        {
+          "@id": "https://i6eal.de/data/ki-auftragsaenderungen/index.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Änderungsindex",
+              "@language": "de"
+            },
+            {
+              "@value": "Change index",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-auftragsaenderungen/index.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-auftragsaenderungen/index.json"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-auftragsaenderungen/archive.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Revisionsarchiv",
+              "@language": "de"
+            },
+            {
+              "@value": "Revision archive",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-auftragsaenderungen/archive.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-auftragsaenderungen/archive.json"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-auftragsaenderungen/changes.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Änderungen",
+              "@language": "de"
+            },
+            {
+              "@value": "Changes",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-auftragsaenderungen/changes.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-auftragsaenderungen/changes.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-auftragsaenderungen/atom.xml",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Änderungsfeed",
+              "@language": "de"
+            },
+            {
+              "@value": "Change feed",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/atom+xml",
+          "dcat:mediaType": "application/atom+xml",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-auftragsaenderungen/atom.xml"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-auftragsaenderungen/atom.xml"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-auftragsaenderungen/methodology.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Methodik",
+              "@language": "de"
+            },
+            {
+              "@value": "Methodology",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-auftragsaenderungen/methodology.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-auftragsaenderungen/methodology.json"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://i6eal.de/data/catalog/dataset/federal-ai-budget-monitor",
+      "@type": "dcat:Dataset",
+      "dct:identifier": "federal-ai-budget-monitor",
+      "dct:title": [
+        {
+          "@value": "KI-Haushaltsmonitor Bund",
+          "@language": "de"
+        },
+        {
+          "@value": "German Federal AI Budget Monitor",
+          "@language": "en"
+        }
+      ],
+      "dct:description": [
+        {
+          "@value": "Maschinenlesbare Bundeshaushaltstitel mit explizitem KI-Bezug, getrennten Soll-, Nachtrags- und Ist-Spuren und amtlichen Revisionen.",
+          "@language": "de"
+        },
+        {
+          "@value": "Machine-readable federal budget titles with explicit AI references, keeping appropriations, supplements, actuals and official revisions separate.",
+          "@language": "en"
+        }
+      ],
+      "dct:publisher": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:creator": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:modified": {
+        "@value": "2026-08-09",
+        "@type": "xsd:date"
+      },
+      "dct:temporal": {
+        "@type": "dct:PeriodOfTime",
+        "dcat:startDate": {
+          "@value": "2014-01-01",
+          "@type": "xsd:date"
+        },
+        "dcat:endDate": {
+          "@value": "2026-12-31",
+          "@type": "xsd:date"
+        }
+      },
+      "schema:temporalCoverage": "2014-01-01/2026-12-31",
+      "i6eal:observedSince": {
+        "@value": "2026-07-20",
+        "@type": "xsd:date"
+      },
+      "i6eal:collectionState": "active",
+      "i6eal:collectionCadence": "daily",
+      "dcat:landingPage": [
+        {
+          "@id": "https://i6eal.de/tools/ki-haushaltsmonitor/"
+        },
+        {
+          "@id": "https://i6eal.de/en/tools/ki-haushaltsmonitor/"
+        }
+      ],
+      "dct:source": [
+        {
+          "@id": "https://www.bundeshaushalt.de/",
+          "@type": "dcat:Resource",
+          "dct:title": "Bundeshaushalt · maschinenlesbare Haushaltsdokumente",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        }
+      ],
+      "dct:rights": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        },
+        {
+          "@value": "Die maschinenlesbaren Haushaltsdokumente unterliegen den Hinweisen und Bedingungen des Bundeshaushaltsportals.",
+          "@language": "de"
+        },
+        {
+          "@value": "The machine-readable budget documents remain subject to the notices and terms of the federal budget portal.",
+          "@language": "en"
+        }
+      ],
+      "dct:provenance": [
+        {
+          "@value": "i6eal-Zusammenstellung auf Basis amtlicher Bundeshaushaltsdaten.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal compilation based on official German federal budget data.",
+          "@language": "en"
+        }
+      ],
+      "schema:creditText": [
+        {
+          "@value": "i6eal-Zusammenstellung auf Basis amtlicher Bundeshaushaltsdaten.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal compilation based on official German federal budget data.",
+          "@language": "en"
+        }
+      ],
+      "i6eal:sourceRightsStatus": "source-specific",
+      "i6eal:compilationLicense": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "i6eal:compilationLicenseScope": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        }
+      ],
+      "dcat:distribution": [
+        {
+          "@id": "https://i6eal.de/data/ki-haushaltsmonitor/index.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Gesamtbestand",
+              "@language": "de"
+            },
+            {
+              "@value": "Full dataset",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-haushaltsmonitor/index.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-haushaltsmonitor/index.json"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-haushaltsmonitor/titles.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Haushaltstitel",
+              "@language": "de"
+            },
+            {
+              "@value": "Budget titles",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-haushaltsmonitor/titles.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-haushaltsmonitor/titles.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-haushaltsmonitor/series.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Zeitreihen",
+              "@language": "de"
+            },
+            {
+              "@value": "Time series",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-haushaltsmonitor/series.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-haushaltsmonitor/series.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-haushaltsmonitor/revisions.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Revisionen",
+              "@language": "de"
+            },
+            {
+              "@value": "Revisions",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-haushaltsmonitor/revisions.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-haushaltsmonitor/revisions.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-haushaltsmonitor/methodology.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Methodik",
+              "@language": "de"
+            },
+            {
+              "@value": "Methodology",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-haushaltsmonitor/methodology.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-haushaltsmonitor/methodology.json"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://i6eal.de/data/catalog/dataset/public-ai-system-evidence-pass",
+      "@type": "dcat:Dataset",
+      "dct:identifier": "public-ai-system-evidence-pass",
+      "dct:title": [
+        {
+          "@value": "KI-Systempass",
+          "@language": "de"
+        },
+        {
+          "@value": "Public AI System Evidence Pass",
+          "@language": "en"
+        }
+      ],
+      "dct:description": [
+        {
+          "@value": "Prüfbare Systemprofile und ausschließlich quellenbelegte Verknüpfungen zu Repositories und technischen Beständen.",
+          "@language": "de"
+        },
+        {
+          "@value": "Inspectable system profiles and source-evidenced links to repositories and technical inventories only.",
+          "@language": "en"
+        }
+      ],
+      "dct:publisher": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:creator": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:modified": {
+        "@value": "2026-08-09",
+        "@type": "xsd:date"
+      },
+      "dct:temporal": {
+        "@type": "dct:PeriodOfTime",
+        "dcat:startDate": {
+          "@value": "2024-10-01",
+          "@type": "xsd:date"
+        },
+        "dcat:endDate": {
+          "@value": "2026-08-07",
+          "@type": "xsd:date"
+        }
+      },
+      "schema:temporalCoverage": "2024-10-01/2026-08-07",
+      "i6eal:observedSince": {
+        "@value": "2026-07-18",
+        "@type": "xsd:date"
+      },
+      "i6eal:collectionState": "derived",
+      "i6eal:collectionCadence": "daily",
+      "dcat:landingPage": [
+        {
+          "@id": "https://i6eal.de/tools/ki-systempass/"
+        },
+        {
+          "@id": "https://i6eal.de/en/tools/ki-systempass/"
+        }
+      ],
+      "dct:source": [
+        {
+          "@id": "https://maki.kimarktplatz.bund.de/a/bmi-makimo-app?kiosk",
+          "@type": "dcat:Resource",
+          "dct:title": "MaKI · öffentlicher Systembestand",
+          "dct:rights": "not-verified",
+          "i6eal:sourceRightsStatus": "not-verified"
+        },
+        {
+          "@id": "https://gitlab.opencode.de/explore/projects",
+          "@type": "dcat:Resource",
+          "dct:title": "openCode · öffentliche Repositories",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://i6eal.de/tools/ki-abhaengigkeitsatlas/",
+          "@type": "dcat:Resource",
+          "dct:title": "KI-Abhängigkeitsatlas · öffentlicher Index",
+          "dct:rights": "mixed",
+          "i6eal:sourceRightsStatus": "mixed"
+        }
+      ],
+      "dct:rights": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        },
+        {
+          "@value": "Die Weiterverwendungsbedingungen des MaKI-Ausgangsbestands sind nicht verifiziert. Prüf deshalb vor einer Nachnutzung die Originalquelle; CC BY gilt nicht pauschal für diese Systemdaten.",
+          "@language": "de"
+        },
+        {
+          "@value": "The redistribution terms of the underlying MaKI dataset have not been verified. Check the original source before reuse; CC BY does not automatically apply to these system records.",
+          "@language": "en"
+        }
+      ],
+      "dct:provenance": [
+        {
+          "@value": "i6eal-Evidenzpass aus MaKI-, openCode- und Abhängigkeitsdaten.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal evidence pass assembled from MaKI, openCode and dependency data.",
+          "@language": "en"
+        }
+      ],
+      "schema:creditText": [
+        {
+          "@value": "i6eal-Evidenzpass aus MaKI-, openCode- und Abhängigkeitsdaten.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal evidence pass assembled from MaKI, openCode and dependency data.",
+          "@language": "en"
+        }
+      ],
+      "i6eal:sourceRightsStatus": "not-verified",
+      "i6eal:compilationLicense": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "i6eal:compilationLicenseScope": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        }
+      ],
+      "dcat:distribution": [
+        {
+          "@id": "https://i6eal.de/data/ki-systempass/index.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Gesamtbestand",
+              "@language": "de"
+            },
+            {
+              "@value": "Full dataset",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-systempass/index.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-systempass/index.json"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-systempass/systems.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Systeme",
+              "@language": "de"
+            },
+            {
+              "@value": "Systems",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-systempass/systems.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-systempass/systems.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-systempass/links.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Verknüpfungen",
+              "@language": "de"
+            },
+            {
+              "@value": "Links",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-systempass/links.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-systempass/links.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-systempass/atom.xml",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Revisionsfeed",
+              "@language": "de"
+            },
+            {
+              "@value": "Revision feed",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/atom+xml",
+          "dcat:mediaType": "application/atom+xml",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-systempass/atom.xml"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-systempass/atom.xml"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-systempass/methodology.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Methodik",
+              "@language": "de"
+            },
+            {
+              "@value": "Methodology",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-systempass/methodology.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-systempass/methodology.json"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://i6eal.de/data/catalog/dataset/german-ai-evidence-network",
+      "@type": "dcat:Dataset",
+      "dct:identifier": "german-ai-evidence-network",
+      "dct:title": [
+        {
+          "@value": "KI-Evidenznetz Deutschland",
+          "@language": "de"
+        },
+        {
+          "@value": "German AI Evidence Network",
+          "@language": "en"
+        }
+      ],
+      "dct:description": [
+        {
+          "@value": "Quellenbelegte Kanten zwischen Akteuren, Projekten, Outputs, Systemen, Repositories, Paketen, Vergaben und Haushaltstiteln.",
+          "@language": "de"
+        },
+        {
+          "@value": "Source-evidenced edges between actors, projects, outputs, systems, repositories, packages, procurements and budget titles.",
+          "@language": "en"
+        }
+      ],
+      "dct:publisher": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:creator": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:modified": {
+        "@value": "2026-08-09",
+        "@type": "xsd:date"
+      },
+      "i6eal:observedSince": {
+        "@value": "2026-07-20",
+        "@type": "xsd:date"
+      },
+      "i6eal:collectionState": "derived",
+      "i6eal:collectionCadence": "daily",
+      "dcat:landingPage": [
+        {
+          "@id": "https://i6eal.de/tools/ki-evidenznetz/"
+        },
+        {
+          "@id": "https://i6eal.de/en/tools/ki-evidenznetz/"
+        }
+      ],
+      "dct:source": [
+        {
+          "@id": "https://i6eal.de/tools/ki-akteure/",
+          "@type": "dcat:Resource",
+          "dct:title": "KI-Akteursregister",
+          "dct:rights": "mixed",
+          "i6eal:sourceRightsStatus": "mixed"
+        },
+        {
+          "@id": "https://i6eal.de/tools/ki-wirkungskette/",
+          "@type": "dcat:Resource",
+          "dct:title": "KI-Wirkungskette",
+          "dct:rights": "mixed",
+          "i6eal:sourceRightsStatus": "mixed"
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-systempass/index.json",
+          "@type": "dcat:Resource",
+          "dct:title": "KI-Systempass",
+          "dct:rights": "not-verified",
+          "i6eal:sourceRightsStatus": "not-verified"
+        },
+        {
+          "@id": "https://i6eal.de/tools/ki-code-radar/",
+          "@type": "dcat:Resource",
+          "dct:title": "KI-Code-Radar",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://i6eal.de/tools/ki-abhaengigkeitsatlas/",
+          "@type": "dcat:Resource",
+          "dct:title": "KI-Abhängigkeitsatlas",
+          "dct:rights": "mixed",
+          "i6eal:sourceRightsStatus": "mixed"
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-auftragschronik/index.json",
+          "@type": "dcat:Resource",
+          "dct:title": "KI-Auftragschronik",
+          "dct:rights": "mixed",
+          "i6eal:sourceRightsStatus": "mixed"
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-haushaltsmonitor/index.json",
+          "@type": "dcat:Resource",
+          "dct:title": "KI-Haushaltsmonitor",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        }
+      ],
+      "dct:rights": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        },
+        {
+          "@value": "Das Netz kombiniert mehrere Datensätze mit unterschiedlichen oder noch ungeklärten Quellenrechten. Für jede Kante bleiben die referenzierten Quellbedingungen maßgeblich.",
+          "@language": "de"
+        },
+        {
+          "@value": "The network combines datasets with different or, in some cases, unverified source rights. The referenced source terms remain decisive for every edge.",
+          "@language": "en"
+        }
+      ],
+      "dct:provenance": [
+        {
+          "@value": "i6eal-Evidenznetz aus separat ausgewiesenen öffentlichen Teilbeständen.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal evidence network assembled from separately identified public datasets.",
+          "@language": "en"
+        }
+      ],
+      "schema:creditText": [
+        {
+          "@value": "i6eal-Evidenznetz aus separat ausgewiesenen öffentlichen Teilbeständen.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal evidence network assembled from separately identified public datasets.",
+          "@language": "en"
+        }
+      ],
+      "i6eal:sourceRightsStatus": "mixed",
+      "i6eal:compilationLicense": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "i6eal:compilationLicenseScope": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        }
+      ],
+      "dcat:distribution": [
+        {
+          "@id": "https://i6eal.de/data/ki-evidenznetz/index.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Gesamtindex",
+              "@language": "de"
+            },
+            {
+              "@value": "Full index",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-evidenznetz/index.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-evidenznetz/index.json"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-evidenznetz/entities.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Entitäten",
+              "@language": "de"
+            },
+            {
+              "@value": "Entities",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-evidenznetz/entities.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-evidenznetz/entities.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-evidenznetz/edges.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Evidenzkanten",
+              "@language": "de"
+            },
+            {
+              "@value": "Evidence edges",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-evidenznetz/edges.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-evidenznetz/edges.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-evidenznetz/methodology.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Methodik",
+              "@language": "de"
+            },
+            {
+              "@value": "Methodology",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-evidenznetz/methodology.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-evidenznetz/methodology.json"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://i6eal.de/data/catalog/dataset/federal-ai-case-law-observatory",
+      "@type": "dcat:Dataset",
+      "dct:identifier": "federal-ai-case-law-observatory",
+      "dct:title": [
+        {
+          "@value": "KI-Rechtsprechungsmonitor Deutschland",
+          "@language": "de"
+        },
+        {
+          "@value": "German AI Case-Law Monitor",
+          "@language": "en"
+        }
+      ],
+      "dct:description": [
+        {
+          "@value": "Beobachteter amtlicher Bundeskorpus mit Entscheidungen, exakten Textfundstellen und materieller Änderungschronik.",
+          "@language": "de"
+        },
+        {
+          "@value": "Observed official federal corpus with decisions, exact passages and a material-change chronicle.",
+          "@language": "en"
+        }
+      ],
+      "dct:publisher": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:creator": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:modified": {
+        "@value": "2026-08-09",
+        "@type": "xsd:date"
+      },
+      "dct:temporal": {
+        "@type": "dct:PeriodOfTime",
+        "dcat:startDate": {
+          "@value": "2010-01-29",
+          "@type": "xsd:date"
+        },
+        "dcat:endDate": {
+          "@value": "2026-04-23",
+          "@type": "xsd:date"
+        }
+      },
+      "schema:temporalCoverage": "2010-01-29/2026-04-23",
+      "i6eal:observedSince": {
+        "@value": "2026-07-20",
+        "@type": "xsd:date"
+      },
+      "i6eal:collectionState": "active",
+      "i6eal:collectionCadence": "daily",
+      "dcat:landingPage": [
+        {
+          "@id": "https://i6eal.de/tools/ki-rechtsprechungsmonitor/"
+        },
+        {
+          "@id": "https://i6eal.de/en/tools/ki-rechtsprechungsmonitor/"
+        }
+      ],
+      "dct:source": [
+        {
+          "@id": "https://testphase.rechtsinformationen.bund.de/",
+          "@type": "dcat:Resource",
+          "dct:title": "Rechtsinformationen des Bundes · API-Testphase",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://docs.rechtsinformationen.bund.de/",
+          "@type": "dcat:Resource",
+          "dct:title": "Rechtsinformationen des Bundes · API-Dokumentation",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        }
+      ],
+      "dct:rights": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        },
+        {
+          "@value": "Entscheidungstexte und Metadaten bleiben an die Nutzungsbedingungen des amtlichen Vorschaukorpus gebunden; die Abdeckung ist unvollständig.",
+          "@language": "de"
+        },
+        {
+          "@value": "Decision texts and metadata remain subject to the official preview corpus terms; coverage is incomplete.",
+          "@language": "en"
+        }
+      ],
+      "dct:provenance": [
+        {
+          "@value": "i6eal-Zusammenstellung auf Basis der Rechtsinformationen des Bundes in der API-Testphase.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal compilation based on the Federal Legal Information API preview.",
+          "@language": "en"
+        }
+      ],
+      "schema:creditText": [
+        {
+          "@value": "i6eal-Zusammenstellung auf Basis der Rechtsinformationen des Bundes in der API-Testphase.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal compilation based on the Federal Legal Information API preview.",
+          "@language": "en"
+        }
+      ],
+      "i6eal:sourceRightsStatus": "source-specific",
+      "i6eal:compilationLicense": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "i6eal:compilationLicenseScope": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        }
+      ],
+      "dcat:distribution": [
+        {
+          "@id": "https://i6eal.de/data/ki-rechtsprechungsmonitor/index.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Gesamtindex",
+              "@language": "de"
+            },
+            {
+              "@value": "Full index",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-rechtsprechungsmonitor/index.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-rechtsprechungsmonitor/index.json"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-rechtsprechungsmonitor/decisions.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Entscheidungen",
+              "@language": "de"
+            },
+            {
+              "@value": "Decisions",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-rechtsprechungsmonitor/decisions.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-rechtsprechungsmonitor/decisions.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-rechtsprechungsmonitor/passages.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Textfundstellen",
+              "@language": "de"
+            },
+            {
+              "@value": "Passages",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-rechtsprechungsmonitor/passages.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-rechtsprechungsmonitor/passages.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-rechtsprechungsmonitor/atom.xml",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Änderungsfeed",
+              "@language": "de"
+            },
+            {
+              "@value": "Change feed",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/atom+xml",
+          "dcat:mediaType": "application/atom+xml",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-rechtsprechungsmonitor/atom.xml"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-rechtsprechungsmonitor/atom.xml"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-rechtsprechungsmonitor/methodology.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Methodik",
+              "@language": "de"
+            },
+            {
+              "@value": "Methodology",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-rechtsprechungsmonitor/methodology.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-rechtsprechungsmonitor/methodology.json"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://i6eal.de/data/catalog/dataset/ai-supervision-monitor",
+      "@type": "dcat:Dataset",
+      "dct:identifier": "ai-supervision-monitor",
+      "dct:title": [
+        {
+          "@value": "KI-Aufsichtsmonitor Deutschland & EU",
+          "@language": "de"
+        },
+        {
+          "@value": "German & EU AI Supervision Monitor",
+          "@language": "en"
+        }
+      ],
+      "dct:description": [
+        {
+          "@value": "Amtlich belegte Zuständigkeiten, Rechtsinstrumente und Beobachtungen – ohne Compliance- oder Wirksamkeitsscore.",
+          "@language": "de"
+        },
+        {
+          "@value": "Officially evidenced responsibilities, legal instruments and observations, without a compliance or effectiveness score.",
+          "@language": "en"
+        }
+      ],
+      "dct:publisher": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:creator": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:modified": {
+        "@value": "2026-08-09",
+        "@type": "xsd:date"
+      },
+      "dct:temporal": {
+        "@type": "dct:PeriodOfTime",
+        "dcat:startDate": {
+          "@value": "2024-07-12",
+          "@type": "xsd:date"
+        },
+        "dcat:endDate": {
+          "@value": "2026-08-02",
+          "@type": "xsd:date"
+        }
+      },
+      "schema:temporalCoverage": "2024-07-12/2026-08-02",
+      "i6eal:observedSince": {
+        "@value": "2026-07-21",
+        "@type": "xsd:date"
+      },
+      "i6eal:collectionState": "active",
+      "i6eal:collectionCadence": "daily",
+      "dcat:landingPage": [
+        {
+          "@id": "https://i6eal.de/tools/ki-aufsichtsmonitor/"
+        },
+        {
+          "@id": "https://i6eal.de/en/tools/ki-aufsichtsmonitor/"
+        }
+      ],
+      "dct:source": [
+        {
+          "@id": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+          "@type": "dcat:Resource",
+          "dct:title": "European Commission · AI Act",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://digital-strategy.ec.europa.eu/en/policies/european-ai-office",
+          "@type": "dcat:Resource",
+          "dct:title": "European Commission · AI Office",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://digital-strategy.ec.europa.eu/en/policies/ai-board",
+          "@type": "dcat:Resource",
+          "dct:title": "European AI Board",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://www.bundesnetzagentur.de/",
+          "@type": "dcat:Resource",
+          "dct:title": "Bundesnetzagentur",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://www.bundestag.de/",
+          "@type": "dcat:Resource",
+          "dct:title": "Deutscher Bundestag",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        }
+      ],
+      "dct:rights": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        },
+        {
+          "@value": "Rechtsakte, Behördenangaben und amtliche Veröffentlichungen behalten ihre jeweiligen Quellenbedingungen.",
+          "@language": "de"
+        },
+        {
+          "@value": "Legal instruments, authority records and official publications retain their respective source terms.",
+          "@language": "en"
+        }
+      ],
+      "dct:provenance": [
+        {
+          "@value": "i6eal-Zusammenstellung amtlich belegter Aufsichts- und Governance-Signale.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal compilation of officially evidenced supervision and governance signals.",
+          "@language": "en"
+        }
+      ],
+      "schema:creditText": [
+        {
+          "@value": "i6eal-Zusammenstellung amtlich belegter Aufsichts- und Governance-Signale.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal compilation of officially evidenced supervision and governance signals.",
+          "@language": "en"
+        }
+      ],
+      "i6eal:sourceRightsStatus": "source-specific",
+      "i6eal:compilationLicense": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "i6eal:compilationLicenseScope": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        }
+      ],
+      "dcat:distribution": [
+        {
+          "@id": "https://i6eal.de/data/ki-aufsichtsmonitor/index.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Gesamtindex",
+              "@language": "de"
+            },
+            {
+              "@value": "Full index",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-aufsichtsmonitor/index.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-aufsichtsmonitor/index.json"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-aufsichtsmonitor/authorities.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Behörden",
+              "@language": "de"
+            },
+            {
+              "@value": "Authorities",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-aufsichtsmonitor/authorities.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-aufsichtsmonitor/authorities.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-aufsichtsmonitor/instruments.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Instrumente",
+              "@language": "de"
+            },
+            {
+              "@value": "Instruments",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-aufsichtsmonitor/instruments.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-aufsichtsmonitor/instruments.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-aufsichtsmonitor/relationships.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Beziehungen",
+              "@language": "de"
+            },
+            {
+              "@value": "Relationships",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-aufsichtsmonitor/relationships.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-aufsichtsmonitor/relationships.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-aufsichtsmonitor/methodology.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Methodik",
+              "@language": "de"
+            },
+            {
+              "@value": "Methodology",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-aufsichtsmonitor/methodology.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-aufsichtsmonitor/methodology.json"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://i6eal.de/data/catalog/dataset/ai-standardisation-monitor",
+      "@type": "dcat:Dataset",
+      "dct:identifier": "ai-standardisation-monitor",
+      "dct:title": [
+        {
+          "@value": "KI-Normungsmonitor Deutschland & EU",
+          "@language": "de"
+        },
+        {
+          "@value": "German & EU AI Standardisation Monitor",
+          "@language": "en"
+        }
+      ],
+      "dct:description": [
+        {
+          "@value": "Normungsauftrag, Arbeitsprojekte, Lebenszyklusereignisse und EU-Fundstellen als getrennte, prüfbare Evidenzspuren.",
+          "@language": "de"
+        },
+        {
+          "@value": "Standardisation request, work items, lifecycle events and EU references as separate inspectable evidence lanes.",
+          "@language": "en"
+        }
+      ],
+      "dct:publisher": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:creator": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:modified": {
+        "@value": "2026-08-09",
+        "@type": "xsd:date"
+      },
+      "dct:temporal": {
+        "@type": "dct:PeriodOfTime",
+        "dcat:startDate": {
+          "@value": "2025-06-23",
+          "@type": "xsd:date"
+        },
+        "dcat:endDate": {
+          "@value": "2026-08-06",
+          "@type": "xsd:date"
+        }
+      },
+      "schema:temporalCoverage": "2025-06-23/2026-08-06",
+      "i6eal:observedSince": {
+        "@value": "2026-07-21",
+        "@type": "xsd:date"
+      },
+      "i6eal:collectionState": "active",
+      "i6eal:collectionCadence": "daily",
+      "dcat:landingPage": [
+        {
+          "@id": "https://i6eal.de/tools/ki-normungsmonitor/"
+        },
+        {
+          "@id": "https://i6eal.de/en/tools/ki-normungsmonitor/"
+        }
+      ],
+      "dct:source": [
+        {
+          "@id": "https://ec.europa.eu/growth/tools-databases/enorm/mandate/613_en",
+          "@type": "dcat:Resource",
+          "dct:title": "European Commission · Normungsauftrag M/613",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://standards.cencenelec.eu/ords/f?p=205:22:::::FSP_ORG_ID,FSP_LANG_ID:2916257,25",
+          "@type": "dcat:Resource",
+          "dct:title": "CEN-CENELEC JTC 21 · Arbeitsprogramm",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-40",
+          "@type": "dcat:Resource",
+          "dct:title": "AI Act Service Desk · Artikel 40",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://single-market-economy.ec.europa.eu/single-market/goods/european-standards/harmonised-standards_en",
+          "@type": "dcat:Resource",
+          "dct:title": "EU-Verzeichnis harmonisierter Normen",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://www.din.de/de/norm-entwuerfe-zum-ai-act-einsehen-und-kommentieren-1249202",
+          "@type": "dcat:Resource",
+          "dct:title": "DIN · Normentwürfe zum AI Act",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        }
+      ],
+      "dct:rights": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        },
+        {
+          "@value": "Veröffentlicht werden nur Metadaten und Evidenzverweise, keine Normtexte. CEN-CENELEC-, DIN- und EU-Inhalte behalten ihre jeweiligen Rechte und Bedingungen.",
+          "@language": "de"
+        },
+        {
+          "@value": "Only metadata and evidence references are published, not standards text. CEN-CENELEC, DIN and EU content retain their respective rights and terms.",
+          "@language": "en"
+        }
+      ],
+      "dct:provenance": [
+        {
+          "@value": "i6eal-Zusammenstellung aus EU-Normungsauftrag, CEN-CENELEC-Arbeitsprogramm, EU-Fundstellen und DIN-Spiegeln.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal compilation based on the EU standardisation request, CEN-CENELEC work programme, EU references and DIN mirrors.",
+          "@language": "en"
+        }
+      ],
+      "schema:creditText": [
+        {
+          "@value": "i6eal-Zusammenstellung aus EU-Normungsauftrag, CEN-CENELEC-Arbeitsprogramm, EU-Fundstellen und DIN-Spiegeln.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal compilation based on the EU standardisation request, CEN-CENELEC work programme, EU references and DIN mirrors.",
+          "@language": "en"
+        }
+      ],
+      "i6eal:sourceRightsStatus": "mixed",
+      "i6eal:compilationLicense": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "i6eal:compilationLicenseScope": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        }
+      ],
+      "dcat:distribution": [
+        {
+          "@id": "https://i6eal.de/data/ki-normungsmonitor/index.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Gesamtindex",
+              "@language": "de"
+            },
+            {
+              "@value": "Full index",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-normungsmonitor/index.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-normungsmonitor/index.json"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-normungsmonitor/work-items.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Arbeitsprojekte",
+              "@language": "de"
+            },
+            {
+              "@value": "Work items",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-normungsmonitor/work-items.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-normungsmonitor/work-items.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-normungsmonitor/events.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Chronik",
+              "@language": "de"
+            },
+            {
+              "@value": "Chronicle",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-normungsmonitor/events.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-normungsmonitor/events.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-normungsmonitor/feed.atom",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Änderungsfeed",
+              "@language": "de"
+            },
+            {
+              "@value": "Change feed",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/atom+xml",
+          "dcat:mediaType": "application/atom+xml",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-normungsmonitor/feed.atom"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-normungsmonitor/feed.atom"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-normungsmonitor/methodology.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Methodik",
+              "@language": "de"
+            },
+            {
+              "@value": "Methodology",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-normungsmonitor/methodology.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-normungsmonitor/methodology.json"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://i6eal.de/data/catalog/dataset/eu-ai-transparency-evidence-monitor",
+      "@type": "dcat:Dataset",
+      "dct:identifier": "eu-ai-transparency-evidence-monitor",
+      "dct:title": [
+        {
+          "@value": "KI-Transparenznachweis-Monitor EU",
+          "@language": "de"
+        },
+        {
+          "@value": "EU AI Transparency Evidence Monitor",
+          "@language": "en"
+        }
+      ],
+      "dct:description": [
+        {
+          "@value": "Anbieter- und Dokumentnachweise für Artikel 50 und 53; Sichtbarkeit und Prüffortschritt bleiben ausdrücklich von Konformität getrennt.",
+          "@language": "de"
+        },
+        {
+          "@value": "Provider and document evidence for Articles 50 and 53; visibility and review progress remain explicitly separate from conformity.",
+          "@language": "en"
+        }
+      ],
+      "dct:publisher": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:creator": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:modified": {
+        "@value": "2026-08-09",
+        "@type": "xsd:date"
+      },
+      "i6eal:observedSince": {
+        "@value": "2026-07-22",
+        "@type": "xsd:date"
+      },
+      "i6eal:collectionState": "active",
+      "i6eal:collectionCadence": "daily",
+      "dcat:landingPage": [
+        {
+          "@id": "https://i6eal.de/tools/ki-transparenznachweis/"
+        },
+        {
+          "@id": "https://i6eal.de/en/tools/ki-transparenznachweis/"
+        }
+      ],
+      "dct:source": [
+        {
+          "@id": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+          "@type": "dcat:Resource",
+          "dct:title": "European Commission · GPAI-Code-Unterzeichner",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://digital-strategy.ec.europa.eu/en/faqs/code-practice-transparency-ai-generated-content",
+          "@type": "dcat:Resource",
+          "dct:title": "European Commission · Artikel-50-Transparenzcode",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50",
+          "@type": "dcat:Resource",
+          "dct:title": "AI Act Service Desk · Artikel 50",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-53",
+          "@type": "dcat:Resource",
+          "dct:title": "AI Act Service Desk · Artikel 53",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-transparenznachweis-monitor/methodology.json",
+          "@type": "dcat:Resource",
+          "dct:title": "Quellen- und Prüfmanifest",
+          "dct:rights": "mixed",
+          "i6eal:sourceRightsStatus": "mixed"
+        }
+      ],
+      "dct:rights": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        },
+        {
+          "@value": "Amtliche Registerangaben und Anbieterunterlagen behalten ihre jeweiligen Rechte. i6eal veröffentlicht nur Metadaten, Prüfstati und Links, keine archivierten Dokumentkörper.",
+          "@language": "de"
+        },
+        {
+          "@value": "Official register entries and provider documents retain their respective rights. i6eal publishes only metadata, review states and links, not archived document bodies.",
+          "@language": "en"
+        }
+      ],
+      "dct:provenance": [
+        {
+          "@value": "i6eal-Evidenzmonitor aus AI-Office-Registern und verlinkten Anbieterquellen.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal evidence monitor based on AI Office registers and linked provider sources.",
+          "@language": "en"
+        }
+      ],
+      "schema:creditText": [
+        {
+          "@value": "i6eal-Evidenzmonitor aus AI-Office-Registern und verlinkten Anbieterquellen.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal evidence monitor based on AI Office registers and linked provider sources.",
+          "@language": "en"
+        }
+      ],
+      "i6eal:sourceRightsStatus": "mixed",
+      "i6eal:compilationLicense": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "i6eal:compilationLicenseScope": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        }
+      ],
+      "dcat:distribution": [
+        {
+          "@id": "https://i6eal.de/data/ki-transparenznachweis-monitor/index.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Gesamtindex",
+              "@language": "de"
+            },
+            {
+              "@value": "Full index",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-transparenznachweis-monitor/index.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-transparenznachweis-monitor/index.json"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-transparenznachweis-monitor/providers.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Anbieter",
+              "@language": "de"
+            },
+            {
+              "@value": "Providers",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-transparenznachweis-monitor/providers.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-transparenznachweis-monitor/providers.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-transparenznachweis-monitor/evidence.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Nachweise",
+              "@language": "de"
+            },
+            {
+              "@value": "Evidence",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-transparenznachweis-monitor/evidence.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-transparenznachweis-monitor/evidence.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-transparenznachweis-monitor/feed.atom",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Änderungsfeed",
+              "@language": "de"
+            },
+            {
+              "@value": "Change feed",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/atom+xml",
+          "dcat:mediaType": "application/atom+xml",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-transparenznachweis-monitor/feed.atom"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-transparenznachweis-monitor/feed.atom"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-transparenznachweis-monitor/methodology.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Methodik",
+              "@language": "de"
+            },
+            {
+              "@value": "Methodology",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-transparenznachweis-monitor/methodology.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-transparenznachweis-monitor/methodology.json"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://i6eal.de/data/catalog/dataset/german-eu-ai-adoption-atlas",
+      "@type": "dcat:Dataset",
+      "dct:identifier": "german-eu-ai-adoption-atlas",
+      "dct:title": [
+        {
+          "@value": "KI-Nutzungsatlas Deutschland & EU",
+          "@language": "de"
+        },
+        {
+          "@value": "German & EU AI Adoption Atlas",
+          "@language": "en"
+        }
+      ],
+      "dct:description": [
+        {
+          "@value": "Amtliche Eurostat-Beobachtungen zur KI-Nutzung von Unternehmen und Personen; Grundgesamtheiten bleiben getrennt.",
+          "@language": "de"
+        },
+        {
+          "@value": "Official Eurostat observations of AI adoption by enterprises and individuals; statistical universes remain separate.",
+          "@language": "en"
+        }
+      ],
+      "dct:publisher": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:creator": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:modified": {
+        "@value": "2026-06-15",
+        "@type": "xsd:date"
+      },
+      "i6eal:observedSince": {
+        "@value": "2026-07-22",
+        "@type": "xsd:date"
+      },
+      "i6eal:collectionState": "active",
+      "i6eal:collectionCadence": "weekly",
+      "dcat:landingPage": [
+        {
+          "@id": "https://i6eal.de/tools/ki-nutzungsatlas/"
+        },
+        {
+          "@id": "https://i6eal.de/en/tools/ki-nutzungsatlas/"
+        }
+      ],
+      "dct:source": [
+        {
+          "@id": "https://doi.org/10.2908/ISOC_EB_AI",
+          "@type": "dcat:Resource",
+          "dct:title": "Eurostat · isoc_eb_ai · DOI 10.2908/ISOC_EB_AI",
+          "dct:rights": {
+            "@id": "https://ec.europa.eu/eurostat/about-us/policies/copyright"
+          },
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://doi.org/10.2908/ISOC_EB_AIN2",
+          "@type": "dcat:Resource",
+          "dct:title": "Eurostat · isoc_eb_ain2 · DOI 10.2908/ISOC_EB_AIN2",
+          "dct:rights": {
+            "@id": "https://ec.europa.eu/eurostat/about-us/policies/copyright"
+          },
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://doi.org/10.2908/ISOC_AI_IAIU",
+          "@type": "dcat:Resource",
+          "dct:title": "Eurostat · isoc_ai_iaiu · DOI 10.2908/ISOC_AI_IAIU",
+          "dct:rights": {
+            "@id": "https://ec.europa.eu/eurostat/about-us/policies/copyright"
+          },
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://www.destatis.de/DE/Themen/Branchen-Unternehmen/Unternehmen/IKT-in-Unternehmen-IKT-Branche/Tabellen/ikti-unternehmen-kuenstliche-intelligenz.html",
+          "@type": "dcat:Resource",
+          "dct:title": "Destatis · KI-Technologien nach Beschäftigtengrößenklasse",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        }
+      ],
+      "dct:rights": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        },
+        {
+          "@value": "Für Eurostat-Daten gilt der verlinkte Eurostat-Urheberrechtshinweis; ergänzende Destatis-Daten behalten deren Quellenbedingungen.",
+          "@language": "de"
+        },
+        {
+          "@value": "Eurostat data is governed by the linked Eurostat copyright notice; supplementary Destatis data retains its source terms.",
+          "@language": "en"
+        }
+      ],
+      "dct:provenance": [
+        {
+          "@value": "i6eal-Zusammenstellung aus Eurostat-Datensätzen und ergänzender Destatis-Validierung.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal compilation based on Eurostat datasets with supplementary Destatis validation.",
+          "@language": "en"
+        }
+      ],
+      "schema:creditText": [
+        {
+          "@value": "i6eal-Zusammenstellung aus Eurostat-Datensätzen und ergänzender Destatis-Validierung.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal compilation based on Eurostat datasets with supplementary Destatis validation.",
+          "@language": "en"
+        }
+      ],
+      "i6eal:sourceRightsStatus": "mixed",
+      "i6eal:compilationLicense": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "i6eal:compilationLicenseScope": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        }
+      ],
+      "dcat:distribution": [
+        {
+          "@id": "https://i6eal.de/data/ki-nutzungsatlas/index.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Gesamtindex",
+              "@language": "de"
+            },
+            {
+              "@value": "Full index",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-nutzungsatlas/index.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-nutzungsatlas/index.json"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-nutzungsatlas/countries.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Ländervergleich",
+              "@language": "de"
+            },
+            {
+              "@value": "Country comparison",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-nutzungsatlas/countries.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-nutzungsatlas/countries.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-nutzungsatlas/observations.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Beobachtungen",
+              "@language": "de"
+            },
+            {
+              "@value": "Observations",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-nutzungsatlas/observations.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-nutzungsatlas/observations.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-nutzungsatlas/revisions.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Revisionen",
+              "@language": "de"
+            },
+            {
+              "@value": "Revisions",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-nutzungsatlas/revisions.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-nutzungsatlas/revisions.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-nutzungsatlas/feed.atom",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Änderungsfeed",
+              "@language": "de"
+            },
+            {
+              "@value": "Change feed",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/atom+xml",
+          "dcat:mediaType": "application/atom+xml",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-nutzungsatlas/feed.atom"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-nutzungsatlas/feed.atom"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-nutzungsatlas/methodology.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Methodik",
+              "@language": "de"
+            },
+            {
+              "@value": "Methodology",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-nutzungsatlas/methodology.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-nutzungsatlas/methodology.json"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://i6eal.de/data/catalog/dataset/parliamentary-ai-accountability-monitor",
+      "@type": "dcat:Dataset",
+      "dct:identifier": "parliamentary-ai-accountability-monitor",
+      "dct:title": [
+        {
+          "@value": "KI-Rechenschaftsmonitor",
+          "@language": "de"
+        },
+        {
+          "@value": "AI Parliamentary Accountability Monitor",
+          "@language": "en"
+        }
+      ],
+      "dct:description": [
+        {
+          "@value": "Parlamentarische Fragen, Antworten und exakt zugeordnete Vorgänge aus dem Dokumentations- und Informationssystem des Bundestages.",
+          "@language": "de"
+        },
+        {
+          "@value": "Parliamentary questions, answers and exactly linked proceedings from the Bundestag documentation system.",
+          "@language": "en"
+        }
+      ],
+      "dct:publisher": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:creator": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:modified": {
+        "@value": "2026-08-09",
+        "@type": "xsd:date"
+      },
+      "dct:temporal": {
+        "@type": "dct:PeriodOfTime",
+        "dcat:startDate": {
+          "@value": "1997-02-04",
+          "@type": "xsd:date"
+        },
+        "dcat:endDate": {
+          "@value": "2026-07-31",
+          "@type": "xsd:date"
+        }
+      },
+      "schema:temporalCoverage": "1997-02-04/2026-07-31",
+      "i6eal:observedSince": {
+        "@value": "2026-07-13",
+        "@type": "xsd:date"
+      },
+      "i6eal:collectionState": "active",
+      "i6eal:collectionCadence": "daily",
+      "dcat:landingPage": [
+        {
+          "@id": "https://i6eal.de/tools/ki-rechenschaftsmonitor/"
+        },
+        {
+          "@id": "https://i6eal.de/en/tools/ki-rechenschaftsmonitor/"
+        }
+      ],
+      "dct:source": [
+        {
+          "@id": "https://dip.bundestag.de/%C3%BCber-dip/hilfe/api",
+          "@type": "dcat:Resource",
+          "dct:title": "Deutscher Bundestag · DIP API",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-systempass/index.json",
+          "@type": "dcat:Resource",
+          "dct:title": "KI-Systempass · öffentlicher Index",
+          "dct:rights": "not-verified",
+          "i6eal:sourceRightsStatus": "not-verified"
+        }
+      ],
+      "dct:rights": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        },
+        {
+          "@value": "Parlamentsdokumente und DIP-Metadaten behalten die Bedingungen des Deutschen Bundestages; verknüpfte Systemdaten können ungeklärte Weiterverwendungsbedingungen haben.",
+          "@language": "de"
+        },
+        {
+          "@value": "Parliamentary documents and DIP metadata retain the German Bundestag terms; linked system records may have unverified redistribution terms.",
+          "@language": "en"
+        }
+      ],
+      "dct:provenance": [
+        {
+          "@value": "i6eal-Zusammenstellung aus der DIP API und exakt verknüpften Systempass-Daten.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal compilation based on the DIP API and exactly linked Systempass data.",
+          "@language": "en"
+        }
+      ],
+      "schema:creditText": [
+        {
+          "@value": "i6eal-Zusammenstellung aus der DIP API und exakt verknüpften Systempass-Daten.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal compilation based on the DIP API and exactly linked Systempass data.",
+          "@language": "en"
+        }
+      ],
+      "i6eal:sourceRightsStatus": "mixed",
+      "i6eal:compilationLicense": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "i6eal:compilationLicenseScope": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        }
+      ],
+      "dcat:distribution": [
+        {
+          "@id": "https://i6eal.de/data/ki-rechenschaftsmonitor/index.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Gesamtindex",
+              "@language": "de"
+            },
+            {
+              "@value": "Full index",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-rechenschaftsmonitor/index.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-rechenschaftsmonitor/index.json"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-rechenschaftsmonitor/questions.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Fragen",
+              "@language": "de"
+            },
+            {
+              "@value": "Questions",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-rechenschaftsmonitor/questions.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-rechenschaftsmonitor/questions.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-rechenschaftsmonitor/answers.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Antworten",
+              "@language": "de"
+            },
+            {
+              "@value": "Answers",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-rechenschaftsmonitor/answers.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-rechenschaftsmonitor/answers.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-rechenschaftsmonitor/atom.xml",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Änderungsfeed",
+              "@language": "de"
+            },
+            {
+              "@value": "Change feed",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/atom+xml",
+          "dcat:mediaType": "application/atom+xml",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-rechenschaftsmonitor/atom.xml"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-rechenschaftsmonitor/atom.xml"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-rechenschaftsmonitor/methodology.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Methodik",
+              "@language": "de"
+            },
+            {
+              "@value": "Methodology",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-rechenschaftsmonitor/methodology.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-rechenschaftsmonitor/methodology.json"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://i6eal.de/data/catalog/dataset/german-state-ai-evidence-layers",
+      "@type": "dcat:Dataset",
+      "dct:identifier": "german-state-ai-evidence-layers",
+      "dct:title": [
+        {
+          "@value": "KI-Länder-Lagebild",
+          "@language": "de"
+        },
+        {
+          "@value": "German State AI Evidence Layers",
+          "@language": "en"
+        }
+      ],
+      "dct:description": [
+        {
+          "@value": "Bundesland-Dossiers aus drei getrennten Evidenzschichten: Infrastruktur, öffentliche Systeme und Vergabesignale.",
+          "@language": "de"
+        },
+        {
+          "@value": "State dossiers assembled from three separate evidence layers: infrastructure, public systems and procurement signals.",
+          "@language": "en"
+        }
+      ],
+      "dct:publisher": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:creator": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:modified": {
+        "@value": "2026-08-09",
+        "@type": "xsd:date"
+      },
+      "i6eal:observedSince": {
+        "@value": "2026-07-19",
+        "@type": "xsd:date"
+      },
+      "i6eal:collectionState": "derived",
+      "i6eal:collectionCadence": "daily",
+      "dcat:landingPage": [
+        {
+          "@id": "https://i6eal.de/tools/ki-laender-lagebild/"
+        },
+        {
+          "@id": "https://i6eal.de/en/tools/ki-laender-lagebild/"
+        }
+      ],
+      "dct:source": [
+        {
+          "@id": "https://gigabitgrundbuch.bund.de/GIGA/DE/Downloads_Suche/start.html",
+          "@type": "dcat:Resource",
+          "dct:title": "Bundesnetzagentur · Gigabit-Grundbuch",
+          "dct:rights": {
+            "@id": "https://www.govdata.de/dl-de/by-2-0"
+          },
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://maki.kimarktplatz.bund.de/a/bmi-makimo-app?kiosk",
+          "@type": "dcat:Resource",
+          "dct:title": "MaKI · öffentlicher Systembestand",
+          "dct:rights": "not-verified",
+          "i6eal:sourceRightsStatus": "not-verified"
+        },
+        {
+          "@id": "https://www.oeffentlichevergabe.de/api/notice-exports",
+          "@type": "dcat:Resource",
+          "dct:title": "Datenservice Öffentlicher Einkauf · OCDS",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://api.ted.europa.eu/v3/notices/search",
+          "@type": "dcat:Resource",
+          "dct:title": "TED Search API · eForms",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-systempass/index.json",
+          "@type": "dcat:Resource",
+          "dct:title": "KI-Systempass · öffentlicher Index",
+          "dct:rights": "not-verified",
+          "i6eal:sourceRightsStatus": "not-verified"
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-auftragschronik/index.json",
+          "@type": "dcat:Resource",
+          "dct:title": "KI-Auftragschronik · öffentlicher Index",
+          "dct:rights": "mixed",
+          "i6eal:sourceRightsStatus": "mixed"
+        }
+      ],
+      "dct:rights": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        },
+        {
+          "@value": "Die drei Evidenzschichten haben eigene Rechte: Breitbanddaten weisen DL-DE/BY-2.0 aus, Vergabequellen eigene Bedingungen und die MaKI-Weiterverwendung ist nicht verifiziert.",
+          "@language": "de"
+        },
+        {
+          "@value": "The three evidence layers have separate rights: broadband data identifies DL-DE/BY-2.0, procurement sources have their own terms, and MaKI redistribution has not been verified.",
+          "@language": "en"
+        }
+      ],
+      "dct:provenance": [
+        {
+          "@value": "i6eal-Länderdossiers aus BNetzA-, MaKI- und amtlichen Vergabedaten.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal state dossiers assembled from BNetzA, MaKI and official procurement data.",
+          "@language": "en"
+        }
+      ],
+      "schema:creditText": [
+        {
+          "@value": "i6eal-Länderdossiers aus BNetzA-, MaKI- und amtlichen Vergabedaten.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal state dossiers assembled from BNetzA, MaKI and official procurement data.",
+          "@language": "en"
+        }
+      ],
+      "i6eal:sourceRightsStatus": "mixed",
+      "i6eal:compilationLicense": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "i6eal:compilationLicenseScope": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        }
+      ],
+      "dcat:distribution": [
+        {
+          "@id": "https://i6eal.de/data/ki-laender-lagebild/index.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Gesamtindex",
+              "@language": "de"
+            },
+            {
+              "@value": "Full index",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-laender-lagebild/index.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-laender-lagebild/index.json"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-laender-lagebild/methodology.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Methodik",
+              "@language": "de"
+            },
+            {
+              "@value": "Methodology",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-laender-lagebild/methodology.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-laender-lagebild/methodology.json"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-laender-lagebild/schema.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Datenschema",
+              "@language": "de"
+            },
+            {
+              "@value": "Data schema",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-laender-lagebild/schema.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-laender-lagebild/schema.json"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://i6eal.de/data/catalog/dataset/eu-platform-automation-monitor",
+      "@type": "dcat:Dataset",
+      "dct:identifier": "eu-platform-automation-monitor",
+      "dct:title": [
+        {
+          "@value": "Plattformautomationsmonitor EU",
+          "@language": "de"
+        },
+        {
+          "@value": "EU Platform Automation Monitor",
+          "@language": "en"
+        }
+      ],
+      "dct:description": [
+        {
+          "@value": "Monatliche DSA-Statements zu automatisierter Erkennung, Entscheidungsautomatisierung und gemeldeten Maßnahmen je Plattform; Automatisierung wird nicht als KI umgedeutet.",
+          "@language": "de"
+        },
+        {
+          "@value": "Monthly DSA statements on automated detection, decision automation and reported restrictions by platform; automation is not relabelled as AI.",
+          "@language": "en"
+        }
+      ],
+      "dct:publisher": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:creator": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:modified": {
+        "@value": "2026-05-31",
+        "@type": "xsd:date"
+      },
+      "dct:temporal": {
+        "@type": "dct:PeriodOfTime",
+        "dcat:startDate": {
+          "@value": "2023-09-25",
+          "@type": "xsd:date"
+        },
+        "dcat:endDate": {
+          "@value": "2026-05-31",
+          "@type": "xsd:date"
+        }
+      },
+      "schema:temporalCoverage": "2023-09-25/2026-05-31",
+      "i6eal:observedSince": {
+        "@value": "2026-07-22",
+        "@type": "xsd:date"
+      },
+      "i6eal:collectionState": "active",
+      "i6eal:collectionCadence": "monthlyDailyFreshness",
+      "dcat:landingPage": [
+        {
+          "@id": "https://i6eal.de/tools/plattformautomationsmonitor/"
+        },
+        {
+          "@id": "https://i6eal.de/en/tools/plattformautomationsmonitor/"
+        }
+      ],
+      "dct:source": [
+        {
+          "@id": "https://transparency.dsa.ec.europa.eu/",
+          "@type": "dcat:Resource",
+          "dct:title": "European Commission · DSA Transparency Database",
+          "dct:rights": {
+            "@id": "https://transparency.dsa.ec.europa.eu/page/data-license?lang=en"
+          },
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://dsa.pages.code.europa.eu/transparency-database/dsa-tdb/data_sources.html",
+          "@type": "dcat:Resource",
+          "dct:title": "European Commission · dsa-tdb aggregate documentation",
+          "dct:rights": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+          },
+          "i6eal:sourceRightsStatus": "source-specific"
+        }
+      ],
+      "dct:rights": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        },
+        {
+          "@value": "Die DSA-Transparenzdatenbank steht unter CC BY 4.0. Die i6eal-Auswertung nennt die Europäische Kommission als Quelle und dokumentiert jede Umformung.",
+          "@language": "de"
+        },
+        {
+          "@value": "The DSA Transparency Database is licensed under CC BY 4.0. The i6eal compilation attributes the European Commission and documents each transformation.",
+          "@language": "en"
+        }
+      ],
+      "dct:provenance": [
+        {
+          "@value": "i6eal-Auswertung der monatlichen aggregated-simple-Daten der DSA-Transparenzdatenbank der Europäischen Kommission.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal analysis of the European Commission DSA Transparency Database monthly aggregated-simple data.",
+          "@language": "en"
+        }
+      ],
+      "schema:creditText": [
+        {
+          "@value": "i6eal-Auswertung der monatlichen aggregated-simple-Daten der DSA-Transparenzdatenbank der Europäischen Kommission.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal analysis of the European Commission DSA Transparency Database monthly aggregated-simple data.",
+          "@language": "en"
+        }
+      ],
+      "i6eal:sourceRightsStatus": "mixed",
+      "i6eal:compilationLicense": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "i6eal:compilationLicenseScope": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        }
+      ],
+      "dcat:distribution": [
+        {
+          "@id": "https://i6eal.de/data/plattformautomationsmonitor/index.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Gesamtindex",
+              "@language": "de"
+            },
+            {
+              "@value": "Full index",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/plattformautomationsmonitor/index.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/plattformautomationsmonitor/index.json"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/plattformautomationsmonitor/platforms.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Plattformen",
+              "@language": "de"
+            },
+            {
+              "@value": "Platforms",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/plattformautomationsmonitor/platforms.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/plattformautomationsmonitor/platforms.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/plattformautomationsmonitor/flows.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Automationsflüsse",
+              "@language": "de"
+            },
+            {
+              "@value": "Automation flows",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/plattformautomationsmonitor/flows.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/plattformautomationsmonitor/flows.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/plattformautomationsmonitor/timeline.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Monatsreihe",
+              "@language": "de"
+            },
+            {
+              "@value": "Monthly timeline",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/plattformautomationsmonitor/timeline.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/plattformautomationsmonitor/timeline.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/plattformautomationsmonitor/revisions.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Revisionen",
+              "@language": "de"
+            },
+            {
+              "@value": "Revisions",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/plattformautomationsmonitor/revisions.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/plattformautomationsmonitor/revisions.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/plattformautomationsmonitor/feed.atom",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Änderungsfeed",
+              "@language": "de"
+            },
+            {
+              "@value": "Change feed",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/atom+xml",
+          "dcat:mediaType": "application/atom+xml",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/plattformautomationsmonitor/feed.atom"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/plattformautomationsmonitor/feed.atom"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/plattformautomationsmonitor/methodology.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Methodik",
+              "@language": "de"
+            },
+            {
+              "@value": "Methodology",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/plattformautomationsmonitor/methodology.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/plattformautomationsmonitor/methodology.json"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://i6eal.de/data/catalog/dataset/eu-ai-medical-device-lifecycle-monitor",
+      "@type": "dcat:Dataset",
+      "dct:identifier": "eu-ai-medical-device-lifecycle-monitor",
+      "dct:title": [
+        {
+          "@value": "KI-Medizinprodukt-Lebenszyklusmonitor EU",
+          "@language": "de"
+        },
+        {
+          "@value": "EU AI Medical-Device Lifecycle Monitor",
+          "@language": "en"
+        }
+      ],
+      "dct:description": [
+        {
+          "@value": "Exakte KI-Textbelege aus dem öffentlichen EUDAMED-Softwarebestand mit Hersteller-, Risiko-, Versions- und Registermerkmalen; Software allein gilt nicht als KI-Beleg.",
+          "@language": "de"
+        },
+        {
+          "@value": "Exact AI text evidence from the public EUDAMED software corpus with manufacturer, risk, version and registry attributes; software alone is never treated as AI evidence.",
+          "@language": "en"
+        }
+      ],
+      "dct:publisher": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:creator": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:modified": {
+        "@value": "2026-08-09",
+        "@type": "xsd:date"
+      },
+      "dct:temporal": {
+        "@type": "dct:PeriodOfTime",
+        "dcat:startDate": {
+          "@value": "2026-07-23",
+          "@type": "xsd:date"
+        },
+        "dcat:endDate": {
+          "@value": "2026-08-09",
+          "@type": "xsd:date"
+        }
+      },
+      "schema:temporalCoverage": "2026-07-23/2026-08-09",
+      "i6eal:observedSince": {
+        "@value": "2026-07-23",
+        "@type": "xsd:date"
+      },
+      "i6eal:collectionState": "baseline",
+      "i6eal:collectionCadence": "asOf",
+      "dcat:landingPage": [
+        {
+          "@id": "https://i6eal.de/tools/ki-medizinproduktmonitor/"
+        },
+        {
+          "@id": "https://i6eal.de/en/tools/ki-medizinproduktmonitor/"
+        }
+      ],
+      "dct:source": [
+        {
+          "@id": "https://developer.datalake.sante.service.ec.europa.eu/apis",
+          "@type": "dcat:Resource",
+          "dct:title": "European Commission · EUDAMED Public API",
+          "dct:rights": {
+            "@id": "https://commission.europa.eu/legal-notice_en"
+          },
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://health.ec.europa.eu/medical-devices-eudamed/overview_en",
+          "@type": "dcat:Resource",
+          "dct:title": "European Commission · EUDAMED overview",
+          "dct:rights": {
+            "@id": "https://commission.europa.eu/legal-notice_en"
+          },
+          "i6eal:sourceRightsStatus": "source-specific"
+        }
+      ],
+      "dct:rights": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        },
+        {
+          "@value": "Öffentliche EUDAMED-Daten der Europäischen Kommission, von i6eal transformiert. Maßgeblich sind der Rechtliche Hinweis der Kommission und die Bedingungen der Quell-API; eine pauschale datensatzspezifische CC-Lizenz wird nicht behauptet.",
+          "@language": "de"
+        },
+        {
+          "@value": "European Commission EUDAMED public data, transformed by i6eal. The Commission legal notice and source API terms govern reuse; no unqualified dataset-specific CC licence is asserted.",
+          "@language": "en"
+        }
+      ],
+      "dct:provenance": [
+        {
+          "@value": "i6eal-Auswertung der EUDAMED Public API der Europäischen Kommission mit offengelegten Textbeleg- und Beobachtungsregeln.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal analysis of the European Commission EUDAMED Public API with disclosed text-evidence and observation rules.",
+          "@language": "en"
+        }
+      ],
+      "schema:creditText": [
+        {
+          "@value": "i6eal-Auswertung der EUDAMED Public API der Europäischen Kommission mit offengelegten Textbeleg- und Beobachtungsregeln.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal analysis of the European Commission EUDAMED Public API with disclosed text-evidence and observation rules.",
+          "@language": "en"
+        }
+      ],
+      "i6eal:sourceRightsStatus": "source-specific",
+      "i6eal:compilationLicense": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "i6eal:compilationLicenseScope": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        }
+      ],
+      "dcat:distribution": [
+        {
+          "@id": "https://i6eal.de/data/ki-medizinproduktmonitor/index.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Gesamtindex",
+              "@language": "de"
+            },
+            {
+              "@value": "Full index",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-medizinproduktmonitor/index.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-medizinproduktmonitor/index.json"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-medizinproduktmonitor/devices.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Geräte",
+              "@language": "de"
+            },
+            {
+              "@value": "Devices",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-medizinproduktmonitor/devices.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-medizinproduktmonitor/devices.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-medizinproduktmonitor/evidence.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Textbelege",
+              "@language": "de"
+            },
+            {
+              "@value": "Text evidence",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-medizinproduktmonitor/evidence.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-medizinproduktmonitor/evidence.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-medizinproduktmonitor/events.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Lebenszyklusereignisse",
+              "@language": "de"
+            },
+            {
+              "@value": "Lifecycle events",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-medizinproduktmonitor/events.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-medizinproduktmonitor/events.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-medizinproduktmonitor/methodology.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Methodik",
+              "@language": "de"
+            },
+            {
+              "@value": "Methodology",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-medizinproduktmonitor/methodology.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-medizinproduktmonitor/methodology.json"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://i6eal.de/data/catalog/dataset/germany-eu-ai-enforcement-monitor",
+      "@type": "dcat:Dataset",
+      "dct:identifier": "germany-eu-ai-enforcement-monitor",
+      "dct:title": [
+        {
+          "@value": "KI-Durchsetzungsmonitor Deutschland & EU",
+          "@language": "de"
+        },
+        {
+          "@value": "AI Enforcement Monitor Germany & EU",
+          "@language": "en"
+        }
+      ],
+      "dct:description": [
+        {
+          "@value": "Amtlich veröffentlichte KI-bezogene Untersuchungen, Anordnungen, Bußgelder und Rechtsbehelfe mit getrennten Verfahrensstufen und exaktem Technologiebeleg.",
+          "@language": "de"
+        },
+        {
+          "@value": "Officially published AI-related investigations, orders, fines and remedies with separate procedural stages and exact technology evidence.",
+          "@language": "en"
+        }
+      ],
+      "dct:publisher": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:creator": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:modified": {
+        "@value": "2026-07-23",
+        "@type": "xsd:date"
+      },
+      "dct:temporal": {
+        "@type": "dct:PeriodOfTime",
+        "dcat:startDate": {
+          "@value": "2026-07-23",
+          "@type": "xsd:date"
+        },
+        "dcat:endDate": {
+          "@value": "2026-07-23",
+          "@type": "xsd:date"
+        }
+      },
+      "schema:temporalCoverage": "2026-07-23/2026-07-23",
+      "i6eal:observedSince": {
+        "@value": "2026-07-23",
+        "@type": "xsd:date"
+      },
+      "i6eal:collectionState": "active",
+      "i6eal:collectionCadence": "daily",
+      "dcat:landingPage": [
+        {
+          "@id": "https://i6eal.de/tools/ki-durchsetzungsmonitor/"
+        },
+        {
+          "@id": "https://i6eal.de/en/tools/ki-durchsetzungsmonitor/"
+        }
+      ],
+      "dct:source": [
+        {
+          "@id": "https://digital-strategy.ec.europa.eu/en/policies/dsa-enforcement",
+          "@type": "dcat:Resource",
+          "dct:title": "European Commission · DSA enforcement",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://datenschutz-hamburg.de/service-information/aktuelles",
+          "@type": "dcat:Resource",
+          "dct:title": "HmbBfDI · Aktuelles",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://www.lda.bayern.de/de/pressemitteilungen.html",
+          "@type": "dcat:Resource",
+          "dct:title": "BayLDA · Pressemitteilungen",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://www.bundeskartellamt.de/DE/DigitalWirtschaft/Digitalwirtschaft_node.html",
+          "@type": "dcat:Resource",
+          "dct:title": "Bundeskartellamt · Digitale Wirtschaft",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://www.garanteprivacy.it/web/garante-privacy-en/press-room",
+          "@type": "dcat:Resource",
+          "dct:title": "Garante · Press room",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        }
+      ],
+      "dct:rights": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        },
+        {
+          "@value": "Die Metadaten-Zusammenstellung steht unter CC BY 4.0. Für amtliche Originaltexte und Dokumente gelten die Hinweise der jeweiligen Primärquelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "The metadata compilation is licensed under CC BY 4.0. Official source texts and documents remain subject to the notices of their respective primary sources.",
+          "@language": "en"
+        }
+      ],
+      "dct:provenance": [
+        {
+          "@value": "i6eal-Zusammenstellung amtlich veröffentlichter KI-bezogener Durchsetzungsmaßnahmen mit Originalquellen.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal compilation of officially published AI-related enforcement actions with primary sources.",
+          "@language": "en"
+        }
+      ],
+      "schema:creditText": [
+        {
+          "@value": "i6eal-Zusammenstellung amtlich veröffentlichter KI-bezogener Durchsetzungsmaßnahmen mit Originalquellen.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal compilation of officially published AI-related enforcement actions with primary sources.",
+          "@language": "en"
+        }
+      ],
+      "i6eal:sourceRightsStatus": "mixed",
+      "i6eal:compilationLicense": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "i6eal:compilationLicenseScope": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        }
+      ],
+      "dcat:distribution": [
+        {
+          "@id": "https://i6eal.de/data/ki-durchsetzungsmonitor/index.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Gesamtindex",
+              "@language": "de"
+            },
+            {
+              "@value": "Full index",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-durchsetzungsmonitor/index.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-durchsetzungsmonitor/index.json"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-durchsetzungsmonitor/actions.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Maßnahmen",
+              "@language": "de"
+            },
+            {
+              "@value": "Actions",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-durchsetzungsmonitor/actions.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-durchsetzungsmonitor/actions.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-durchsetzungsmonitor/events.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Chronik",
+              "@language": "de"
+            },
+            {
+              "@value": "Chronicle",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-durchsetzungsmonitor/events.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-durchsetzungsmonitor/events.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-durchsetzungsmonitor/evidence.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Amtliche Belege",
+              "@language": "de"
+            },
+            {
+              "@value": "Official evidence",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-durchsetzungsmonitor/evidence.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-durchsetzungsmonitor/evidence.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-durchsetzungsmonitor/feed.atom",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Änderungsfeed",
+              "@language": "de"
+            },
+            {
+              "@value": "Change feed",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/atom+xml",
+          "dcat:mediaType": "application/atom+xml",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-durchsetzungsmonitor/feed.atom"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-durchsetzungsmonitor/feed.atom"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-durchsetzungsmonitor/methodology.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Methodik",
+              "@language": "de"
+            },
+            {
+              "@value": "Methodology",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-durchsetzungsmonitor/methodology.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-durchsetzungsmonitor/methodology.json"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://i6eal.de/data/catalog/dataset/eu-ai-clinical-trial-lifecycle-monitor",
+      "@type": "dcat:Dataset",
+      "dct:identifier": "eu-ai-clinical-trial-lifecycle-monitor",
+      "dct:title": [
+        {
+          "@value": "KI-Studienmonitor EU",
+          "@language": "de"
+        },
+        {
+          "@value": "EU AI Studies Monitor",
+          "@language": "en"
+        }
+      ],
+      "dct:description": [
+        {
+          "@value": "Amtliche CTIS-Verläufe klinischer Arzneimittelstudien mit exaktem KI-Textbeleg, getrennten Antrags-, Länderstatus-, Rekrutierungs-, Sicherheits- und Ergebnisereignissen.",
+          "@language": "de"
+        },
+        {
+          "@value": "Official CTIS lifecycles of medicinal clinical trials with exact AI text evidence and separate application, country-status, recruitment, safety and results events.",
+          "@language": "en"
+        }
+      ],
+      "dct:publisher": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:creator": {
+        "@id": "https://i6eal.de/#organization"
+      },
+      "dct:modified": {
+        "@value": "2026-08-09",
+        "@type": "xsd:date"
+      },
+      "dct:temporal": {
+        "@type": "dct:PeriodOfTime",
+        "dcat:startDate": {
+          "@value": "2026-07-23",
+          "@type": "xsd:date"
+        },
+        "dcat:endDate": {
+          "@value": "2026-08-09",
+          "@type": "xsd:date"
+        }
+      },
+      "schema:temporalCoverage": "2026-07-23/2026-08-09",
+      "i6eal:observedSince": {
+        "@value": "2026-07-23",
+        "@type": "xsd:date"
+      },
+      "i6eal:collectionState": "baseline",
+      "i6eal:collectionCadence": "daily",
+      "dcat:landingPage": [
+        {
+          "@id": "https://i6eal.de/tools/ki-studienmonitor/"
+        },
+        {
+          "@id": "https://i6eal.de/en/tools/ki-studienmonitor/"
+        }
+      ],
+      "dct:source": [
+        {
+          "@id": "https://euclinicaltrials.eu/ctis-public/search",
+          "@type": "dcat:Resource",
+          "dct:title": "European Medicines Agency · CTIS public portal",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        },
+        {
+          "@id": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/clinical-trials-human-medicines/clinical-trials-information-system",
+          "@type": "dcat:Resource",
+          "dct:title": "European Medicines Agency · CTIS overview",
+          "dct:rights": "source-specific",
+          "i6eal:sourceRightsStatus": "source-specific"
+        }
+      ],
+      "dct:rights": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        },
+        {
+          "@value": "Öffentliche CTIS-Daten der Europäischen Arzneimittel-Agentur, von i6eal datensparsam transformiert. Für Ausgangsdaten und Originaldokumente gelten die Hinweise der EMA und der Quellplattform; eine pauschale datensatzspezifische CC-Lizenz wird nicht behauptet.",
+          "@language": "de"
+        },
+        {
+          "@value": "Public CTIS data from the European Medicines Agency, transformed by i6eal with data minimisation. EMA and source-platform terms govern the underlying data and documents; no unqualified dataset-specific CC licence is asserted.",
+          "@language": "en"
+        }
+      ],
+      "dct:provenance": [
+        {
+          "@value": "i6eal-Auswertung des öffentlichen Clinical Trials Information System (CTIS) mit offengelegten Evidenz-, Zeit- und Datenschutzregeln.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal analysis of the public Clinical Trials Information System (CTIS) with disclosed evidence, time and privacy rules.",
+          "@language": "en"
+        }
+      ],
+      "schema:creditText": [
+        {
+          "@value": "i6eal-Auswertung des öffentlichen Clinical Trials Information System (CTIS) mit offengelegten Evidenz-, Zeit- und Datenschutzregeln.",
+          "@language": "de"
+        },
+        {
+          "@value": "i6eal analysis of the public Clinical Trials Information System (CTIS) with disclosed evidence, time and privacy rules.",
+          "@language": "en"
+        }
+      ],
+      "i6eal:sourceRightsStatus": "source-specific",
+      "i6eal:compilationLicense": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "i6eal:compilationLicenseScope": [
+        {
+          "@value": "CC BY 4.0 gilt ausschließlich für die i6eal-Zusammenstellung und eigene Beschreibungen. Für Ausgangsdaten gelten die Rechte und Nutzungsbedingungen der jeweils genannten Quelle.",
+          "@language": "de"
+        },
+        {
+          "@value": "CC BY 4.0 applies only to the i6eal compilation and original descriptions. Underlying data remains subject to the rights and terms of each named source.",
+          "@language": "en"
+        }
+      ],
+      "dcat:distribution": [
+        {
+          "@id": "https://i6eal.de/data/ki-studienmonitor/index.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Gesamtindex",
+              "@language": "de"
+            },
+            {
+              "@value": "Full index",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-studienmonitor/index.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-studienmonitor/index.json"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-studienmonitor/studies.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Studien",
+              "@language": "de"
+            },
+            {
+              "@value": "Trials",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-studienmonitor/studies.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-studienmonitor/studies.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-studienmonitor/evidence.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "KI-Textbelege",
+              "@language": "de"
+            },
+            {
+              "@value": "AI text evidence",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-studienmonitor/evidence.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-studienmonitor/evidence.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-studienmonitor/events.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Amtliche Ereignisse",
+              "@language": "de"
+            },
+            {
+              "@value": "Official events",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-studienmonitor/events.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-studienmonitor/events.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-studienmonitor/observations.csv",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Beobachtungsänderungen",
+              "@language": "de"
+            },
+            {
+              "@value": "Observation changes",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "text/csv",
+          "dcat:mediaType": "text/csv",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-studienmonitor/observations.csv"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-studienmonitor/observations.csv"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-studienmonitor/feed.atom",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Änderungsfeed",
+              "@language": "de"
+            },
+            {
+              "@value": "Change feed",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/atom+xml",
+          "dcat:mediaType": "application/atom+xml",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-studienmonitor/feed.atom"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-studienmonitor/feed.atom"
+          }
+        },
+        {
+          "@id": "https://i6eal.de/data/ki-studienmonitor/methodology.json",
+          "@type": "dcat:Distribution",
+          "dct:title": [
+            {
+              "@value": "Methodik",
+              "@language": "de"
+            },
+            {
+              "@value": "Methodology",
+              "@language": "en"
+            }
+          ],
+          "dct:format": "application/json",
+          "dcat:mediaType": "application/json",
+          "dcat:accessURL": {
+            "@id": "https://i6eal.de/data/ki-studienmonitor/methodology.json"
+          },
+          "dcat:downloadURL": {
+            "@id": "https://i6eal.de/data/ki-studienmonitor/methodology.json"
+          }
+        }
+      ]
+    }
+  ]
+}
