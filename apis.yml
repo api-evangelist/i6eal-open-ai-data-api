@@ -28,44 +28,376 @@ tags:
   - Germany
   - European Union
 apis:
-  - name: i6eal Open AI Data API
-    description: >-
-      REST-style open-data API serving 16 AI-related datasets for Germany and the EU as static JSON/CSV/JSON-LD/Atom
-      files over HTTPS/CDN. No authentication, no rate limits, CORS open. 83 GET endpoints described by a validated
-      OpenAPI 3.0.3 document, with programmatic discovery via a DCAT-AP JSON-LD catalogue.
-    humanURL: https://i6eal.de/en/tools/data/
-    baseURL: https://i6eal.de
-    tags:
-      - Artificial Intelligence
-      - Open Data
-      - Public Policy
-      - Regulation
-      - Compliance
-      - EU AI Act
-      - Government
-      - Public Sector
-      - Legal
-      - Case Law
-      - Public Procurement
-      - Germany
-      - European Union
-    properties:
-      - type: OpenAPI
-        url: https://i6eal.de/openapi.json
-      - type: OpenAPI
-        url: openapi/i6eal-open-ai-data-api-openapi.json
-      - type: Documentation
-        url: https://i6eal.de/en/tools/data/
-      - type: JSONLD
-        url: https://i6eal.de/data/catalog/dcat.jsonld
-      - type: JSONLD
-        url: json-ld/i6eal-open-ai-data-api-dcat.jsonld
-      - type: Overlay
-        url: overlays/i6eal-open-ai-data-api-overlay.yaml
-      - type: Examples
-        url: examples/i6eal-open-ai-data-api-examples.yml
-      - type: DataModel
-        url: data-model/i6eal-open-ai-data-api-data-model.yml
+- aid: i6eal-open-ai-data-api:i6eal-open-ai-data-api-ai-enforcement-monitor-germany-eu-api
+  name: i6eal Open AI Data API AI Enforcement Monitor Germany & EU API
+  description: >-
+    Officially published AI-related investigations, orders, fines and remedies with separate procedural
+    stages and exact technology evidence.
+  humanURL: https://i6eal.de/en/tools/data/
+  baseURL: https://i6eal.de
+  tags:
+  - AI Enforcement Monitor Germany & EU
+  properties:
+  - type: OpenAPI
+    url: openapi/i6eal-open-ai-data-api-ai-enforcement-monitor-germany-eu-api-openapi.yml
+  - type: Documentation
+    url: https://i6eal.de/en/tools/data/
+  - type: JSONLD
+    url: https://i6eal.de/data/catalog/dcat.jsonld
+  - type: JSONLD
+    url: json-ld/i6eal-open-ai-data-api-dcat.jsonld
+  - type: Examples
+    url: examples/i6eal-open-ai-data-api-examples.yml
+  - type: DataModel
+    url: data-model/i6eal-open-ai-data-api-data-model.yml
+- aid: >-
+    i6eal-open-ai-data-api:i6eal-open-ai-data-api-ai-parliamentary-accountability-monitor-api
+  name: i6eal Open AI Data API AI Parliamentary Accountability Monitor API
+  description: >-
+    Parliamentary questions, answers and exactly linked proceedings from the Bundestag documentation system.
+  humanURL: https://i6eal.de/en/tools/data/
+  baseURL: https://i6eal.de
+  tags:
+  - AI Parliamentary Accountability Monitor
+  properties:
+  - type: OpenAPI
+    url: openapi/i6eal-open-ai-data-api-ai-parliamentary-accountability-monitor-api-openapi.yml
+  - type: Documentation
+    url: https://i6eal.de/en/tools/data/
+  - type: JSONLD
+    url: https://i6eal.de/data/catalog/dcat.jsonld
+  - type: JSONLD
+    url: json-ld/i6eal-open-ai-data-api-dcat.jsonld
+  - type: Examples
+    url: examples/i6eal-open-ai-data-api-examples.yml
+  - type: DataModel
+    url: data-model/i6eal-open-ai-data-api-data-model.yml
+- aid: i6eal-open-ai-data-api:i6eal-open-ai-data-api-catalogue-api
+  name: i6eal Open AI Data API Catalogue API
+  description: Machine-readable index of every published dataset.
+  humanURL: https://i6eal.de/en/tools/data/
+  baseURL: https://i6eal.de
+  tags:
+  - Catalogue
+  properties:
+  - type: OpenAPI
+    url: openapi/i6eal-open-ai-data-api-catalogue-api-openapi.yml
+  - type: Documentation
+    url: https://i6eal.de/en/tools/data/
+  - type: JSONLD
+    url: https://i6eal.de/data/catalog/dcat.jsonld
+  - type: JSONLD
+    url: json-ld/i6eal-open-ai-data-api-dcat.jsonld
+  - type: Examples
+    url: examples/i6eal-open-ai-data-api-examples.yml
+  - type: DataModel
+    url: data-model/i6eal-open-ai-data-api-data-model.yml
+- aid: i6eal-open-ai-data-api:i6eal-open-ai-data-api-eu-ai-medical-device-lifecycle-monitor-api
+  name: i6eal Open AI Data API EU AI Medical-Device Lifecycle Monitor API
+  description: >-
+    Exact AI text evidence from the public EUDAMED software corpus with manufacturer, risk, version and
+    registry attributes; software alone is never treated as AI evidence.
+  humanURL: https://i6eal.de/en/tools/data/
+  baseURL: https://i6eal.de
+  tags:
+  - EU AI Medical-Device Lifecycle Monitor
+  properties:
+  - type: OpenAPI
+    url: openapi/i6eal-open-ai-data-api-eu-ai-medical-device-lifecycle-monitor-api-openapi.yml
+  - type: Documentation
+    url: https://i6eal.de/en/tools/data/
+  - type: JSONLD
+    url: https://i6eal.de/data/catalog/dcat.jsonld
+  - type: JSONLD
+    url: json-ld/i6eal-open-ai-data-api-dcat.jsonld
+  - type: Examples
+    url: examples/i6eal-open-ai-data-api-examples.yml
+  - type: DataModel
+    url: data-model/i6eal-open-ai-data-api-data-model.yml
+- aid: i6eal-open-ai-data-api:i6eal-open-ai-data-api-eu-ai-studies-monitor-api
+  name: i6eal Open AI Data API EU AI Studies Monitor API
+  description: >-
+    Official CTIS lifecycles of medicinal clinical trials with exact AI text evidence and separate application,
+    country-status, recruitment, safety and results events.
+  humanURL: https://i6eal.de/en/tools/data/
+  baseURL: https://i6eal.de
+  tags:
+  - EU AI Studies Monitor
+  properties:
+  - type: OpenAPI
+    url: openapi/i6eal-open-ai-data-api-eu-ai-studies-monitor-api-openapi.yml
+  - type: Documentation
+    url: https://i6eal.de/en/tools/data/
+  - type: JSONLD
+    url: https://i6eal.de/data/catalog/dcat.jsonld
+  - type: JSONLD
+    url: json-ld/i6eal-open-ai-data-api-dcat.jsonld
+  - type: Examples
+    url: examples/i6eal-open-ai-data-api-examples.yml
+  - type: DataModel
+    url: data-model/i6eal-open-ai-data-api-data-model.yml
+- aid: i6eal-open-ai-data-api:i6eal-open-ai-data-api-eu-ai-transparency-evidence-monitor-api
+  name: i6eal Open AI Data API EU AI Transparency Evidence Monitor API
+  description: >-
+    Provider and document evidence for Articles 50 and 53; visibility and review progress remain explicitly
+    separate from conformity.
+  humanURL: https://i6eal.de/en/tools/data/
+  baseURL: https://i6eal.de
+  tags:
+  - EU AI Transparency Evidence Monitor
+  properties:
+  - type: OpenAPI
+    url: openapi/i6eal-open-ai-data-api-eu-ai-transparency-evidence-monitor-api-openapi.yml
+  - type: Documentation
+    url: https://i6eal.de/en/tools/data/
+  - type: JSONLD
+    url: https://i6eal.de/data/catalog/dcat.jsonld
+  - type: JSONLD
+    url: json-ld/i6eal-open-ai-data-api-dcat.jsonld
+  - type: Examples
+    url: examples/i6eal-open-ai-data-api-examples.yml
+  - type: DataModel
+    url: data-model/i6eal-open-ai-data-api-data-model.yml
+- aid: i6eal-open-ai-data-api:i6eal-open-ai-data-api-eu-platform-automation-monitor-api
+  name: i6eal Open AI Data API EU Platform Automation Monitor API
+  description: >-
+    Monthly DSA statements on automated detection, decision automation and reported restrictions by platform;
+    automation is not relabelled as AI.
+  humanURL: https://i6eal.de/en/tools/data/
+  baseURL: https://i6eal.de
+  tags:
+  - EU Platform Automation Monitor
+  properties:
+  - type: OpenAPI
+    url: openapi/i6eal-open-ai-data-api-eu-platform-automation-monitor-api-openapi.yml
+  - type: Documentation
+    url: https://i6eal.de/en/tools/data/
+  - type: JSONLD
+    url: https://i6eal.de/data/catalog/dcat.jsonld
+  - type: JSONLD
+    url: json-ld/i6eal-open-ai-data-api-dcat.jsonld
+  - type: Examples
+    url: examples/i6eal-open-ai-data-api-examples.yml
+  - type: DataModel
+    url: data-model/i6eal-open-ai-data-api-data-model.yml
+- aid: i6eal-open-ai-data-api:i6eal-open-ai-data-api-german-ai-case-law-monitor-api
+  name: i6eal Open AI Data API German AI Case-Law Monitor API
+  description: >-
+    Observed official federal corpus with decisions, exact passages and a material-change chronicle.
+  humanURL: https://i6eal.de/en/tools/data/
+  baseURL: https://i6eal.de
+  tags:
+  - German AI Case-Law Monitor
+  properties:
+  - type: OpenAPI
+    url: openapi/i6eal-open-ai-data-api-german-ai-case-law-monitor-api-openapi.yml
+  - type: Documentation
+    url: https://i6eal.de/en/tools/data/
+  - type: JSONLD
+    url: https://i6eal.de/data/catalog/dcat.jsonld
+  - type: JSONLD
+    url: json-ld/i6eal-open-ai-data-api-dcat.jsonld
+  - type: Examples
+    url: examples/i6eal-open-ai-data-api-examples.yml
+  - type: DataModel
+    url: data-model/i6eal-open-ai-data-api-data-model.yml
+- aid: i6eal-open-ai-data-api:i6eal-open-ai-data-api-german-ai-evidence-network-api
+  name: i6eal Open AI Data API German AI Evidence Network API
+  description: >-
+    Source-evidenced edges between actors, projects, outputs, systems, repositories, packages, procurements
+    and budget titles.
+  humanURL: https://i6eal.de/en/tools/data/
+  baseURL: https://i6eal.de
+  tags:
+  - German AI Evidence Network
+  properties:
+  - type: OpenAPI
+    url: openapi/i6eal-open-ai-data-api-german-ai-evidence-network-api-openapi.yml
+  - type: Documentation
+    url: https://i6eal.de/en/tools/data/
+  - type: JSONLD
+    url: https://i6eal.de/data/catalog/dcat.jsonld
+  - type: JSONLD
+    url: json-ld/i6eal-open-ai-data-api-dcat.jsonld
+  - type: Examples
+    url: examples/i6eal-open-ai-data-api-examples.yml
+  - type: DataModel
+    url: data-model/i6eal-open-ai-data-api-data-model.yml
+- aid: i6eal-open-ai-data-api:i6eal-open-ai-data-api-german-eu-ai-adoption-atlas-api
+  name: i6eal Open AI Data API German & EU AI Adoption Atlas API
+  description: >-
+    Official Eurostat observations of AI adoption by enterprises and individuals; statistical universes
+    remain separate.
+  humanURL: https://i6eal.de/en/tools/data/
+  baseURL: https://i6eal.de
+  tags:
+  - German & EU AI Adoption Atlas
+  properties:
+  - type: OpenAPI
+    url: openapi/i6eal-open-ai-data-api-german-eu-ai-adoption-atlas-api-openapi.yml
+  - type: Documentation
+    url: https://i6eal.de/en/tools/data/
+  - type: JSONLD
+    url: https://i6eal.de/data/catalog/dcat.jsonld
+  - type: JSONLD
+    url: json-ld/i6eal-open-ai-data-api-dcat.jsonld
+  - type: Examples
+    url: examples/i6eal-open-ai-data-api-examples.yml
+  - type: DataModel
+    url: data-model/i6eal-open-ai-data-api-data-model.yml
+- aid: i6eal-open-ai-data-api:i6eal-open-ai-data-api-german-eu-ai-procurement-chronicle-api
+  name: i6eal Open AI Data API German & EU AI Procurement Chronicle API
+  description: >-
+    Official procurement signals as durable procedure chains, separating exactly linked procedures from
+    isolated notices.
+  humanURL: https://i6eal.de/en/tools/data/
+  baseURL: https://i6eal.de
+  tags:
+  - German & EU AI Procurement Chronicle
+  properties:
+  - type: OpenAPI
+    url: openapi/i6eal-open-ai-data-api-german-eu-ai-procurement-chronicle-api-openapi.yml
+  - type: Documentation
+    url: https://i6eal.de/en/tools/data/
+  - type: JSONLD
+    url: https://i6eal.de/data/catalog/dcat.jsonld
+  - type: JSONLD
+    url: json-ld/i6eal-open-ai-data-api-dcat.jsonld
+  - type: Examples
+    url: examples/i6eal-open-ai-data-api-examples.yml
+  - type: DataModel
+    url: data-model/i6eal-open-ai-data-api-data-model.yml
+- aid: i6eal-open-ai-data-api:i6eal-open-ai-data-api-german-eu-ai-standardisation-monitor-api
+  name: i6eal Open AI Data API German & EU AI Standardisation Monitor API
+  description: >-
+    Standardisation request, work items, lifecycle events and EU references as separate inspectable evidence
+    lanes.
+  humanURL: https://i6eal.de/en/tools/data/
+  baseURL: https://i6eal.de
+  tags:
+  - German & EU AI Standardisation Monitor
+  properties:
+  - type: OpenAPI
+    url: openapi/i6eal-open-ai-data-api-german-eu-ai-standardisation-monitor-api-openapi.yml
+  - type: Documentation
+    url: https://i6eal.de/en/tools/data/
+  - type: JSONLD
+    url: https://i6eal.de/data/catalog/dcat.jsonld
+  - type: JSONLD
+    url: json-ld/i6eal-open-ai-data-api-dcat.jsonld
+  - type: Examples
+    url: examples/i6eal-open-ai-data-api-examples.yml
+  - type: DataModel
+    url: data-model/i6eal-open-ai-data-api-data-model.yml
+- aid: i6eal-open-ai-data-api:i6eal-open-ai-data-api-german-eu-ai-supervision-monitor-api
+  name: i6eal Open AI Data API German & EU AI Supervision Monitor API
+  description: >-
+    Officially evidenced responsibilities, legal instruments and observations, without a compliance or
+    effectiveness score.
+  humanURL: https://i6eal.de/en/tools/data/
+  baseURL: https://i6eal.de
+  tags:
+  - German & EU AI Supervision Monitor
+  properties:
+  - type: OpenAPI
+    url: openapi/i6eal-open-ai-data-api-german-eu-ai-supervision-monitor-api-openapi.yml
+  - type: Documentation
+    url: https://i6eal.de/en/tools/data/
+  - type: JSONLD
+    url: https://i6eal.de/data/catalog/dcat.jsonld
+  - type: JSONLD
+    url: json-ld/i6eal-open-ai-data-api-dcat.jsonld
+  - type: Examples
+    url: examples/i6eal-open-ai-data-api-examples.yml
+  - type: DataModel
+    url: data-model/i6eal-open-ai-data-api-data-model.yml
+- aid: i6eal-open-ai-data-api:i6eal-open-ai-data-api-german-federal-ai-budget-monitor-api
+  name: i6eal Open AI Data API German Federal AI Budget Monitor API
+  description: >-
+    Machine-readable federal budget titles with explicit AI references, keeping appropriations, supplements,
+    actuals and official revisions separate.
+  humanURL: https://i6eal.de/en/tools/data/
+  baseURL: https://i6eal.de
+  tags:
+  - German Federal AI Budget Monitor
+  properties:
+  - type: OpenAPI
+    url: openapi/i6eal-open-ai-data-api-german-federal-ai-budget-monitor-api-openapi.yml
+  - type: Documentation
+    url: https://i6eal.de/en/tools/data/
+  - type: JSONLD
+    url: https://i6eal.de/data/catalog/dcat.jsonld
+  - type: JSONLD
+    url: json-ld/i6eal-open-ai-data-api-dcat.jsonld
+  - type: Examples
+    url: examples/i6eal-open-ai-data-api-examples.yml
+  - type: DataModel
+    url: data-model/i6eal-open-ai-data-api-data-model.yml
+- aid: i6eal-open-ai-data-api:i6eal-open-ai-data-api-german-state-ai-evidence-layers-api
+  name: i6eal Open AI Data API German State AI Evidence Layers API
+  description: >-
+    State dossiers assembled from three separate evidence layers: infrastructure, public systems and procurement
+    signals.
+  humanURL: https://i6eal.de/en/tools/data/
+  baseURL: https://i6eal.de
+  tags:
+  - German State AI Evidence Layers
+  properties:
+  - type: OpenAPI
+    url: openapi/i6eal-open-ai-data-api-german-state-ai-evidence-layers-api-openapi.yml
+  - type: Documentation
+    url: https://i6eal.de/en/tools/data/
+  - type: JSONLD
+    url: https://i6eal.de/data/catalog/dcat.jsonld
+  - type: JSONLD
+    url: json-ld/i6eal-open-ai-data-api-dcat.jsonld
+  - type: Examples
+    url: examples/i6eal-open-ai-data-api-examples.yml
+  - type: DataModel
+    url: data-model/i6eal-open-ai-data-api-data-model.yml
+- aid: i6eal-open-ai-data-api:i6eal-open-ai-data-api-observed-ai-procurement-changes-api
+  name: i6eal Open AI Data API Observed AI Procurement Changes API
+  description: >-
+    Revision trail for newly published and materially changed procedure dossiers; retrieval timestamps
+    alone never create an event.
+  humanURL: https://i6eal.de/en/tools/data/
+  baseURL: https://i6eal.de
+  tags:
+  - Observed AI Procurement Changes
+  properties:
+  - type: OpenAPI
+    url: openapi/i6eal-open-ai-data-api-observed-ai-procurement-changes-api-openapi.yml
+  - type: Documentation
+    url: https://i6eal.de/en/tools/data/
+  - type: JSONLD
+    url: https://i6eal.de/data/catalog/dcat.jsonld
+  - type: JSONLD
+    url: json-ld/i6eal-open-ai-data-api-dcat.jsonld
+  - type: Examples
+    url: examples/i6eal-open-ai-data-api-examples.yml
+  - type: DataModel
+    url: data-model/i6eal-open-ai-data-api-data-model.yml
+- aid: i6eal-open-ai-data-api:i6eal-open-ai-data-api-public-ai-system-evidence-pass-api
+  name: i6eal Open AI Data API Public AI System Evidence Pass API
+  description: >-
+    Inspectable system profiles and source-evidenced links to repositories and technical inventories only.
+  humanURL: https://i6eal.de/en/tools/data/
+  baseURL: https://i6eal.de
+  tags:
+  - Public AI System Evidence Pass
+  properties:
+  - type: OpenAPI
+    url: openapi/i6eal-open-ai-data-api-public-ai-system-evidence-pass-api-openapi.yml
+  - type: Documentation
+    url: https://i6eal.de/en/tools/data/
+  - type: JSONLD
+    url: https://i6eal.de/data/catalog/dcat.jsonld
+  - type: JSONLD
+    url: json-ld/i6eal-open-ai-data-api-dcat.jsonld
+  - type: Examples
+    url: examples/i6eal-open-ai-data-api-examples.yml
+  - type: DataModel
+    url: data-model/i6eal-open-ai-data-api-data-model.yml
 maintainers:
   - FN: i6eal
     email: ai@i6eal.de
@@ -76,6 +408,8 @@ generated:
   confidence: 95
   at: '2026-08-05T13:36:22.361Z'
 common:
+- type: MCPServer
+  url: mcp/i6eal-open-ai-data-api-mcp.yml
 - type: DomainSecurity
   url: security/i6eal-open-ai-data-api-domain-security.yml
 - type: Website
