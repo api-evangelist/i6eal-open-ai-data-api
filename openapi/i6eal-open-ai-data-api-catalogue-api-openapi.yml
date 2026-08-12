@@ -1,0 +1,76 @@
+openapi: 3.2.0
+info:
+  title: i6eal Open AI Data Catalogue API
+  version: 1.0.0
+  description: 'Open datasets on artificial intelligence in Germany and the EU — public procurement, federal budget lines, case law, supervision, standardisation, medical devices, enforcement and more.
+
+
+    **No authentication, no registration, no rate limit, no quota.** Every endpoint is a static file served from a CDN and answers plain `GET` requests. Cross-origin requests are permitted (`Access-Control-Allow-Origin: *`), so the data can be fetched directly from a browser.
+
+
+    Each dataset publishes a full JSON index, one or more CSV tables, and — where the dataset tracks change over time — an Atom change feed. `methodology.json` states how a dataset is collected and what it does and does not claim.
+
+
+    Start at the [DCAT-AP catalogue](https://i6eal.de/data/catalog/dcat.jsonld) to discover everything programmatically.
+
+
+    ### Licensing
+
+
+    The i6eal compilation, structure and original descriptions are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). This is **not** a blanket licence over the data itself: underlying records remain subject to the rights and reuse terms of each named official source. Every dataset carries its own source list and rights statement — see the per-operation descriptions and `dct:rights` in the catalogue.
+
+
+    Full terms: https://i6eal.de/tools/daten/
+
+
+    ### Stability
+
+
+    Distribution URLs are treated as permanent. Payload shapes are versioned per dataset through the `schemaVersion` field in each index.'
+  termsOfService: https://i6eal.de/tools/daten/
+  contact:
+    name: i6eal
+    url: https://i6eal.de/kontakt/
+    email: ai@i6eal.de
+  license:
+    name: CC BY 4.0 — i6eal compilation only; source records retain source-specific rights
+    url: https://i6eal.de/tools/daten/
+  x-logo:
+    url: https://i6eal.de/publisher-logo.png
+    altText: i6eal
+servers:
+- url: https://i6eal.de
+  description: Production — static files behind CloudFront
+security: []
+tags:
+- name: Catalogue
+  description: Machine-readable index of every published dataset.
+paths:
+  /data/catalog/dcat.jsonld:
+    get:
+      tags:
+      - Catalogue
+      operationId: getOpenDataCatalogue
+      summary: DCAT-AP catalogue of every published dataset
+      description: Machine-readable index of all datasets described by this API, as DCAT-AP in JSON-LD. Start here to discover distributions, temporal coverage, sources and per-dataset rights.
+      responses:
+        '200':
+          description: DCAT-AP catalogue document.
+          content:
+            application/ld+json:
+              schema:
+                $ref: '#/components/schemas/DcatCatalogue'
+        '404':
+          $ref: '#/components/responses/NotFound'
+components:
+  schemas:
+    DcatCatalogue:
+      type: object
+      description: DCAT-AP catalogue in JSON-LD.
+      additionalProperties: true
+  responses:
+    NotFound:
+      description: No distribution exists at this path.
+externalDocs:
+  description: Open data hub, licensing and citation guidance
+  url: https://i6eal.de/tools/daten/

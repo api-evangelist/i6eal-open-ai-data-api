@@ -1,0 +1,206 @@
+openapi: 3.2.0
+info:
+  title: i6eal Open AI Data EU AI Transparency Evidence Monitor API
+  version: 1.0.0
+  description: 'Open datasets on artificial intelligence in Germany and the EU — public procurement, federal budget lines, case law, supervision, standardisation, medical devices, enforcement and more.
+
+
+    **No authentication, no registration, no rate limit, no quota.** Every endpoint is a static file served from a CDN and answers plain `GET` requests. Cross-origin requests are permitted (`Access-Control-Allow-Origin: *`), so the data can be fetched directly from a browser.
+
+
+    Each dataset publishes a full JSON index, one or more CSV tables, and — where the dataset tracks change over time — an Atom change feed. `methodology.json` states how a dataset is collected and what it does and does not claim.
+
+
+    Start at the [DCAT-AP catalogue](https://i6eal.de/data/catalog/dcat.jsonld) to discover everything programmatically.
+
+
+    ### Licensing
+
+
+    The i6eal compilation, structure and original descriptions are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). This is **not** a blanket licence over the data itself: underlying records remain subject to the rights and reuse terms of each named official source. Every dataset carries its own source list and rights statement — see the per-operation descriptions and `dct:rights` in the catalogue.
+
+
+    Full terms: https://i6eal.de/tools/daten/
+
+
+    ### Stability
+
+
+    Distribution URLs are treated as permanent. Payload shapes are versioned per dataset through the `schemaVersion` field in each index.'
+  termsOfService: https://i6eal.de/tools/daten/
+  contact:
+    name: i6eal
+    url: https://i6eal.de/kontakt/
+    email: ai@i6eal.de
+  license:
+    name: CC BY 4.0 — i6eal compilation only; source records retain source-specific rights
+    url: https://i6eal.de/tools/daten/
+  x-logo:
+    url: https://i6eal.de/publisher-logo.png
+    altText: i6eal
+servers:
+- url: https://i6eal.de
+  description: Production — static files behind CloudFront
+security: []
+tags:
+- name: EU AI Transparency Evidence Monitor
+  description: Provider and document evidence for Articles 50 and 53; visibility and review progress remain explicitly separate from conformity.
+  externalDocs:
+    description: Dataset documentation and methodology
+    url: https://i6eal.de/tools/ki-transparenznachweis/
+paths:
+  /data/ki-transparenznachweis-monitor/index.json:
+    get:
+      tags:
+      - EU AI Transparency Evidence Monitor
+      operationId: getEuAiTransparencyEvidenceMonitorIndex
+      summary: Full index — EU AI Transparency Evidence Monitor
+      description: 'Provider and document evidence for Articles 50 and 53; visibility and review progress remain explicitly separate from conformity.
+
+
+        Attribution: i6eal evidence monitor based on AI Office registers and linked provider sources.
+
+
+        Reuse: Official register entries and provider documents retain their respective rights. i6eal publishes only metadata, review states and links, not archived document bodies.'
+      responses:
+        '200':
+          description: Full index of EU AI Transparency Evidence Monitor.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DatasetIndex'
+        '404':
+          $ref: '#/components/responses/NotFound'
+  /data/ki-transparenznachweis-monitor/providers.csv:
+    get:
+      tags:
+      - EU AI Transparency Evidence Monitor
+      operationId: getEuAiTransparencyEvidenceMonitorProviders
+      summary: Providers — EU AI Transparency Evidence Monitor
+      description: 'Provider and document evidence for Articles 50 and 53; visibility and review progress remain explicitly separate from conformity.
+
+
+        Attribution: i6eal evidence monitor based on AI Office registers and linked provider sources.
+
+
+        Reuse: Official register entries and provider documents retain their respective rights. i6eal publishes only metadata, review states and links, not archived document bodies.'
+      responses:
+        '200':
+          description: Providers of EU AI Transparency Evidence Monitor.
+          content:
+            text/csv:
+              schema:
+                $ref: '#/components/schemas/CsvTable'
+        '404':
+          $ref: '#/components/responses/NotFound'
+  /data/ki-transparenznachweis-monitor/evidence.csv:
+    get:
+      tags:
+      - EU AI Transparency Evidence Monitor
+      operationId: getEuAiTransparencyEvidenceMonitorEvidence
+      summary: Evidence — EU AI Transparency Evidence Monitor
+      description: 'Provider and document evidence for Articles 50 and 53; visibility and review progress remain explicitly separate from conformity.
+
+
+        Attribution: i6eal evidence monitor based on AI Office registers and linked provider sources.
+
+
+        Reuse: Official register entries and provider documents retain their respective rights. i6eal publishes only metadata, review states and links, not archived document bodies.'
+      responses:
+        '200':
+          description: Evidence of EU AI Transparency Evidence Monitor.
+          content:
+            text/csv:
+              schema:
+                $ref: '#/components/schemas/CsvTable'
+        '404':
+          $ref: '#/components/responses/NotFound'
+  /data/ki-transparenznachweis-monitor/feed.atom:
+    get:
+      tags:
+      - EU AI Transparency Evidence Monitor
+      operationId: getEuAiTransparencyEvidenceMonitorFeed
+      summary: Change feed — EU AI Transparency Evidence Monitor
+      description: 'Provider and document evidence for Articles 50 and 53; visibility and review progress remain explicitly separate from conformity.
+
+
+        Attribution: i6eal evidence monitor based on AI Office registers and linked provider sources.
+
+
+        Reuse: Official register entries and provider documents retain their respective rights. i6eal publishes only metadata, review states and links, not archived document bodies.'
+      responses:
+        '200':
+          description: Change feed of EU AI Transparency Evidence Monitor.
+          content:
+            application/atom+xml:
+              schema:
+                $ref: '#/components/schemas/AtomFeed'
+        '404':
+          $ref: '#/components/responses/NotFound'
+  /data/ki-transparenznachweis-monitor/methodology.json:
+    get:
+      tags:
+      - EU AI Transparency Evidence Monitor
+      operationId: getEuAiTransparencyEvidenceMonitorMethodology
+      summary: Methodology — EU AI Transparency Evidence Monitor
+      description: 'Provider and document evidence for Articles 50 and 53; visibility and review progress remain explicitly separate from conformity.
+
+
+        Attribution: i6eal evidence monitor based on AI Office registers and linked provider sources.
+
+
+        Reuse: Official register entries and provider documents retain their respective rights. i6eal publishes only metadata, review states and links, not archived document bodies.'
+      responses:
+        '200':
+          description: Methodology of EU AI Transparency Evidence Monitor.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DatasetResource'
+        '404':
+          $ref: '#/components/responses/NotFound'
+components:
+  responses:
+    NotFound:
+      description: No distribution exists at this path.
+  schemas:
+    AtomFeed:
+      type: string
+      description: Atom 1.0 feed of observed changes to this dataset.
+    DatasetResource:
+      type: object
+      description: A dataset-specific JSON document. See the dataset entry in the DCAT catalogue for its shape.
+      additionalProperties: true
+    CsvTable:
+      type: string
+      description: RFC 4180 CSV with a header row, UTF-8 encoded.
+    DatasetIndex:
+      type: object
+      description: Every dataset index shares the envelope below. The remaining top-level keys are dataset-specific — consult the `methodology` block and the dataset entry in the DCAT catalogue.
+      required:
+      - schemaVersion
+      properties:
+        schemaVersion:
+          description: Payload contract of this dataset. Changes only on a breaking shape change.
+          oneOf:
+          - type: string
+          - type: integer
+        generatedAt:
+          type: string
+          format: date-time
+          description: When this projection was built.
+        trackingSince:
+          type: string
+          description: Start of the i6eal observation period — distinct from the coverage of the underlying sources.
+        methodology:
+          type: object
+          description: How the dataset is collected and what it does and does not claim.
+        downloads:
+          type: object
+          additionalProperties:
+            type: string
+          description: Named paths of sibling distributions published with this dataset.
+      additionalProperties: true
+externalDocs:
+  description: Open data hub, licensing and citation guidance
+  url: https://i6eal.de/tools/daten/

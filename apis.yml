@@ -40,6 +40,14 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/i6eal-open-ai-data-api-ai-enforcement-monitor-germany-eu-api-openapi.yml
+  # The provider's OWN document, registered at their request ("we do maintain a
+  # spec, so please point the record at it"). Verified 2026-08-11: 200
+  # application/json, OpenAPI 3.0.3, 83 paths, all GET, single server
+  # https://i6eal.de, 17 tags, one shared NotFound response component — every
+  # figure they stated, confirmed. BYTE-IDENTICAL to openapi/_original/, and the
+  # 17 per-tag splits total exactly those 83 paths.
+  - type: OpenAPI
+    url: https://i6eal.de/openapi.json
   - type: Documentation
     url: https://i6eal.de/en/tools/data/
   - type: JSONLD
@@ -461,3 +469,43 @@ x-enrichment:
   status: enriched
   artifacts_added: 23
   pass: local-v1
+x-evidence:
+  verified: '2026-08-11'
+  request: 'email from ai@i6eal.de, thread "Re: i6eal Open AI Data API is live on APIs.io"'
+  note: >-
+    The provider asked us to point the record at their own spec, and pre-emptively
+    flagged two things they expected a generated or derived artifact to have got wrong:
+    authentication and rate limits. Checked both. The record already stated their
+    position correctly, sourced from their own document rather than inferred — see
+    already_correct below. The one real gap was that their canonical spec URL was not
+    registered; it is now.
+  fetched:
+  - url: https://i6eal.de/openapi.json
+    status: 200
+    note: >-
+      OpenAPI 3.0.3, 83 paths, all 83 operations GET, single server https://i6eal.de,
+      17 tags, one shared NotFound response component. Every figure the provider stated,
+      confirmed. `security: []` and NO components.securitySchemes. BYTE-IDENTICAL to
+      openapi/_original/ — harvested, not reconstructed.
+  - url: https://i6eal.de/data/catalog/dcat.jsonld
+    status: 200
+    note: 142541B, application/ld+json — already registered as JSONLD
+  - url: https://i6eal.de/llms.txt
+    status: 200
+    note: 14530B — already registered as LLMsTxt
+  - url: https://i6eal.de/zzz-not-real-9137
+    status: 404
+    note: invented control path — the host discriminates, so its 200s are real
+  already_correct: >-
+    AUTHENTICATION: authentication/ records `model: none`, `schemes: []`,
+    `operations_requiring_auth: 0`, with `method: searched` and
+    `source: https://i6eal.de/openapi.json`. It reads their document-level `security: []`
+    and the absence of securitySchemes, and quotes their own info.description. Nothing
+    was inferred.
+    RATE LIMITS: no rate-limits/ artifact was ever generated and no RateLimits pointer
+    exists in common[]; the provider description says "no published rate limit". The
+    catalog asserted no limit because none was found, which is the correct outcome.
+  not_changed: >-
+    The top-level url: still points at the catalog mirror. The provider did not raise it
+    and does not appear to self-host an APIs.json index, so there is nothing better to
+    point it at. Left alone rather than changed unasked.
