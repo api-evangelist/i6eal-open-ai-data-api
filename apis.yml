@@ -9,7 +9,7 @@ description: >-
   feeds. No authentication, no registration, no published rate limit; CORS is open and responses carry ETag validators.
   The i6eal compilation is CC BY 4.0; underlying official records retain their source-specific rights.
 image: https://i6eal.de/publisher-logo.png
-url: https://i6eal-open-ai-data-api.apievangelist.com/apis.yml
+url: https://raw.githubusercontent.com/api-evangelist/i6eal-open-ai-data-api/refs/heads/main/apis.yml
 created: '2026-08-05'
 modified: '2026-08-09'
 specificationVersion: '0.21'
