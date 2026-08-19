@@ -1,0 +1,557 @@
+{
+  "item": [
+    {
+      "id": "36d57605-125c-41e9-85ed-15aa13386e93",
+      "name": "German Federal AI Budget Monitor",
+      "description": {
+        "content": "Machine-readable federal budget titles with explicit AI references, keeping appropriations, supplements, actuals and official revisions separate.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "8d8299d1-d858-46f7-8dc4-00f46fc5549d",
+          "name": "Full dataset — German Federal AI Budget Monitor",
+          "request": {
+            "name": "Full dataset — German Federal AI Budget Monitor",
+            "description": {
+              "content": "Machine-readable federal budget titles with explicit AI references, keeping appropriations, supplements, actuals and official revisions separate.\n\nAttribution: i6eal compilation based on official German federal budget data.\n\nReuse: The machine-readable budget documents remain subject to the notices and terms of the federal budget portal.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-haushaltsmonitor",
+                "index.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "59ff25c3-a567-4f3a-ad8f-19b15611cb54",
+              "name": "Full dataset of German Federal AI Budget Monitor.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-haushaltsmonitor",
+                    "index.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"schemaVersion\": \"string\",\n  \"generatedAt\": \"1972-10-14T13:53:16.218Z\",\n  \"trackingSince\": \"string\",\n  \"methodology\": {},\n  \"downloads\": {\n    \"key_0\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "c3489e75-6f94-44fa-b7bc-9dcebf9a6c41",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-haushaltsmonitor",
+                    "index.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "627e68d2-f568-465f-b729-aec48f712331",
+          "name": "Budget titles — German Federal AI Budget Monitor",
+          "request": {
+            "name": "Budget titles — German Federal AI Budget Monitor",
+            "description": {
+              "content": "Machine-readable federal budget titles with explicit AI references, keeping appropriations, supplements, actuals and official revisions separate.\n\nAttribution: i6eal compilation based on official German federal budget data.\n\nReuse: The machine-readable budget documents remain subject to the notices and terms of the federal budget portal.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-haushaltsmonitor",
+                "titles.csv"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/csv"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ae1b5462-8c40-4a96-8570-8a7c8faffb99",
+              "name": "Budget titles of German Federal AI Budget Monitor.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-haushaltsmonitor",
+                    "titles.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/csv"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/csv"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "6e7cd344-28db-40ff-9e8a-1a0ac425bfc2",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-haushaltsmonitor",
+                    "titles.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "7b790d71-117d-46fa-95e7-b20b6b8eeae6",
+          "name": "Time series — German Federal AI Budget Monitor",
+          "request": {
+            "name": "Time series — German Federal AI Budget Monitor",
+            "description": {
+              "content": "Machine-readable federal budget titles with explicit AI references, keeping appropriations, supplements, actuals and official revisions separate.\n\nAttribution: i6eal compilation based on official German federal budget data.\n\nReuse: The machine-readable budget documents remain subject to the notices and terms of the federal budget portal.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-haushaltsmonitor",
+                "series.csv"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/csv"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "4dace053-86a0-42a6-9fa7-5a2a110dc8c6",
+              "name": "Time series of German Federal AI Budget Monitor.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-haushaltsmonitor",
+                    "series.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/csv"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/csv"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "49a94ee6-26e8-4552-9c06-a99a37250444",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-haushaltsmonitor",
+                    "series.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "706ba373-37d0-483c-807d-8370bfe76d52",
+          "name": "Revisions — German Federal AI Budget Monitor",
+          "request": {
+            "name": "Revisions — German Federal AI Budget Monitor",
+            "description": {
+              "content": "Machine-readable federal budget titles with explicit AI references, keeping appropriations, supplements, actuals and official revisions separate.\n\nAttribution: i6eal compilation based on official German federal budget data.\n\nReuse: The machine-readable budget documents remain subject to the notices and terms of the federal budget portal.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-haushaltsmonitor",
+                "revisions.csv"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/csv"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "63c7c62a-5229-4716-8ef5-7473f05729d8",
+              "name": "Revisions of German Federal AI Budget Monitor.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-haushaltsmonitor",
+                    "revisions.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/csv"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/csv"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "d4c0ba5d-436b-46ed-8c32-fc2070ddc3a2",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-haushaltsmonitor",
+                    "revisions.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b1231bb7-0050-4784-849e-e1eb9653519f",
+          "name": "Methodology — German Federal AI Budget Monitor",
+          "request": {
+            "name": "Methodology — German Federal AI Budget Monitor",
+            "description": {
+              "content": "Machine-readable federal budget titles with explicit AI references, keeping appropriations, supplements, actuals and official revisions separate.\n\nAttribution: i6eal compilation based on official German federal budget data.\n\nReuse: The machine-readable budget documents remain subject to the notices and terms of the federal budget portal.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-haushaltsmonitor",
+                "methodology.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "7ded45b4-2572-4473-8be3-1afc177ac255",
+              "name": "Methodology of German Federal AI Budget Monitor.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-haushaltsmonitor",
+                    "methodology.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"key_0\": 3438\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "0fb8e18c-3837-4b43-9be1-4884c2a4b878",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-haushaltsmonitor",
+                    "methodology.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://i6eal.de",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "535af745-7fd7-4d80-85ee-4dc294526ee0",
+    "name": "i6eal Open AI Data German Federal AI Budget Monitor API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Open datasets on artificial intelligence in Germany and the EU — public procurement, federal budget lines, case law, supervision, standardisation, medical devices, enforcement and more.\n\n**No authentication, no registration, no rate limit, no quota.** Every endpoint is a static file served from a CDN and answers plain `GET` requests. Cross-origin requests are permitted (`Access-Control-Allow-Origin: *`), so the data can be fetched directly from a browser.\n\nEach dataset publishes a full JSON index, one or more CSV tables, and — where the dataset tracks change over time — an Atom change feed. `methodology.json` states how a dataset is collected and what it does and does not claim.\n\nStart at the [DCAT-AP catalogue](https://i6eal.de/data/catalog/dcat.jsonld) to discover everything programmatically.\n\n### Licensing\n\nThe i6eal compilation, structure and original descriptions are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). This is **not** a blanket licence over the data itself: underlying records remain subject to the rights and reuse terms of each named official source. Every dataset carries its own source list and rights statement — see the per-operation descriptions and `dct:rights` in the catalogue.\n\nFull terms: https://i6eal.de/tools/daten/\n\n### Stability\n\nDistribution URLs are treated as permanent. Payload shapes are versioned per dataset through the `schemaVersion` field in each index.\n\nContact Support:\n Name: i6eal\n Email: ai@i6eal.de",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,557 @@
+{
+  "item": [
+    {
+      "id": "ed96d27b-da7b-4f8b-9cc9-7dfb2d4b0da3",
+      "name": "EU AI Medical-Device Lifecycle Monitor",
+      "description": {
+        "content": "Exact AI text evidence from the public EUDAMED software corpus with manufacturer, risk, version and registry attributes; software alone is never treated as AI evidence.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "8cd85476-5afb-4b76-8528-e5e86e74ae74",
+          "name": "Full index — EU AI Medical-Device Lifecycle Monitor",
+          "request": {
+            "name": "Full index — EU AI Medical-Device Lifecycle Monitor",
+            "description": {
+              "content": "Exact AI text evidence from the public EUDAMED software corpus with manufacturer, risk, version and registry attributes; software alone is never treated as AI evidence.\n\nAttribution: i6eal analysis of the European Commission EUDAMED Public API with disclosed text-evidence and observation rules.\n\nReuse: European Commission EUDAMED public data, transformed by i6eal. The Commission legal notice and source API terms govern reuse; no unqualified dataset-specific CC licence is asserted.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-medizinproduktmonitor",
+                "index.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "fb78def6-467b-42bc-a2cc-35c9ba60b3e4",
+              "name": "Full index of EU AI Medical-Device Lifecycle Monitor.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-medizinproduktmonitor",
+                    "index.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"schemaVersion\": \"string\",\n  \"generatedAt\": \"2020-01-23T13:25:09.149Z\",\n  \"trackingSince\": \"string\",\n  \"methodology\": {},\n  \"downloads\": {\n    \"key_0\": \"string\",\n    \"key_1\": \"string\",\n    \"key_2\": \"string\",\n    \"key_3\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "7084f0e8-532c-4854-8b80-4a75921f0cdd",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-medizinproduktmonitor",
+                    "index.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "734b326c-581a-4d85-ace1-720c2d489bee",
+          "name": "Devices — EU AI Medical-Device Lifecycle Monitor",
+          "request": {
+            "name": "Devices — EU AI Medical-Device Lifecycle Monitor",
+            "description": {
+              "content": "Exact AI text evidence from the public EUDAMED software corpus with manufacturer, risk, version and registry attributes; software alone is never treated as AI evidence.\n\nAttribution: i6eal analysis of the European Commission EUDAMED Public API with disclosed text-evidence and observation rules.\n\nReuse: European Commission EUDAMED public data, transformed by i6eal. The Commission legal notice and source API terms govern reuse; no unqualified dataset-specific CC licence is asserted.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-medizinproduktmonitor",
+                "devices.csv"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/csv"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "28415ad3-fcbf-4224-b3bd-176aa428fe82",
+              "name": "Devices of EU AI Medical-Device Lifecycle Monitor.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-medizinproduktmonitor",
+                    "devices.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/csv"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/csv"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "0ee4259f-3d2f-49df-b2c5-fb55515c7376",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-medizinproduktmonitor",
+                    "devices.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "3c3d5408-bb14-426f-9791-2e1edd9459f4",
+          "name": "Text evidence — EU AI Medical-Device Lifecycle Monitor",
+          "request": {
+            "name": "Text evidence — EU AI Medical-Device Lifecycle Monitor",
+            "description": {
+              "content": "Exact AI text evidence from the public EUDAMED software corpus with manufacturer, risk, version and registry attributes; software alone is never treated as AI evidence.\n\nAttribution: i6eal analysis of the European Commission EUDAMED Public API with disclosed text-evidence and observation rules.\n\nReuse: European Commission EUDAMED public data, transformed by i6eal. The Commission legal notice and source API terms govern reuse; no unqualified dataset-specific CC licence is asserted.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-medizinproduktmonitor",
+                "evidence.csv"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/csv"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d836bc8d-ab2a-4de7-846a-85f1852e88be",
+              "name": "Text evidence of EU AI Medical-Device Lifecycle Monitor.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-medizinproduktmonitor",
+                    "evidence.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/csv"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/csv"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "e867904a-ebb3-4986-ac32-6265d47e2723",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-medizinproduktmonitor",
+                    "evidence.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "a8a774ee-a61f-45e0-8962-b392bac8ed91",
+          "name": "Lifecycle events — EU AI Medical-Device Lifecycle Monitor",
+          "request": {
+            "name": "Lifecycle events — EU AI Medical-Device Lifecycle Monitor",
+            "description": {
+              "content": "Exact AI text evidence from the public EUDAMED software corpus with manufacturer, risk, version and registry attributes; software alone is never treated as AI evidence.\n\nAttribution: i6eal analysis of the European Commission EUDAMED Public API with disclosed text-evidence and observation rules.\n\nReuse: European Commission EUDAMED public data, transformed by i6eal. The Commission legal notice and source API terms govern reuse; no unqualified dataset-specific CC licence is asserted.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-medizinproduktmonitor",
+                "events.csv"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/csv"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c9cb8556-1d07-4cc7-ad80-d64de566da5b",
+              "name": "Lifecycle events of EU AI Medical-Device Lifecycle Monitor.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-medizinproduktmonitor",
+                    "events.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/csv"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/csv"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "389566c1-586c-489d-ae38-296365d30de4",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-medizinproduktmonitor",
+                    "events.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "791c8638-a5fd-4288-98b8-c70f41736858",
+          "name": "Methodology — EU AI Medical-Device Lifecycle Monitor",
+          "request": {
+            "name": "Methodology — EU AI Medical-Device Lifecycle Monitor",
+            "description": {
+              "content": "Exact AI text evidence from the public EUDAMED software corpus with manufacturer, risk, version and registry attributes; software alone is never treated as AI evidence.\n\nAttribution: i6eal analysis of the European Commission EUDAMED Public API with disclosed text-evidence and observation rules.\n\nReuse: European Commission EUDAMED public data, transformed by i6eal. The Commission legal notice and source API terms govern reuse; no unqualified dataset-specific CC licence is asserted.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-medizinproduktmonitor",
+                "methodology.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "2148eb07-8ea4-4228-93d9-65cac3a716a5",
+              "name": "Methodology of EU AI Medical-Device Lifecycle Monitor.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-medizinproduktmonitor",
+                    "methodology.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"key_0\": 417.9029179580862,\n  \"key_1\": true\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "9cf4f8a9-86d5-4c21-b51f-cdcad8e3e8b0",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-medizinproduktmonitor",
+                    "methodology.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://i6eal.de",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "065d45a3-f8dd-4353-8434-2045f8b590aa",
+    "name": "i6eal Open AI Data EU AI Medical-Device Lifecycle Monitor API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Open datasets on artificial intelligence in Germany and the EU — public procurement, federal budget lines, case law, supervision, standardisation, medical devices, enforcement and more.\n\n**No authentication, no registration, no rate limit, no quota.** Every endpoint is a static file served from a CDN and answers plain `GET` requests. Cross-origin requests are permitted (`Access-Control-Allow-Origin: *`), so the data can be fetched directly from a browser.\n\nEach dataset publishes a full JSON index, one or more CSV tables, and — where the dataset tracks change over time — an Atom change feed. `methodology.json` states how a dataset is collected and what it does and does not claim.\n\nStart at the [DCAT-AP catalogue](https://i6eal.de/data/catalog/dcat.jsonld) to discover everything programmatically.\n\n### Licensing\n\nThe i6eal compilation, structure and original descriptions are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). This is **not** a blanket licence over the data itself: underlying records remain subject to the rights and reuse terms of each named official source. Every dataset carries its own source list and rights statement — see the per-operation descriptions and `dct:rights` in the catalogue.\n\nFull terms: https://i6eal.de/tools/daten/\n\n### Stability\n\nDistribution URLs are treated as permanent. Payload shapes are versioned per dataset through the `schemaVersion` field in each index.\n\nContact Support:\n Name: i6eal\n Email: ai@i6eal.de",
+      "type": "text/plain"
+    }
+  }
+}

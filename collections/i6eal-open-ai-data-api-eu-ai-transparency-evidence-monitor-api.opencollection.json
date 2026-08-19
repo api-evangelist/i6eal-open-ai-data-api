@@ -1,0 +1,73 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "i6eal Open AI Data EU AI Transparency Evidence Monitor API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "EU AI Transparency Evidence Monitor",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Full index — EU AI Transparency Evidence Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-transparenznachweis-monitor/index.json"
+          },
+          "docs": "Provider and document evidence for Articles 50 and 53; visibility and review progress remain explicitly separate from conformity.\n\nAttribution: i6eal evidence monitor based on AI Office registers and linked provider sources.\n\nReuse: Official register entries and provider documents retain their respective rights. i6eal publishes only metadata, review states and links, not archived document bodies."
+        },
+        {
+          "info": {
+            "name": "Providers — EU AI Transparency Evidence Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-transparenznachweis-monitor/providers.csv"
+          },
+          "docs": "Provider and document evidence for Articles 50 and 53; visibility and review progress remain explicitly separate from conformity.\n\nAttribution: i6eal evidence monitor based on AI Office registers and linked provider sources.\n\nReuse: Official register entries and provider documents retain their respective rights. i6eal publishes only metadata, review states and links, not archived document bodies."
+        },
+        {
+          "info": {
+            "name": "Evidence — EU AI Transparency Evidence Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-transparenznachweis-monitor/evidence.csv"
+          },
+          "docs": "Provider and document evidence for Articles 50 and 53; visibility and review progress remain explicitly separate from conformity.\n\nAttribution: i6eal evidence monitor based on AI Office registers and linked provider sources.\n\nReuse: Official register entries and provider documents retain their respective rights. i6eal publishes only metadata, review states and links, not archived document bodies."
+        },
+        {
+          "info": {
+            "name": "Change feed — EU AI Transparency Evidence Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-transparenznachweis-monitor/feed.atom"
+          },
+          "docs": "Provider and document evidence for Articles 50 and 53; visibility and review progress remain explicitly separate from conformity.\n\nAttribution: i6eal evidence monitor based on AI Office registers and linked provider sources.\n\nReuse: Official register entries and provider documents retain their respective rights. i6eal publishes only metadata, review states and links, not archived document bodies."
+        },
+        {
+          "info": {
+            "name": "Methodology — EU AI Transparency Evidence Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-transparenznachweis-monitor/methodology.json"
+          },
+          "docs": "Provider and document evidence for Articles 50 and 53; visibility and review progress remain explicitly separate from conformity.\n\nAttribution: i6eal evidence monitor based on AI Office registers and linked provider sources.\n\nReuse: Official register entries and provider documents retain their respective rights. i6eal publishes only metadata, review states and links, not archived document bodies."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

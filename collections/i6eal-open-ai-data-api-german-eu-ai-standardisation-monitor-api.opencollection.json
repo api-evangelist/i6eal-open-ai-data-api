@@ -1,0 +1,73 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "i6eal Open AI Data German & EU AI Standardisation Monitor API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "German & EU AI Standardisation Monitor",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Full index — German & EU AI Standardisation Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-normungsmonitor/index.json"
+          },
+          "docs": "Standardisation request, work items, lifecycle events and EU references as separate inspectable evidence lanes.\n\nAttribution: i6eal compilation based on the EU standardisation request, CEN-CENELEC work programme, EU references and DIN mirrors.\n\nReuse: Only metadata and evidence references are published, not standards text. CEN-CENELEC, DIN and EU content retain their respective rights and terms."
+        },
+        {
+          "info": {
+            "name": "Work items — German & EU AI Standardisation Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-normungsmonitor/work-items.csv"
+          },
+          "docs": "Standardisation request, work items, lifecycle events and EU references as separate inspectable evidence lanes.\n\nAttribution: i6eal compilation based on the EU standardisation request, CEN-CENELEC work programme, EU references and DIN mirrors.\n\nReuse: Only metadata and evidence references are published, not standards text. CEN-CENELEC, DIN and EU content retain their respective rights and terms."
+        },
+        {
+          "info": {
+            "name": "Chronicle — German & EU AI Standardisation Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-normungsmonitor/events.csv"
+          },
+          "docs": "Standardisation request, work items, lifecycle events and EU references as separate inspectable evidence lanes.\n\nAttribution: i6eal compilation based on the EU standardisation request, CEN-CENELEC work programme, EU references and DIN mirrors.\n\nReuse: Only metadata and evidence references are published, not standards text. CEN-CENELEC, DIN and EU content retain their respective rights and terms."
+        },
+        {
+          "info": {
+            "name": "Change feed — German & EU AI Standardisation Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-normungsmonitor/feed.atom"
+          },
+          "docs": "Standardisation request, work items, lifecycle events and EU references as separate inspectable evidence lanes.\n\nAttribution: i6eal compilation based on the EU standardisation request, CEN-CENELEC work programme, EU references and DIN mirrors.\n\nReuse: Only metadata and evidence references are published, not standards text. CEN-CENELEC, DIN and EU content retain their respective rights and terms."
+        },
+        {
+          "info": {
+            "name": "Methodology — German & EU AI Standardisation Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-normungsmonitor/methodology.json"
+          },
+          "docs": "Standardisation request, work items, lifecycle events and EU references as separate inspectable evidence lanes.\n\nAttribution: i6eal compilation based on the EU standardisation request, CEN-CENELEC work programme, EU references and DIN mirrors.\n\nReuse: Only metadata and evidence references are published, not standards text. CEN-CENELEC, DIN and EU content retain their respective rights and terms."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

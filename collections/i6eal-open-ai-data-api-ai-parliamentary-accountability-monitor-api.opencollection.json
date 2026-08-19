@@ -1,0 +1,73 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "i6eal Open AI Data AI Parliamentary Accountability Monitor API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "AI Parliamentary Accountability Monitor",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Full index — AI Parliamentary Accountability Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-rechenschaftsmonitor/index.json"
+          },
+          "docs": "Parliamentary questions, answers and exactly linked proceedings from the Bundestag documentation system.\n\nAttribution: i6eal compilation based on the DIP API and exactly linked Systempass data.\n\nReuse: Parliamentary documents and DIP metadata retain the German Bundestag terms; linked system records may have unverified redistribution terms."
+        },
+        {
+          "info": {
+            "name": "Questions — AI Parliamentary Accountability Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-rechenschaftsmonitor/questions.csv"
+          },
+          "docs": "Parliamentary questions, answers and exactly linked proceedings from the Bundestag documentation system.\n\nAttribution: i6eal compilation based on the DIP API and exactly linked Systempass data.\n\nReuse: Parliamentary documents and DIP metadata retain the German Bundestag terms; linked system records may have unverified redistribution terms."
+        },
+        {
+          "info": {
+            "name": "Answers — AI Parliamentary Accountability Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-rechenschaftsmonitor/answers.csv"
+          },
+          "docs": "Parliamentary questions, answers and exactly linked proceedings from the Bundestag documentation system.\n\nAttribution: i6eal compilation based on the DIP API and exactly linked Systempass data.\n\nReuse: Parliamentary documents and DIP metadata retain the German Bundestag terms; linked system records may have unverified redistribution terms."
+        },
+        {
+          "info": {
+            "name": "Change feed — AI Parliamentary Accountability Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-rechenschaftsmonitor/atom.xml"
+          },
+          "docs": "Parliamentary questions, answers and exactly linked proceedings from the Bundestag documentation system.\n\nAttribution: i6eal compilation based on the DIP API and exactly linked Systempass data.\n\nReuse: Parliamentary documents and DIP metadata retain the German Bundestag terms; linked system records may have unverified redistribution terms."
+        },
+        {
+          "info": {
+            "name": "Methodology — AI Parliamentary Accountability Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-rechenschaftsmonitor/methodology.json"
+          },
+          "docs": "Parliamentary questions, answers and exactly linked proceedings from the Bundestag documentation system.\n\nAttribution: i6eal compilation based on the DIP API and exactly linked Systempass data.\n\nReuse: Parliamentary documents and DIP metadata retain the German Bundestag terms; linked system records may have unverified redistribution terms."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,73 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "i6eal Open AI Data German & EU AI Supervision Monitor API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "German & EU AI Supervision Monitor",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Full index — German & EU AI Supervision Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-aufsichtsmonitor/index.json"
+          },
+          "docs": "Officially evidenced responsibilities, legal instruments and observations, without a compliance or effectiveness score.\n\nAttribution: i6eal compilation of officially evidenced supervision and governance signals.\n\nReuse: Legal instruments, authority records and official publications retain their respective source terms."
+        },
+        {
+          "info": {
+            "name": "Authorities — German & EU AI Supervision Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-aufsichtsmonitor/authorities.csv"
+          },
+          "docs": "Officially evidenced responsibilities, legal instruments and observations, without a compliance or effectiveness score.\n\nAttribution: i6eal compilation of officially evidenced supervision and governance signals.\n\nReuse: Legal instruments, authority records and official publications retain their respective source terms."
+        },
+        {
+          "info": {
+            "name": "Instruments — German & EU AI Supervision Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-aufsichtsmonitor/instruments.csv"
+          },
+          "docs": "Officially evidenced responsibilities, legal instruments and observations, without a compliance or effectiveness score.\n\nAttribution: i6eal compilation of officially evidenced supervision and governance signals.\n\nReuse: Legal instruments, authority records and official publications retain their respective source terms."
+        },
+        {
+          "info": {
+            "name": "Relationships — German & EU AI Supervision Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-aufsichtsmonitor/relationships.csv"
+          },
+          "docs": "Officially evidenced responsibilities, legal instruments and observations, without a compliance or effectiveness score.\n\nAttribution: i6eal compilation of officially evidenced supervision and governance signals.\n\nReuse: Legal instruments, authority records and official publications retain their respective source terms."
+        },
+        {
+          "info": {
+            "name": "Methodology — German & EU AI Supervision Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-aufsichtsmonitor/methodology.json"
+          },
+          "docs": "Officially evidenced responsibilities, legal instruments and observations, without a compliance or effectiveness score.\n\nAttribution: i6eal compilation of officially evidenced supervision and governance signals.\n\nReuse: Legal instruments, authority records and official publications retain their respective source terms."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,84 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "i6eal Open AI Data AI Enforcement Monitor Germany & EU API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "AI Enforcement Monitor Germany & EU",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Full index — AI Enforcement Monitor Germany & EU",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-durchsetzungsmonitor/index.json"
+          },
+          "docs": "Officially published AI-related investigations, orders, fines and remedies with separate procedural stages and exact technology evidence.\n\nAttribution: i6eal compilation of officially published AI-related enforcement actions with primary sources.\n\nReuse: The metadata compilation is licensed under CC BY 4.0. Official source texts and documents remain subject to the notices of their respective primary sources."
+        },
+        {
+          "info": {
+            "name": "Actions — AI Enforcement Monitor Germany & EU",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-durchsetzungsmonitor/actions.csv"
+          },
+          "docs": "Officially published AI-related investigations, orders, fines and remedies with separate procedural stages and exact technology evidence.\n\nAttribution: i6eal compilation of officially published AI-related enforcement actions with primary sources.\n\nReuse: The metadata compilation is licensed under CC BY 4.0. Official source texts and documents remain subject to the notices of their respective primary sources."
+        },
+        {
+          "info": {
+            "name": "Chronicle — AI Enforcement Monitor Germany & EU",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-durchsetzungsmonitor/events.csv"
+          },
+          "docs": "Officially published AI-related investigations, orders, fines and remedies with separate procedural stages and exact technology evidence.\n\nAttribution: i6eal compilation of officially published AI-related enforcement actions with primary sources.\n\nReuse: The metadata compilation is licensed under CC BY 4.0. Official source texts and documents remain subject to the notices of their respective primary sources."
+        },
+        {
+          "info": {
+            "name": "Official evidence — AI Enforcement Monitor Germany & EU",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-durchsetzungsmonitor/evidence.csv"
+          },
+          "docs": "Officially published AI-related investigations, orders, fines and remedies with separate procedural stages and exact technology evidence.\n\nAttribution: i6eal compilation of officially published AI-related enforcement actions with primary sources.\n\nReuse: The metadata compilation is licensed under CC BY 4.0. Official source texts and documents remain subject to the notices of their respective primary sources."
+        },
+        {
+          "info": {
+            "name": "Change feed — AI Enforcement Monitor Germany & EU",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-durchsetzungsmonitor/feed.atom"
+          },
+          "docs": "Officially published AI-related investigations, orders, fines and remedies with separate procedural stages and exact technology evidence.\n\nAttribution: i6eal compilation of officially published AI-related enforcement actions with primary sources.\n\nReuse: The metadata compilation is licensed under CC BY 4.0. Official source texts and documents remain subject to the notices of their respective primary sources."
+        },
+        {
+          "info": {
+            "name": "Methodology — AI Enforcement Monitor Germany & EU",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-durchsetzungsmonitor/methodology.json"
+          },
+          "docs": "Officially published AI-related investigations, orders, fines and remedies with separate procedural stages and exact technology evidence.\n\nAttribution: i6eal compilation of officially published AI-related enforcement actions with primary sources.\n\nReuse: The metadata compilation is licensed under CC BY 4.0. Official source texts and documents remain subject to the notices of their respective primary sources."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

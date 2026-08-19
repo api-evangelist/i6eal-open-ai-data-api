@@ -1,0 +1,73 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "i6eal Open AI Data Observed AI Procurement Changes API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Observed AI Procurement Changes",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Change index — Observed AI Procurement Changes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-auftragsaenderungen/index.json"
+          },
+          "docs": "Revision trail for newly published and materially changed procedure dossiers; retrieval timestamps alone never create an event.\n\nAttribution: i6eal revision trail for the AI Procurement Chronicle.\n\nReuse: The i6eal revision metadata is an original compilation; included procurement facts retain their original source terms."
+        },
+        {
+          "info": {
+            "name": "Revision archive — Observed AI Procurement Changes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-auftragsaenderungen/archive.json"
+          },
+          "docs": "Revision trail for newly published and materially changed procedure dossiers; retrieval timestamps alone never create an event.\n\nAttribution: i6eal revision trail for the AI Procurement Chronicle.\n\nReuse: The i6eal revision metadata is an original compilation; included procurement facts retain their original source terms."
+        },
+        {
+          "info": {
+            "name": "Changes — Observed AI Procurement Changes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-auftragsaenderungen/changes.csv"
+          },
+          "docs": "Revision trail for newly published and materially changed procedure dossiers; retrieval timestamps alone never create an event.\n\nAttribution: i6eal revision trail for the AI Procurement Chronicle.\n\nReuse: The i6eal revision metadata is an original compilation; included procurement facts retain their original source terms."
+        },
+        {
+          "info": {
+            "name": "Change feed — Observed AI Procurement Changes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-auftragsaenderungen/atom.xml"
+          },
+          "docs": "Revision trail for newly published and materially changed procedure dossiers; retrieval timestamps alone never create an event.\n\nAttribution: i6eal revision trail for the AI Procurement Chronicle.\n\nReuse: The i6eal revision metadata is an original compilation; included procurement facts retain their original source terms."
+        },
+        {
+          "info": {
+            "name": "Methodology — Observed AI Procurement Changes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-auftragsaenderungen/methodology.json"
+          },
+          "docs": "Revision trail for newly published and materially changed procedure dossiers; retrieval timestamps alone never create an event.\n\nAttribution: i6eal revision trail for the AI Procurement Chronicle.\n\nReuse: The i6eal revision metadata is an original compilation; included procurement facts retain their original source terms."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

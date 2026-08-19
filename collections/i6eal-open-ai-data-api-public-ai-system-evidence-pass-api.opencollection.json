@@ -1,0 +1,73 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "i6eal Open AI Data Public AI System Evidence Pass API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Public AI System Evidence Pass",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Full dataset — Public AI System Evidence Pass",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-systempass/index.json"
+          },
+          "docs": "Inspectable system profiles and source-evidenced links to repositories and technical inventories only.\n\nAttribution: i6eal evidence pass assembled from MaKI, openCode and dependency data.\n\nReuse: The redistribution terms of the underlying MaKI dataset have not been verified. Check the original source before reuse; CC BY does not automatically apply to these system records."
+        },
+        {
+          "info": {
+            "name": "Systems — Public AI System Evidence Pass",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-systempass/systems.csv"
+          },
+          "docs": "Inspectable system profiles and source-evidenced links to repositories and technical inventories only.\n\nAttribution: i6eal evidence pass assembled from MaKI, openCode and dependency data.\n\nReuse: The redistribution terms of the underlying MaKI dataset have not been verified. Check the original source before reuse; CC BY does not automatically apply to these system records."
+        },
+        {
+          "info": {
+            "name": "Links — Public AI System Evidence Pass",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-systempass/links.csv"
+          },
+          "docs": "Inspectable system profiles and source-evidenced links to repositories and technical inventories only.\n\nAttribution: i6eal evidence pass assembled from MaKI, openCode and dependency data.\n\nReuse: The redistribution terms of the underlying MaKI dataset have not been verified. Check the original source before reuse; CC BY does not automatically apply to these system records."
+        },
+        {
+          "info": {
+            "name": "Revision feed — Public AI System Evidence Pass",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-systempass/atom.xml"
+          },
+          "docs": "Inspectable system profiles and source-evidenced links to repositories and technical inventories only.\n\nAttribution: i6eal evidence pass assembled from MaKI, openCode and dependency data.\n\nReuse: The redistribution terms of the underlying MaKI dataset have not been verified. Check the original source before reuse; CC BY does not automatically apply to these system records."
+        },
+        {
+          "info": {
+            "name": "Methodology — Public AI System Evidence Pass",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-systempass/methodology.json"
+          },
+          "docs": "Inspectable system profiles and source-evidenced links to repositories and technical inventories only.\n\nAttribution: i6eal evidence pass assembled from MaKI, openCode and dependency data.\n\nReuse: The redistribution terms of the underlying MaKI dataset have not been verified. Check the original source before reuse; CC BY does not automatically apply to these system records."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,84 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "i6eal Open AI Data German & EU AI Adoption Atlas API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "German & EU AI Adoption Atlas",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Full index — German & EU AI Adoption Atlas",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-nutzungsatlas/index.json"
+          },
+          "docs": "Official Eurostat observations of AI adoption by enterprises and individuals; statistical universes remain separate.\n\nAttribution: i6eal compilation based on Eurostat datasets with supplementary Destatis validation.\n\nReuse: Eurostat data is governed by the linked Eurostat copyright notice; supplementary Destatis data retains its source terms."
+        },
+        {
+          "info": {
+            "name": "Country comparison — German & EU AI Adoption Atlas",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-nutzungsatlas/countries.csv"
+          },
+          "docs": "Official Eurostat observations of AI adoption by enterprises and individuals; statistical universes remain separate.\n\nAttribution: i6eal compilation based on Eurostat datasets with supplementary Destatis validation.\n\nReuse: Eurostat data is governed by the linked Eurostat copyright notice; supplementary Destatis data retains its source terms."
+        },
+        {
+          "info": {
+            "name": "Observations — German & EU AI Adoption Atlas",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-nutzungsatlas/observations.csv"
+          },
+          "docs": "Official Eurostat observations of AI adoption by enterprises and individuals; statistical universes remain separate.\n\nAttribution: i6eal compilation based on Eurostat datasets with supplementary Destatis validation.\n\nReuse: Eurostat data is governed by the linked Eurostat copyright notice; supplementary Destatis data retains its source terms."
+        },
+        {
+          "info": {
+            "name": "Revisions — German & EU AI Adoption Atlas",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-nutzungsatlas/revisions.csv"
+          },
+          "docs": "Official Eurostat observations of AI adoption by enterprises and individuals; statistical universes remain separate.\n\nAttribution: i6eal compilation based on Eurostat datasets with supplementary Destatis validation.\n\nReuse: Eurostat data is governed by the linked Eurostat copyright notice; supplementary Destatis data retains its source terms."
+        },
+        {
+          "info": {
+            "name": "Change feed — German & EU AI Adoption Atlas",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-nutzungsatlas/feed.atom"
+          },
+          "docs": "Official Eurostat observations of AI adoption by enterprises and individuals; statistical universes remain separate.\n\nAttribution: i6eal compilation based on Eurostat datasets with supplementary Destatis validation.\n\nReuse: Eurostat data is governed by the linked Eurostat copyright notice; supplementary Destatis data retains its source terms."
+        },
+        {
+          "info": {
+            "name": "Methodology — German & EU AI Adoption Atlas",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-nutzungsatlas/methodology.json"
+          },
+          "docs": "Official Eurostat observations of AI adoption by enterprises and individuals; statistical universes remain separate.\n\nAttribution: i6eal compilation based on Eurostat datasets with supplementary Destatis validation.\n\nReuse: Eurostat data is governed by the linked Eurostat copyright notice; supplementary Destatis data retains its source terms."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

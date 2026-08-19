@@ -1,0 +1,73 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "i6eal Open AI Data EU AI Medical-Device Lifecycle Monitor API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "EU AI Medical-Device Lifecycle Monitor",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Full index — EU AI Medical-Device Lifecycle Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-medizinproduktmonitor/index.json"
+          },
+          "docs": "Exact AI text evidence from the public EUDAMED software corpus with manufacturer, risk, version and registry attributes; software alone is never treated as AI evidence.\n\nAttribution: i6eal analysis of the European Commission EUDAMED Public API with disclosed text-evidence and observation rules.\n\nReuse: European Commission EUDAMED public data, transformed by i6eal. The Commission legal notice and source API terms govern reuse; no unqualified dataset-specific CC licence is asserted."
+        },
+        {
+          "info": {
+            "name": "Devices — EU AI Medical-Device Lifecycle Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-medizinproduktmonitor/devices.csv"
+          },
+          "docs": "Exact AI text evidence from the public EUDAMED software corpus with manufacturer, risk, version and registry attributes; software alone is never treated as AI evidence.\n\nAttribution: i6eal analysis of the European Commission EUDAMED Public API with disclosed text-evidence and observation rules.\n\nReuse: European Commission EUDAMED public data, transformed by i6eal. The Commission legal notice and source API terms govern reuse; no unqualified dataset-specific CC licence is asserted."
+        },
+        {
+          "info": {
+            "name": "Text evidence — EU AI Medical-Device Lifecycle Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-medizinproduktmonitor/evidence.csv"
+          },
+          "docs": "Exact AI text evidence from the public EUDAMED software corpus with manufacturer, risk, version and registry attributes; software alone is never treated as AI evidence.\n\nAttribution: i6eal analysis of the European Commission EUDAMED Public API with disclosed text-evidence and observation rules.\n\nReuse: European Commission EUDAMED public data, transformed by i6eal. The Commission legal notice and source API terms govern reuse; no unqualified dataset-specific CC licence is asserted."
+        },
+        {
+          "info": {
+            "name": "Lifecycle events — EU AI Medical-Device Lifecycle Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-medizinproduktmonitor/events.csv"
+          },
+          "docs": "Exact AI text evidence from the public EUDAMED software corpus with manufacturer, risk, version and registry attributes; software alone is never treated as AI evidence.\n\nAttribution: i6eal analysis of the European Commission EUDAMED Public API with disclosed text-evidence and observation rules.\n\nReuse: European Commission EUDAMED public data, transformed by i6eal. The Commission legal notice and source API terms govern reuse; no unqualified dataset-specific CC licence is asserted."
+        },
+        {
+          "info": {
+            "name": "Methodology — EU AI Medical-Device Lifecycle Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-medizinproduktmonitor/methodology.json"
+          },
+          "docs": "Exact AI text evidence from the public EUDAMED software corpus with manufacturer, risk, version and registry attributes; software alone is never treated as AI evidence.\n\nAttribution: i6eal analysis of the European Commission EUDAMED Public API with disclosed text-evidence and observation rules.\n\nReuse: European Commission EUDAMED public data, transformed by i6eal. The Commission legal notice and source API terms govern reuse; no unqualified dataset-specific CC licence is asserted."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

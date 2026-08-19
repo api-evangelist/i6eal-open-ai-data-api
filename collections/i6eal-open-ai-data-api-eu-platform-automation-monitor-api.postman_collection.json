@@ -1,0 +1,767 @@
+{
+  "item": [
+    {
+      "id": "bf3f161d-b20e-47a4-abdd-f5d1b12c87f4",
+      "name": "EU Platform Automation Monitor",
+      "description": {
+        "content": "Monthly DSA statements on automated detection, decision automation and reported restrictions by platform; automation is not relabelled as AI.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "e51c1e47-1937-4357-b309-b10b1815d5a0",
+          "name": "Full index — EU Platform Automation Monitor",
+          "request": {
+            "name": "Full index — EU Platform Automation Monitor",
+            "description": {
+              "content": "Monthly DSA statements on automated detection, decision automation and reported restrictions by platform; automation is not relabelled as AI.\n\nAttribution: i6eal analysis of the European Commission DSA Transparency Database monthly aggregated-simple data.\n\nReuse: The DSA Transparency Database is licensed under CC BY 4.0. The i6eal compilation attributes the European Commission and documents each transformation.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "plattformautomationsmonitor",
+                "index.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ae553d8d-b6e3-484e-9261-3a73414b226b",
+              "name": "Full index of EU Platform Automation Monitor.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "plattformautomationsmonitor",
+                    "index.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"schemaVersion\": \"string\",\n  \"generatedAt\": \"1995-01-12T08:14:16.832Z\",\n  \"trackingSince\": \"string\",\n  \"methodology\": {},\n  \"downloads\": {\n    \"key_0\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "3bb0971c-93f7-425f-8be3-282782c2ee61",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "plattformautomationsmonitor",
+                    "index.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "a2d26147-6b8c-4e7f-b806-00e31f0fe21c",
+          "name": "Platforms — EU Platform Automation Monitor",
+          "request": {
+            "name": "Platforms — EU Platform Automation Monitor",
+            "description": {
+              "content": "Monthly DSA statements on automated detection, decision automation and reported restrictions by platform; automation is not relabelled as AI.\n\nAttribution: i6eal analysis of the European Commission DSA Transparency Database monthly aggregated-simple data.\n\nReuse: The DSA Transparency Database is licensed under CC BY 4.0. The i6eal compilation attributes the European Commission and documents each transformation.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "plattformautomationsmonitor",
+                "platforms.csv"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/csv"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "2c9cce9f-0d3c-4d6a-a468-b26702e67deb",
+              "name": "Platforms of EU Platform Automation Monitor.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "plattformautomationsmonitor",
+                    "platforms.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/csv"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/csv"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "2fe90898-a11c-4c25-9aa0-47a73e77f8b4",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "plattformautomationsmonitor",
+                    "platforms.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "e8bb9a54-2bc2-4bda-b808-42dd3439f8dd",
+          "name": "Automation flows — EU Platform Automation Monitor",
+          "request": {
+            "name": "Automation flows — EU Platform Automation Monitor",
+            "description": {
+              "content": "Monthly DSA statements on automated detection, decision automation and reported restrictions by platform; automation is not relabelled as AI.\n\nAttribution: i6eal analysis of the European Commission DSA Transparency Database monthly aggregated-simple data.\n\nReuse: The DSA Transparency Database is licensed under CC BY 4.0. The i6eal compilation attributes the European Commission and documents each transformation.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "plattformautomationsmonitor",
+                "flows.csv"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/csv"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d3dde378-ccb4-49d8-be14-2801ffafaf0c",
+              "name": "Automation flows of EU Platform Automation Monitor.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "plattformautomationsmonitor",
+                    "flows.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/csv"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/csv"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "4243218e-cd5a-4275-a4ff-5543c3fb60da",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "plattformautomationsmonitor",
+                    "flows.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "f2a34bfc-18ae-49e5-b164-e5ccfb790d2f",
+          "name": "Monthly timeline — EU Platform Automation Monitor",
+          "request": {
+            "name": "Monthly timeline — EU Platform Automation Monitor",
+            "description": {
+              "content": "Monthly DSA statements on automated detection, decision automation and reported restrictions by platform; automation is not relabelled as AI.\n\nAttribution: i6eal analysis of the European Commission DSA Transparency Database monthly aggregated-simple data.\n\nReuse: The DSA Transparency Database is licensed under CC BY 4.0. The i6eal compilation attributes the European Commission and documents each transformation.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "plattformautomationsmonitor",
+                "timeline.csv"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/csv"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "8d4ca0c1-33c0-4f73-b65c-ddae9ec1ad9b",
+              "name": "Monthly timeline of EU Platform Automation Monitor.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "plattformautomationsmonitor",
+                    "timeline.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/csv"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/csv"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "63714b48-2cad-458b-bd9b-1c9348f38750",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "plattformautomationsmonitor",
+                    "timeline.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "cd6a369b-18d6-4b93-bf58-5e38a6daa7a8",
+          "name": "Revisions — EU Platform Automation Monitor",
+          "request": {
+            "name": "Revisions — EU Platform Automation Monitor",
+            "description": {
+              "content": "Monthly DSA statements on automated detection, decision automation and reported restrictions by platform; automation is not relabelled as AI.\n\nAttribution: i6eal analysis of the European Commission DSA Transparency Database monthly aggregated-simple data.\n\nReuse: The DSA Transparency Database is licensed under CC BY 4.0. The i6eal compilation attributes the European Commission and documents each transformation.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "plattformautomationsmonitor",
+                "revisions.csv"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/csv"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f97f801e-0103-4281-8434-56515c886ba8",
+              "name": "Revisions of EU Platform Automation Monitor.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "plattformautomationsmonitor",
+                    "revisions.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/csv"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/csv"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "5c364189-cba7-46e5-8e03-3f21fed77803",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "plattformautomationsmonitor",
+                    "revisions.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "65bbe79f-6714-4562-bf69-c41f2a26f76d",
+          "name": "Change feed — EU Platform Automation Monitor",
+          "request": {
+            "name": "Change feed — EU Platform Automation Monitor",
+            "description": {
+              "content": "Monthly DSA statements on automated detection, decision automation and reported restrictions by platform; automation is not relabelled as AI.\n\nAttribution: i6eal analysis of the European Commission DSA Transparency Database monthly aggregated-simple data.\n\nReuse: The DSA Transparency Database is licensed under CC BY 4.0. The i6eal compilation attributes the European Commission and documents each transformation.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "plattformautomationsmonitor",
+                "feed.atom"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/atom+xml"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a527cf95-358c-4239-8e45-d3f1d10d524d",
+              "name": "Change feed of EU Platform Automation Monitor.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "plattformautomationsmonitor",
+                    "feed.atom"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/atom+xml"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/atom+xml"
+                }
+              ],
+              "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<element>(string)</element>",
+              "cookie": [],
+              "_postman_previewlanguage": "xml"
+            },
+            {
+              "id": "5c5e6ab9-540d-4383-84cd-60e5c97e2845",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "plattformautomationsmonitor",
+                    "feed.atom"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "0e1d8fa5-7c57-4cdb-9a79-c06702c18e6a",
+          "name": "Methodology — EU Platform Automation Monitor",
+          "request": {
+            "name": "Methodology — EU Platform Automation Monitor",
+            "description": {
+              "content": "Monthly DSA statements on automated detection, decision automation and reported restrictions by platform; automation is not relabelled as AI.\n\nAttribution: i6eal analysis of the European Commission DSA Transparency Database monthly aggregated-simple data.\n\nReuse: The DSA Transparency Database is licensed under CC BY 4.0. The i6eal compilation attributes the European Commission and documents each transformation.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "plattformautomationsmonitor",
+                "methodology.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "3ff231db-c1c5-4c2f-b0c9-cd738f22614f",
+              "name": "Methodology of EU Platform Automation Monitor.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "plattformautomationsmonitor",
+                    "methodology.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"key_0\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "d1e55d0a-7cf1-4e73-9966-abd819968876",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "plattformautomationsmonitor",
+                    "methodology.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://i6eal.de",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "4181226c-aa1a-49e3-802e-573dffac6591",
+    "name": "i6eal Open AI Data EU Platform Automation Monitor API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Open datasets on artificial intelligence in Germany and the EU — public procurement, federal budget lines, case law, supervision, standardisation, medical devices, enforcement and more.\n\n**No authentication, no registration, no rate limit, no quota.** Every endpoint is a static file served from a CDN and answers plain `GET` requests. Cross-origin requests are permitted (`Access-Control-Allow-Origin: *`), so the data can be fetched directly from a browser.\n\nEach dataset publishes a full JSON index, one or more CSV tables, and — where the dataset tracks change over time — an Atom change feed. `methodology.json` states how a dataset is collected and what it does and does not claim.\n\nStart at the [DCAT-AP catalogue](https://i6eal.de/data/catalog/dcat.jsonld) to discover everything programmatically.\n\n### Licensing\n\nThe i6eal compilation, structure and original descriptions are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). This is **not** a blanket licence over the data itself: underlying records remain subject to the rights and reuse terms of each named official source. Every dataset carries its own source list and rights statement — see the per-operation descriptions and `dct:rights` in the catalogue.\n\nFull terms: https://i6eal.de/tools/daten/\n\n### Stability\n\nDistribution URLs are treated as permanent. Payload shapes are versioned per dataset through the `schemaVersion` field in each index.\n\nContact Support:\n Name: i6eal\n Email: ai@i6eal.de",
+      "type": "text/plain"
+    }
+  }
+}

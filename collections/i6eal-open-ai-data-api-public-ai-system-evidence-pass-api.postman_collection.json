@@ -1,0 +1,557 @@
+{
+  "item": [
+    {
+      "id": "5e2632df-8c8f-4810-8544-d819ea082e59",
+      "name": "Public AI System Evidence Pass",
+      "description": {
+        "content": "Inspectable system profiles and source-evidenced links to repositories and technical inventories only.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "5a911cf6-468b-49e6-8098-5af52037a1fa",
+          "name": "Full dataset — Public AI System Evidence Pass",
+          "request": {
+            "name": "Full dataset — Public AI System Evidence Pass",
+            "description": {
+              "content": "Inspectable system profiles and source-evidenced links to repositories and technical inventories only.\n\nAttribution: i6eal evidence pass assembled from MaKI, openCode and dependency data.\n\nReuse: The redistribution terms of the underlying MaKI dataset have not been verified. Check the original source before reuse; CC BY does not automatically apply to these system records.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-systempass",
+                "index.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "7cb90dab-8608-42f7-81e9-a8f40a0297a4",
+              "name": "Full dataset of Public AI System Evidence Pass.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-systempass",
+                    "index.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"schemaVersion\": \"string\",\n  \"generatedAt\": \"1995-01-02T19:03:29.962Z\",\n  \"trackingSince\": \"string\",\n  \"methodology\": {},\n  \"downloads\": {\n    \"key_0\": \"string\",\n    \"key_1\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "ff60bbb6-11b0-422f-b33c-17eb45c42980",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-systempass",
+                    "index.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "91494fc1-d18e-44fa-9f14-659a95dba68d",
+          "name": "Systems — Public AI System Evidence Pass",
+          "request": {
+            "name": "Systems — Public AI System Evidence Pass",
+            "description": {
+              "content": "Inspectable system profiles and source-evidenced links to repositories and technical inventories only.\n\nAttribution: i6eal evidence pass assembled from MaKI, openCode and dependency data.\n\nReuse: The redistribution terms of the underlying MaKI dataset have not been verified. Check the original source before reuse; CC BY does not automatically apply to these system records.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-systempass",
+                "systems.csv"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/csv"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "128b7447-ff3e-422d-b40d-6a3a10d88e14",
+              "name": "Systems of Public AI System Evidence Pass.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-systempass",
+                    "systems.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/csv"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/csv"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "be8d192c-b262-4f05-995f-bed4183c12c6",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-systempass",
+                    "systems.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "12b6d017-8fd8-4e71-8cc2-6989efcee24c",
+          "name": "Links — Public AI System Evidence Pass",
+          "request": {
+            "name": "Links — Public AI System Evidence Pass",
+            "description": {
+              "content": "Inspectable system profiles and source-evidenced links to repositories and technical inventories only.\n\nAttribution: i6eal evidence pass assembled from MaKI, openCode and dependency data.\n\nReuse: The redistribution terms of the underlying MaKI dataset have not been verified. Check the original source before reuse; CC BY does not automatically apply to these system records.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-systempass",
+                "links.csv"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/csv"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "3fafb353-9ed5-45cc-be5f-c48356fef298",
+              "name": "Links of Public AI System Evidence Pass.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-systempass",
+                    "links.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/csv"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/csv"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "611488aa-3f78-4bf3-bff8-6307c409640f",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-systempass",
+                    "links.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "93bf1967-2405-438f-99e7-108955814496",
+          "name": "Revision feed — Public AI System Evidence Pass",
+          "request": {
+            "name": "Revision feed — Public AI System Evidence Pass",
+            "description": {
+              "content": "Inspectable system profiles and source-evidenced links to repositories and technical inventories only.\n\nAttribution: i6eal evidence pass assembled from MaKI, openCode and dependency data.\n\nReuse: The redistribution terms of the underlying MaKI dataset have not been verified. Check the original source before reuse; CC BY does not automatically apply to these system records.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-systempass",
+                "atom.xml"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/atom+xml"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ad1c7903-855e-4c92-9220-6819defc8e10",
+              "name": "Revision feed of Public AI System Evidence Pass.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-systempass",
+                    "atom.xml"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/atom+xml"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/atom+xml"
+                }
+              ],
+              "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<element>(string)</element>",
+              "cookie": [],
+              "_postman_previewlanguage": "xml"
+            },
+            {
+              "id": "9507b234-b0ba-49b5-8bd8-82611094dab6",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-systempass",
+                    "atom.xml"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "8f7ca1cc-69f0-4405-9bc3-9a826dd83d31",
+          "name": "Methodology — Public AI System Evidence Pass",
+          "request": {
+            "name": "Methodology — Public AI System Evidence Pass",
+            "description": {
+              "content": "Inspectable system profiles and source-evidenced links to repositories and technical inventories only.\n\nAttribution: i6eal evidence pass assembled from MaKI, openCode and dependency data.\n\nReuse: The redistribution terms of the underlying MaKI dataset have not been verified. Check the original source before reuse; CC BY does not automatically apply to these system records.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-systempass",
+                "methodology.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "87dce8ce-6405-4492-8cd0-2f668a84030d",
+              "name": "Methodology of Public AI System Evidence Pass.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-systempass",
+                    "methodology.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"key_0\": 9405,\n  \"key_1\": false,\n  \"key_2\": 7170.660385048206\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "ab27ddb6-a6db-4569-b614-a3c59d88ab93",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-systempass",
+                    "methodology.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://i6eal.de",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "0096dbcc-fd1e-4cff-8bf9-12caff871d04",
+    "name": "i6eal Open AI Data Public AI System Evidence Pass API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Open datasets on artificial intelligence in Germany and the EU — public procurement, federal budget lines, case law, supervision, standardisation, medical devices, enforcement and more.\n\n**No authentication, no registration, no rate limit, no quota.** Every endpoint is a static file served from a CDN and answers plain `GET` requests. Cross-origin requests are permitted (`Access-Control-Allow-Origin: *`), so the data can be fetched directly from a browser.\n\nEach dataset publishes a full JSON index, one or more CSV tables, and — where the dataset tracks change over time — an Atom change feed. `methodology.json` states how a dataset is collected and what it does and does not claim.\n\nStart at the [DCAT-AP catalogue](https://i6eal.de/data/catalog/dcat.jsonld) to discover everything programmatically.\n\n### Licensing\n\nThe i6eal compilation, structure and original descriptions are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). This is **not** a blanket licence over the data itself: underlying records remain subject to the rights and reuse terms of each named official source. Every dataset carries its own source list and rights statement — see the per-operation descriptions and `dct:rights` in the catalogue.\n\nFull terms: https://i6eal.de/tools/daten/\n\n### Stability\n\nDistribution URLs are treated as permanent. Payload shapes are versioned per dataset through the `schemaVersion` field in each index.\n\nContact Support:\n Name: i6eal\n Email: ai@i6eal.de",
+      "type": "text/plain"
+    }
+  }
+}

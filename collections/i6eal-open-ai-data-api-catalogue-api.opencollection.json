@@ -1,0 +1,29 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "i6eal Open AI Data Catalogue API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Catalogue",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "DCAT-AP catalogue of every published dataset",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/catalog/dcat.jsonld"
+          },
+          "docs": "Machine-readable index of all datasets described by this API, as DCAT-AP in JSON-LD. Start here to discover distributions, temporal coverage, sources and per-dataset rights."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

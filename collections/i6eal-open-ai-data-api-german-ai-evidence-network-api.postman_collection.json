@@ -1,0 +1,452 @@
+{
+  "item": [
+    {
+      "id": "3d2ab358-71e8-4670-bff7-6f204b62cbb3",
+      "name": "German AI Evidence Network",
+      "description": {
+        "content": "Source-evidenced edges between actors, projects, outputs, systems, repositories, packages, procurements and budget titles.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "fbabe40f-190b-4a36-b39d-168bbac2fe17",
+          "name": "Full index — German AI Evidence Network",
+          "request": {
+            "name": "Full index — German AI Evidence Network",
+            "description": {
+              "content": "Source-evidenced edges between actors, projects, outputs, systems, repositories, packages, procurements and budget titles.\n\nAttribution: i6eal evidence network assembled from separately identified public datasets.\n\nReuse: The network combines datasets with different or, in some cases, unverified source rights. The referenced source terms remain decisive for every edge.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-evidenznetz",
+                "index.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5601eaf5-b08b-46ed-912f-ae863f1041a2",
+              "name": "Full index of German AI Evidence Network.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-evidenznetz",
+                    "index.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"schemaVersion\": \"string\",\n  \"generatedAt\": \"2026-06-01T14:08:42.024Z\",\n  \"trackingSince\": \"string\",\n  \"methodology\": {},\n  \"downloads\": {\n    \"key_0\": \"string\",\n    \"key_1\": \"string\",\n    \"key_2\": \"string\",\n    \"key_3\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "19c9de53-dfee-4e07-a068-f43cce273d41",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-evidenznetz",
+                    "index.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "86264e37-d1b2-43c6-9421-1cc273a03b2b",
+          "name": "Entities — German AI Evidence Network",
+          "request": {
+            "name": "Entities — German AI Evidence Network",
+            "description": {
+              "content": "Source-evidenced edges between actors, projects, outputs, systems, repositories, packages, procurements and budget titles.\n\nAttribution: i6eal evidence network assembled from separately identified public datasets.\n\nReuse: The network combines datasets with different or, in some cases, unverified source rights. The referenced source terms remain decisive for every edge.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-evidenznetz",
+                "entities.csv"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/csv"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "41009359-2eab-46f8-8bf7-871da7ea3501",
+              "name": "Entities of German AI Evidence Network.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-evidenznetz",
+                    "entities.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/csv"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/csv"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "4503647d-3947-448f-8ba8-0e3a8a618e32",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-evidenznetz",
+                    "entities.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "a034a3ac-a74c-497c-8794-b79d47ed1904",
+          "name": "Evidence edges — German AI Evidence Network",
+          "request": {
+            "name": "Evidence edges — German AI Evidence Network",
+            "description": {
+              "content": "Source-evidenced edges between actors, projects, outputs, systems, repositories, packages, procurements and budget titles.\n\nAttribution: i6eal evidence network assembled from separately identified public datasets.\n\nReuse: The network combines datasets with different or, in some cases, unverified source rights. The referenced source terms remain decisive for every edge.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-evidenznetz",
+                "edges.csv"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/csv"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5fe774f3-2dfa-4761-b06c-798959391370",
+              "name": "Evidence edges of German AI Evidence Network.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-evidenznetz",
+                    "edges.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/csv"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/csv"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "745575a0-4233-4e9f-a0ee-4d7b3936a8a9",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-evidenznetz",
+                    "edges.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "0389da66-8daf-4a3e-b63c-ce201ca52a34",
+          "name": "Methodology — German AI Evidence Network",
+          "request": {
+            "name": "Methodology — German AI Evidence Network",
+            "description": {
+              "content": "Source-evidenced edges between actors, projects, outputs, systems, repositories, packages, procurements and budget titles.\n\nAttribution: i6eal evidence network assembled from separately identified public datasets.\n\nReuse: The network combines datasets with different or, in some cases, unverified source rights. The referenced source terms remain decisive for every edge.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-evidenznetz",
+                "methodology.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "90438997-50f1-4d93-be11-816924d7b5a1",
+              "name": "Methodology of German AI Evidence Network.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-evidenznetz",
+                    "methodology.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"key_0\": true,\n  \"key_1\": 298,\n  \"key_2\": true,\n  \"key_3\": 609.8745427649399\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "bcdb778c-76ce-43e8-9dc9-e79197d0fd4f",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-evidenznetz",
+                    "methodology.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://i6eal.de",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "91438c57-d546-40aa-aa0f-4d3811388d8c",
+    "name": "i6eal Open AI Data German AI Evidence Network API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Open datasets on artificial intelligence in Germany and the EU — public procurement, federal budget lines, case law, supervision, standardisation, medical devices, enforcement and more.\n\n**No authentication, no registration, no rate limit, no quota.** Every endpoint is a static file served from a CDN and answers plain `GET` requests. Cross-origin requests are permitted (`Access-Control-Allow-Origin: *`), so the data can be fetched directly from a browser.\n\nEach dataset publishes a full JSON index, one or more CSV tables, and — where the dataset tracks change over time — an Atom change feed. `methodology.json` states how a dataset is collected and what it does and does not claim.\n\nStart at the [DCAT-AP catalogue](https://i6eal.de/data/catalog/dcat.jsonld) to discover everything programmatically.\n\n### Licensing\n\nThe i6eal compilation, structure and original descriptions are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). This is **not** a blanket licence over the data itself: underlying records remain subject to the rights and reuse terms of each named official source. Every dataset carries its own source list and rights statement — see the per-operation descriptions and `dct:rights` in the catalogue.\n\nFull terms: https://i6eal.de/tools/daten/\n\n### Stability\n\nDistribution URLs are treated as permanent. Payload shapes are versioned per dataset through the `schemaVersion` field in each index.\n\nContact Support:\n Name: i6eal\n Email: ai@i6eal.de",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,557 @@
+{
+  "item": [
+    {
+      "id": "ad7ad9e7-d204-4e98-bdcf-f272bfce438f",
+      "name": "Observed AI Procurement Changes",
+      "description": {
+        "content": "Revision trail for newly published and materially changed procedure dossiers; retrieval timestamps alone never create an event.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "1b363969-c7fc-4d96-8737-59f5d5cfa5f4",
+          "name": "Change index — Observed AI Procurement Changes",
+          "request": {
+            "name": "Change index — Observed AI Procurement Changes",
+            "description": {
+              "content": "Revision trail for newly published and materially changed procedure dossiers; retrieval timestamps alone never create an event.\n\nAttribution: i6eal revision trail for the AI Procurement Chronicle.\n\nReuse: The i6eal revision metadata is an original compilation; included procurement facts retain their original source terms.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-auftragsaenderungen",
+                "index.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "4c270ce0-46bc-4b3e-ac70-4f2ad91008c9",
+              "name": "Change index of Observed AI Procurement Changes.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-auftragsaenderungen",
+                    "index.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"schemaVersion\": \"string\",\n  \"generatedAt\": \"1976-03-29T17:10:09.957Z\",\n  \"trackingSince\": \"string\",\n  \"methodology\": {},\n  \"downloads\": {\n    \"key_0\": \"string\",\n    \"key_1\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "767195d9-d763-42f5-b509-d5a43f718d7d",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-auftragsaenderungen",
+                    "index.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "29a8bd54-0cc8-4ede-b954-0ae34b3e0ace",
+          "name": "Revision archive — Observed AI Procurement Changes",
+          "request": {
+            "name": "Revision archive — Observed AI Procurement Changes",
+            "description": {
+              "content": "Revision trail for newly published and materially changed procedure dossiers; retrieval timestamps alone never create an event.\n\nAttribution: i6eal revision trail for the AI Procurement Chronicle.\n\nReuse: The i6eal revision metadata is an original compilation; included procurement facts retain their original source terms.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-auftragsaenderungen",
+                "archive.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ff0135ab-7a42-48b9-803e-b04dd975719d",
+              "name": "Revision archive of Observed AI Procurement Changes.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-auftragsaenderungen",
+                    "archive.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"key_0\": 6475.300101616859,\n  \"key_1\": 8697.669007494847\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "dd18ea28-b8f8-4c45-bfff-b70ff24a0a06",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-auftragsaenderungen",
+                    "archive.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "00d9c618-0db6-4035-a783-0b9a910bee35",
+          "name": "Changes — Observed AI Procurement Changes",
+          "request": {
+            "name": "Changes — Observed AI Procurement Changes",
+            "description": {
+              "content": "Revision trail for newly published and materially changed procedure dossiers; retrieval timestamps alone never create an event.\n\nAttribution: i6eal revision trail for the AI Procurement Chronicle.\n\nReuse: The i6eal revision metadata is an original compilation; included procurement facts retain their original source terms.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-auftragsaenderungen",
+                "changes.csv"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/csv"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f501ae60-4eed-453c-9467-cf2e9e8f56ff",
+              "name": "Changes of Observed AI Procurement Changes.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-auftragsaenderungen",
+                    "changes.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/csv"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/csv"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "7466d1d7-0867-4e3c-9a5a-18a6c1dfd4da",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-auftragsaenderungen",
+                    "changes.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b577a355-ffa8-407e-abc1-f6be09d0c6a1",
+          "name": "Change feed — Observed AI Procurement Changes",
+          "request": {
+            "name": "Change feed — Observed AI Procurement Changes",
+            "description": {
+              "content": "Revision trail for newly published and materially changed procedure dossiers; retrieval timestamps alone never create an event.\n\nAttribution: i6eal revision trail for the AI Procurement Chronicle.\n\nReuse: The i6eal revision metadata is an original compilation; included procurement facts retain their original source terms.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-auftragsaenderungen",
+                "atom.xml"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/atom+xml"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d38eb59d-7d1a-4328-b54b-7ec5b16673de",
+              "name": "Change feed of Observed AI Procurement Changes.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-auftragsaenderungen",
+                    "atom.xml"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/atom+xml"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/atom+xml"
+                }
+              ],
+              "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<element>(string)</element>",
+              "cookie": [],
+              "_postman_previewlanguage": "xml"
+            },
+            {
+              "id": "8fc20f89-cdd3-42ca-9627-df08cbaa9c92",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-auftragsaenderungen",
+                    "atom.xml"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "53de5a29-55f5-4bb7-8af2-815a26d53eac",
+          "name": "Methodology — Observed AI Procurement Changes",
+          "request": {
+            "name": "Methodology — Observed AI Procurement Changes",
+            "description": {
+              "content": "Revision trail for newly published and materially changed procedure dossiers; retrieval timestamps alone never create an event.\n\nAttribution: i6eal revision trail for the AI Procurement Chronicle.\n\nReuse: The i6eal revision metadata is an original compilation; included procurement facts retain their original source terms.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-auftragsaenderungen",
+                "methodology.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "86886529-3fcd-4105-9c0f-bf1696ee1b43",
+              "name": "Methodology of Observed AI Procurement Changes.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-auftragsaenderungen",
+                    "methodology.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"key_0\": 6475.300101616859,\n  \"key_1\": 8697.669007494847\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "ca6894de-1754-44db-a9ec-580df821dc5c",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-auftragsaenderungen",
+                    "methodology.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://i6eal.de",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "f43326d4-2948-4d34-8bf4-c6f850b38ec6",
+    "name": "i6eal Open AI Data Observed AI Procurement Changes API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Open datasets on artificial intelligence in Germany and the EU — public procurement, federal budget lines, case law, supervision, standardisation, medical devices, enforcement and more.\n\n**No authentication, no registration, no rate limit, no quota.** Every endpoint is a static file served from a CDN and answers plain `GET` requests. Cross-origin requests are permitted (`Access-Control-Allow-Origin: *`), so the data can be fetched directly from a browser.\n\nEach dataset publishes a full JSON index, one or more CSV tables, and — where the dataset tracks change over time — an Atom change feed. `methodology.json` states how a dataset is collected and what it does and does not claim.\n\nStart at the [DCAT-AP catalogue](https://i6eal.de/data/catalog/dcat.jsonld) to discover everything programmatically.\n\n### Licensing\n\nThe i6eal compilation, structure and original descriptions are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). This is **not** a blanket licence over the data itself: underlying records remain subject to the rights and reuse terms of each named official source. Every dataset carries its own source list and rights statement — see the per-operation descriptions and `dct:rights` in the catalogue.\n\nFull terms: https://i6eal.de/tools/daten/\n\n### Stability\n\nDistribution URLs are treated as permanent. Payload shapes are versioned per dataset through the `schemaVersion` field in each index.\n\nContact Support:\n Name: i6eal\n Email: ai@i6eal.de",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "i6eal Open AI Data EU AI Studies Monitor API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "EU AI Studies Monitor",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Full index — EU AI Studies Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-studienmonitor/index.json"
+          },
+          "docs": "Official CTIS lifecycles of medicinal clinical trials with exact AI text evidence and separate application, country-status, recruitment, safety and results events.\n\nAttribution: i6eal analysis of the public Clinical Trials Information System (CTIS) with disclosed evidence, time and privacy rules.\n\nReuse: Public CTIS data from the European Medicines Agency, transformed by i6eal with data minimisation. EMA and source-platform terms govern the underlying data and documents; no unqualified dataset-s"
+        },
+        {
+          "info": {
+            "name": "Trials — EU AI Studies Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-studienmonitor/studies.csv"
+          },
+          "docs": "Official CTIS lifecycles of medicinal clinical trials with exact AI text evidence and separate application, country-status, recruitment, safety and results events.\n\nAttribution: i6eal analysis of the public Clinical Trials Information System (CTIS) with disclosed evidence, time and privacy rules.\n\nReuse: Public CTIS data from the European Medicines Agency, transformed by i6eal with data minimisation. EMA and source-platform terms govern the underlying data and documents; no unqualified dataset-s"
+        },
+        {
+          "info": {
+            "name": "AI text evidence — EU AI Studies Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-studienmonitor/evidence.csv"
+          },
+          "docs": "Official CTIS lifecycles of medicinal clinical trials with exact AI text evidence and separate application, country-status, recruitment, safety and results events.\n\nAttribution: i6eal analysis of the public Clinical Trials Information System (CTIS) with disclosed evidence, time and privacy rules.\n\nReuse: Public CTIS data from the European Medicines Agency, transformed by i6eal with data minimisation. EMA and source-platform terms govern the underlying data and documents; no unqualified dataset-s"
+        },
+        {
+          "info": {
+            "name": "Official events — EU AI Studies Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-studienmonitor/events.csv"
+          },
+          "docs": "Official CTIS lifecycles of medicinal clinical trials with exact AI text evidence and separate application, country-status, recruitment, safety and results events.\n\nAttribution: i6eal analysis of the public Clinical Trials Information System (CTIS) with disclosed evidence, time and privacy rules.\n\nReuse: Public CTIS data from the European Medicines Agency, transformed by i6eal with data minimisation. EMA and source-platform terms govern the underlying data and documents; no unqualified dataset-s"
+        },
+        {
+          "info": {
+            "name": "Observation changes — EU AI Studies Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-studienmonitor/observations.csv"
+          },
+          "docs": "Official CTIS lifecycles of medicinal clinical trials with exact AI text evidence and separate application, country-status, recruitment, safety and results events.\n\nAttribution: i6eal analysis of the public Clinical Trials Information System (CTIS) with disclosed evidence, time and privacy rules.\n\nReuse: Public CTIS data from the European Medicines Agency, transformed by i6eal with data minimisation. EMA and source-platform terms govern the underlying data and documents; no unqualified dataset-s"
+        },
+        {
+          "info": {
+            "name": "Change feed — EU AI Studies Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-studienmonitor/feed.atom"
+          },
+          "docs": "Official CTIS lifecycles of medicinal clinical trials with exact AI text evidence and separate application, country-status, recruitment, safety and results events.\n\nAttribution: i6eal analysis of the public Clinical Trials Information System (CTIS) with disclosed evidence, time and privacy rules.\n\nReuse: Public CTIS data from the European Medicines Agency, transformed by i6eal with data minimisation. EMA and source-platform terms govern the underlying data and documents; no unqualified dataset-s"
+        },
+        {
+          "info": {
+            "name": "Methodology — EU AI Studies Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-studienmonitor/methodology.json"
+          },
+          "docs": "Official CTIS lifecycles of medicinal clinical trials with exact AI text evidence and separate application, country-status, recruitment, safety and results events.\n\nAttribution: i6eal analysis of the public Clinical Trials Information System (CTIS) with disclosed evidence, time and privacy rules.\n\nReuse: Public CTIS data from the European Medicines Agency, transformed by i6eal with data minimisation. EMA and source-platform terms govern the underlying data and documents; no unqualified dataset-s"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

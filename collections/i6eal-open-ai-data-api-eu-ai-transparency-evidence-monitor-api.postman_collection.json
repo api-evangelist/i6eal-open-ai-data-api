@@ -1,0 +1,557 @@
+{
+  "item": [
+    {
+      "id": "6fb175e8-6c2c-4a85-8ddc-ddddce94821f",
+      "name": "EU AI Transparency Evidence Monitor",
+      "description": {
+        "content": "Provider and document evidence for Articles 50 and 53; visibility and review progress remain explicitly separate from conformity.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "bb6612cc-8166-4425-a32c-5badb3c94610",
+          "name": "Full index — EU AI Transparency Evidence Monitor",
+          "request": {
+            "name": "Full index — EU AI Transparency Evidence Monitor",
+            "description": {
+              "content": "Provider and document evidence for Articles 50 and 53; visibility and review progress remain explicitly separate from conformity.\n\nAttribution: i6eal evidence monitor based on AI Office registers and linked provider sources.\n\nReuse: Official register entries and provider documents retain their respective rights. i6eal publishes only metadata, review states and links, not archived document bodies.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-transparenznachweis-monitor",
+                "index.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "2770d857-7f16-4261-9a16-ca153049123e",
+              "name": "Full index of EU AI Transparency Evidence Monitor.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-transparenznachweis-monitor",
+                    "index.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"schemaVersion\": \"string\",\n  \"generatedAt\": \"1984-05-24T16:45:46.634Z\",\n  \"trackingSince\": \"string\",\n  \"methodology\": {},\n  \"downloads\": {\n    \"key_0\": \"string\",\n    \"key_1\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "f6b57ab1-9ba5-47e4-a995-ce34a5edb000",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-transparenznachweis-monitor",
+                    "index.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "befe2ea3-3cab-4f11-b530-0cf267b3b1c7",
+          "name": "Providers — EU AI Transparency Evidence Monitor",
+          "request": {
+            "name": "Providers — EU AI Transparency Evidence Monitor",
+            "description": {
+              "content": "Provider and document evidence for Articles 50 and 53; visibility and review progress remain explicitly separate from conformity.\n\nAttribution: i6eal evidence monitor based on AI Office registers and linked provider sources.\n\nReuse: Official register entries and provider documents retain their respective rights. i6eal publishes only metadata, review states and links, not archived document bodies.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-transparenznachweis-monitor",
+                "providers.csv"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/csv"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "fee2b5a3-092b-4ab1-8be6-08bc36e7631b",
+              "name": "Providers of EU AI Transparency Evidence Monitor.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-transparenznachweis-monitor",
+                    "providers.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/csv"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/csv"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "8f5858a2-781a-4139-b409-acc196fe91f9",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-transparenznachweis-monitor",
+                    "providers.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "da652c7c-80f5-48c6-9444-57a0e18bffae",
+          "name": "Evidence — EU AI Transparency Evidence Monitor",
+          "request": {
+            "name": "Evidence — EU AI Transparency Evidence Monitor",
+            "description": {
+              "content": "Provider and document evidence for Articles 50 and 53; visibility and review progress remain explicitly separate from conformity.\n\nAttribution: i6eal evidence monitor based on AI Office registers and linked provider sources.\n\nReuse: Official register entries and provider documents retain their respective rights. i6eal publishes only metadata, review states and links, not archived document bodies.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-transparenznachweis-monitor",
+                "evidence.csv"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/csv"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ec1bd866-c690-490c-bdf7-425984045e8f",
+              "name": "Evidence of EU AI Transparency Evidence Monitor.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-transparenznachweis-monitor",
+                    "evidence.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/csv"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/csv"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "f069bd4b-12e7-4085-8388-48dff5bc0791",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-transparenznachweis-monitor",
+                    "evidence.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "06d4e731-9df5-4ebd-b06b-f0b4e16f2a74",
+          "name": "Change feed — EU AI Transparency Evidence Monitor",
+          "request": {
+            "name": "Change feed — EU AI Transparency Evidence Monitor",
+            "description": {
+              "content": "Provider and document evidence for Articles 50 and 53; visibility and review progress remain explicitly separate from conformity.\n\nAttribution: i6eal evidence monitor based on AI Office registers and linked provider sources.\n\nReuse: Official register entries and provider documents retain their respective rights. i6eal publishes only metadata, review states and links, not archived document bodies.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-transparenznachweis-monitor",
+                "feed.atom"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/atom+xml"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f95068ab-e57d-47df-84ec-d7852bc36124",
+              "name": "Change feed of EU AI Transparency Evidence Monitor.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-transparenznachweis-monitor",
+                    "feed.atom"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/atom+xml"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/atom+xml"
+                }
+              ],
+              "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<element>(string)</element>",
+              "cookie": [],
+              "_postman_previewlanguage": "xml"
+            },
+            {
+              "id": "7766a78e-b065-4fb0-b005-1f4118e0e9c4",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-transparenznachweis-monitor",
+                    "feed.atom"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "668cf061-51fe-4d37-9740-b3d015fa9691",
+          "name": "Methodology — EU AI Transparency Evidence Monitor",
+          "request": {
+            "name": "Methodology — EU AI Transparency Evidence Monitor",
+            "description": {
+              "content": "Provider and document evidence for Articles 50 and 53; visibility and review progress remain explicitly separate from conformity.\n\nAttribution: i6eal evidence monitor based on AI Office registers and linked provider sources.\n\nReuse: Official register entries and provider documents retain their respective rights. i6eal publishes only metadata, review states and links, not archived document bodies.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-transparenznachweis-monitor",
+                "methodology.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5133e160-49f5-4cbb-a305-b6710438a67a",
+              "name": "Methodology of EU AI Transparency Evidence Monitor.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-transparenznachweis-monitor",
+                    "methodology.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"key_0\": 3933.0184283792023\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "c930ab0e-51ee-4097-9828-2c4c83f6c51c",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-transparenznachweis-monitor",
+                    "methodology.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://i6eal.de",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "278c31ef-19f7-4f0e-8426-51c3f6e1dff7",
+    "name": "i6eal Open AI Data EU AI Transparency Evidence Monitor API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Open datasets on artificial intelligence in Germany and the EU — public procurement, federal budget lines, case law, supervision, standardisation, medical devices, enforcement and more.\n\n**No authentication, no registration, no rate limit, no quota.** Every endpoint is a static file served from a CDN and answers plain `GET` requests. Cross-origin requests are permitted (`Access-Control-Allow-Origin: *`), so the data can be fetched directly from a browser.\n\nEach dataset publishes a full JSON index, one or more CSV tables, and — where the dataset tracks change over time — an Atom change feed. `methodology.json` states how a dataset is collected and what it does and does not claim.\n\nStart at the [DCAT-AP catalogue](https://i6eal.de/data/catalog/dcat.jsonld) to discover everything programmatically.\n\n### Licensing\n\nThe i6eal compilation, structure and original descriptions are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). This is **not** a blanket licence over the data itself: underlying records remain subject to the rights and reuse terms of each named official source. Every dataset carries its own source list and rights statement — see the per-operation descriptions and `dct:rights` in the catalogue.\n\nFull terms: https://i6eal.de/tools/daten/\n\n### Stability\n\nDistribution URLs are treated as permanent. Payload shapes are versioned per dataset through the `schemaVersion` field in each index.\n\nContact Support:\n Name: i6eal\n Email: ai@i6eal.de",
+      "type": "text/plain"
+    }
+  }
+}

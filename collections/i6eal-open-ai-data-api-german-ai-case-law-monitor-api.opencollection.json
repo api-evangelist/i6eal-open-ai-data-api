@@ -1,0 +1,73 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "i6eal Open AI Data German AI Case-Law Monitor API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "German AI Case-Law Monitor",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Full index — German AI Case-Law Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-rechtsprechungsmonitor/index.json"
+          },
+          "docs": "Observed official federal corpus with decisions, exact passages and a material-change chronicle.\n\nAttribution: i6eal compilation based on the Federal Legal Information API preview.\n\nReuse: Decision texts and metadata remain subject to the official preview corpus terms; coverage is incomplete."
+        },
+        {
+          "info": {
+            "name": "Decisions — German AI Case-Law Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-rechtsprechungsmonitor/decisions.csv"
+          },
+          "docs": "Observed official federal corpus with decisions, exact passages and a material-change chronicle.\n\nAttribution: i6eal compilation based on the Federal Legal Information API preview.\n\nReuse: Decision texts and metadata remain subject to the official preview corpus terms; coverage is incomplete."
+        },
+        {
+          "info": {
+            "name": "Passages — German AI Case-Law Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-rechtsprechungsmonitor/passages.csv"
+          },
+          "docs": "Observed official federal corpus with decisions, exact passages and a material-change chronicle.\n\nAttribution: i6eal compilation based on the Federal Legal Information API preview.\n\nReuse: Decision texts and metadata remain subject to the official preview corpus terms; coverage is incomplete."
+        },
+        {
+          "info": {
+            "name": "Change feed — German AI Case-Law Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-rechtsprechungsmonitor/atom.xml"
+          },
+          "docs": "Observed official federal corpus with decisions, exact passages and a material-change chronicle.\n\nAttribution: i6eal compilation based on the Federal Legal Information API preview.\n\nReuse: Decision texts and metadata remain subject to the official preview corpus terms; coverage is incomplete."
+        },
+        {
+          "info": {
+            "name": "Methodology — German AI Case-Law Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-rechtsprechungsmonitor/methodology.json"
+          },
+          "docs": "Observed official federal corpus with decisions, exact passages and a material-change chronicle.\n\nAttribution: i6eal compilation based on the Federal Legal Information API preview.\n\nReuse: Decision texts and metadata remain subject to the official preview corpus terms; coverage is incomplete."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

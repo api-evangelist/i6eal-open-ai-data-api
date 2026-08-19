@@ -1,0 +1,662 @@
+{
+  "item": [
+    {
+      "id": "30ca6349-056d-4d7b-b444-161e8b8f0ddb",
+      "name": "German & EU AI Adoption Atlas",
+      "description": {
+        "content": "Official Eurostat observations of AI adoption by enterprises and individuals; statistical universes remain separate.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "44b6b811-40a8-4818-aacb-7fe49fc773ed",
+          "name": "Full index — German & EU AI Adoption Atlas",
+          "request": {
+            "name": "Full index — German & EU AI Adoption Atlas",
+            "description": {
+              "content": "Official Eurostat observations of AI adoption by enterprises and individuals; statistical universes remain separate.\n\nAttribution: i6eal compilation based on Eurostat datasets with supplementary Destatis validation.\n\nReuse: Eurostat data is governed by the linked Eurostat copyright notice; supplementary Destatis data retains its source terms.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-nutzungsatlas",
+                "index.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "499dd103-7240-4832-b548-c2e05e606c8a",
+              "name": "Full index of German & EU AI Adoption Atlas.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-nutzungsatlas",
+                    "index.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"schemaVersion\": \"string\",\n  \"generatedAt\": \"1992-09-03T02:35:36.122Z\",\n  \"trackingSince\": \"string\",\n  \"methodology\": {},\n  \"downloads\": {\n    \"key_0\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "fda0bfec-1339-43cb-bd94-05a3bed12dec",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-nutzungsatlas",
+                    "index.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "83d5c00c-0703-4a38-9e86-da3e23c97750",
+          "name": "Country comparison — German & EU AI Adoption Atlas",
+          "request": {
+            "name": "Country comparison — German & EU AI Adoption Atlas",
+            "description": {
+              "content": "Official Eurostat observations of AI adoption by enterprises and individuals; statistical universes remain separate.\n\nAttribution: i6eal compilation based on Eurostat datasets with supplementary Destatis validation.\n\nReuse: Eurostat data is governed by the linked Eurostat copyright notice; supplementary Destatis data retains its source terms.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-nutzungsatlas",
+                "countries.csv"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/csv"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "4b828f6b-ee45-459b-a141-0c2574d2b6cc",
+              "name": "Country comparison of German & EU AI Adoption Atlas.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-nutzungsatlas",
+                    "countries.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/csv"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/csv"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "88c8fb30-8209-4380-85b0-e80eb3954abb",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-nutzungsatlas",
+                    "countries.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c9853c39-da13-49ed-aa1a-656cfec84c64",
+          "name": "Observations — German & EU AI Adoption Atlas",
+          "request": {
+            "name": "Observations — German & EU AI Adoption Atlas",
+            "description": {
+              "content": "Official Eurostat observations of AI adoption by enterprises and individuals; statistical universes remain separate.\n\nAttribution: i6eal compilation based on Eurostat datasets with supplementary Destatis validation.\n\nReuse: Eurostat data is governed by the linked Eurostat copyright notice; supplementary Destatis data retains its source terms.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-nutzungsatlas",
+                "observations.csv"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/csv"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f17239d8-7469-41e0-af5f-f9d5e05d618b",
+              "name": "Observations of German & EU AI Adoption Atlas.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-nutzungsatlas",
+                    "observations.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/csv"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/csv"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "c26c5347-41b3-40e8-b14a-009d06c0663d",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-nutzungsatlas",
+                    "observations.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "7d220134-ed6c-4c73-ace1-1d3639a86d57",
+          "name": "Revisions — German & EU AI Adoption Atlas",
+          "request": {
+            "name": "Revisions — German & EU AI Adoption Atlas",
+            "description": {
+              "content": "Official Eurostat observations of AI adoption by enterprises and individuals; statistical universes remain separate.\n\nAttribution: i6eal compilation based on Eurostat datasets with supplementary Destatis validation.\n\nReuse: Eurostat data is governed by the linked Eurostat copyright notice; supplementary Destatis data retains its source terms.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-nutzungsatlas",
+                "revisions.csv"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/csv"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "927deeb0-ef9c-49c4-bfb1-f8f8c74cacfd",
+              "name": "Revisions of German & EU AI Adoption Atlas.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-nutzungsatlas",
+                    "revisions.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/csv"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/csv"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "f2163d25-0647-4c92-9913-5a32c12a3a22",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-nutzungsatlas",
+                    "revisions.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "545e6d1f-536e-4159-856b-4207b42f6453",
+          "name": "Change feed — German & EU AI Adoption Atlas",
+          "request": {
+            "name": "Change feed — German & EU AI Adoption Atlas",
+            "description": {
+              "content": "Official Eurostat observations of AI adoption by enterprises and individuals; statistical universes remain separate.\n\nAttribution: i6eal compilation based on Eurostat datasets with supplementary Destatis validation.\n\nReuse: Eurostat data is governed by the linked Eurostat copyright notice; supplementary Destatis data retains its source terms.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-nutzungsatlas",
+                "feed.atom"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/atom+xml"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f0cfbfbb-66b3-47e6-ad0f-963fb8a52c03",
+              "name": "Change feed of German & EU AI Adoption Atlas.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-nutzungsatlas",
+                    "feed.atom"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/atom+xml"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/atom+xml"
+                }
+              ],
+              "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<element>(string)</element>",
+              "cookie": [],
+              "_postman_previewlanguage": "xml"
+            },
+            {
+              "id": "5df3f116-5a19-446a-a1d5-6d2adba78fca",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-nutzungsatlas",
+                    "feed.atom"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "e33a2c90-5117-4aba-bd7f-9be248741d03",
+          "name": "Methodology — German & EU AI Adoption Atlas",
+          "request": {
+            "name": "Methodology — German & EU AI Adoption Atlas",
+            "description": {
+              "content": "Official Eurostat observations of AI adoption by enterprises and individuals; statistical universes remain separate.\n\nAttribution: i6eal compilation based on Eurostat datasets with supplementary Destatis validation.\n\nReuse: Eurostat data is governed by the linked Eurostat copyright notice; supplementary Destatis data retains its source terms.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-nutzungsatlas",
+                "methodology.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ff6dc4e6-f899-48d8-bc50-0f9c5a77ce90",
+              "name": "Methodology of German & EU AI Adoption Atlas.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-nutzungsatlas",
+                    "methodology.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"key_0\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "d6b8124e-4158-480d-bbc2-bb37fdc0cfe2",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-nutzungsatlas",
+                    "methodology.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://i6eal.de",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "64c1be6f-53b8-428d-a44f-ec84731763d0",
+    "name": "i6eal Open AI Data German & EU AI Adoption Atlas API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Open datasets on artificial intelligence in Germany and the EU — public procurement, federal budget lines, case law, supervision, standardisation, medical devices, enforcement and more.\n\n**No authentication, no registration, no rate limit, no quota.** Every endpoint is a static file served from a CDN and answers plain `GET` requests. Cross-origin requests are permitted (`Access-Control-Allow-Origin: *`), so the data can be fetched directly from a browser.\n\nEach dataset publishes a full JSON index, one or more CSV tables, and — where the dataset tracks change over time — an Atom change feed. `methodology.json` states how a dataset is collected and what it does and does not claim.\n\nStart at the [DCAT-AP catalogue](https://i6eal.de/data/catalog/dcat.jsonld) to discover everything programmatically.\n\n### Licensing\n\nThe i6eal compilation, structure and original descriptions are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). This is **not** a blanket licence over the data itself: underlying records remain subject to the rights and reuse terms of each named official source. Every dataset carries its own source list and rights statement — see the per-operation descriptions and `dct:rights` in the catalogue.\n\nFull terms: https://i6eal.de/tools/daten/\n\n### Stability\n\nDistribution URLs are treated as permanent. Payload shapes are versioned per dataset through the `schemaVersion` field in each index.\n\nContact Support:\n Name: i6eal\n Email: ai@i6eal.de",
+      "type": "text/plain"
+    }
+  }
+}

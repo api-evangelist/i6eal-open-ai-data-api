@@ -1,0 +1,662 @@
+{
+  "item": [
+    {
+      "id": "d162aba7-a7b7-424e-b52d-f56559c40273",
+      "name": "AI Enforcement Monitor Germany & EU",
+      "description": {
+        "content": "Officially published AI-related investigations, orders, fines and remedies with separate procedural stages and exact technology evidence.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "aa8e3324-1b4d-47b8-bbd3-a94d82a4fae1",
+          "name": "Full index — AI Enforcement Monitor Germany & EU",
+          "request": {
+            "name": "Full index — AI Enforcement Monitor Germany & EU",
+            "description": {
+              "content": "Officially published AI-related investigations, orders, fines and remedies with separate procedural stages and exact technology evidence.\n\nAttribution: i6eal compilation of officially published AI-related enforcement actions with primary sources.\n\nReuse: The metadata compilation is licensed under CC BY 4.0. Official source texts and documents remain subject to the notices of their respective primary sources.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-durchsetzungsmonitor",
+                "index.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "08ec774e-11d3-4bc4-a8bd-ede0c710789b",
+              "name": "Full index of AI Enforcement Monitor Germany & EU.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-durchsetzungsmonitor",
+                    "index.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"schemaVersion\": \"string\",\n  \"generatedAt\": \"1956-07-01T02:03:45.344Z\",\n  \"trackingSince\": \"string\",\n  \"methodology\": {},\n  \"downloads\": {\n    \"key_0\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "bb30690a-8c9d-4451-a883-246c2117aac4",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-durchsetzungsmonitor",
+                    "index.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "544fcffc-52e6-414e-8991-f3fcc13a4c8e",
+          "name": "Actions — AI Enforcement Monitor Germany & EU",
+          "request": {
+            "name": "Actions — AI Enforcement Monitor Germany & EU",
+            "description": {
+              "content": "Officially published AI-related investigations, orders, fines and remedies with separate procedural stages and exact technology evidence.\n\nAttribution: i6eal compilation of officially published AI-related enforcement actions with primary sources.\n\nReuse: The metadata compilation is licensed under CC BY 4.0. Official source texts and documents remain subject to the notices of their respective primary sources.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-durchsetzungsmonitor",
+                "actions.csv"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/csv"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c37ebd12-5b8c-4fdd-b7fa-ff2da489f20b",
+              "name": "Actions of AI Enforcement Monitor Germany & EU.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-durchsetzungsmonitor",
+                    "actions.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/csv"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/csv"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "1bf27d99-85e6-49fe-b750-7ba91eeb9d72",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-durchsetzungsmonitor",
+                    "actions.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "21aa3b33-75ab-4171-8c85-eb2f056ec158",
+          "name": "Chronicle — AI Enforcement Monitor Germany & EU",
+          "request": {
+            "name": "Chronicle — AI Enforcement Monitor Germany & EU",
+            "description": {
+              "content": "Officially published AI-related investigations, orders, fines and remedies with separate procedural stages and exact technology evidence.\n\nAttribution: i6eal compilation of officially published AI-related enforcement actions with primary sources.\n\nReuse: The metadata compilation is licensed under CC BY 4.0. Official source texts and documents remain subject to the notices of their respective primary sources.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-durchsetzungsmonitor",
+                "events.csv"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/csv"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9731d6b0-d98b-4490-a8c0-f4440ac6e5bf",
+              "name": "Chronicle of AI Enforcement Monitor Germany & EU.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-durchsetzungsmonitor",
+                    "events.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/csv"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/csv"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "6074c4a0-e6dd-425f-97c2-c2edfac2f6e2",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-durchsetzungsmonitor",
+                    "events.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "73c7d13e-3c4f-49c1-b335-5421c5e80f10",
+          "name": "Official evidence — AI Enforcement Monitor Germany & EU",
+          "request": {
+            "name": "Official evidence — AI Enforcement Monitor Germany & EU",
+            "description": {
+              "content": "Officially published AI-related investigations, orders, fines and remedies with separate procedural stages and exact technology evidence.\n\nAttribution: i6eal compilation of officially published AI-related enforcement actions with primary sources.\n\nReuse: The metadata compilation is licensed under CC BY 4.0. Official source texts and documents remain subject to the notices of their respective primary sources.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-durchsetzungsmonitor",
+                "evidence.csv"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/csv"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b3e990ed-df56-4f68-baa9-a3e388bd5bf9",
+              "name": "Official evidence of AI Enforcement Monitor Germany & EU.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-durchsetzungsmonitor",
+                    "evidence.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/csv"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/csv"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "72f7354d-eb9f-4f3d-a8fb-461c238ea618",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-durchsetzungsmonitor",
+                    "evidence.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "77564f72-3daa-43d1-a136-a258d7d06b53",
+          "name": "Change feed — AI Enforcement Monitor Germany & EU",
+          "request": {
+            "name": "Change feed — AI Enforcement Monitor Germany & EU",
+            "description": {
+              "content": "Officially published AI-related investigations, orders, fines and remedies with separate procedural stages and exact technology evidence.\n\nAttribution: i6eal compilation of officially published AI-related enforcement actions with primary sources.\n\nReuse: The metadata compilation is licensed under CC BY 4.0. Official source texts and documents remain subject to the notices of their respective primary sources.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-durchsetzungsmonitor",
+                "feed.atom"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/atom+xml"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "68363ea4-b7c5-46cc-b74d-720b6483e412",
+              "name": "Change feed of AI Enforcement Monitor Germany & EU.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-durchsetzungsmonitor",
+                    "feed.atom"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/atom+xml"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/atom+xml"
+                }
+              ],
+              "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<element>(string)</element>",
+              "cookie": [],
+              "_postman_previewlanguage": "xml"
+            },
+            {
+              "id": "ef53eafe-295b-4853-953b-c81558ea9cd0",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-durchsetzungsmonitor",
+                    "feed.atom"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "50a232af-8761-45e5-b725-43c6205a4290",
+          "name": "Methodology — AI Enforcement Monitor Germany & EU",
+          "request": {
+            "name": "Methodology — AI Enforcement Monitor Germany & EU",
+            "description": {
+              "content": "Officially published AI-related investigations, orders, fines and remedies with separate procedural stages and exact technology evidence.\n\nAttribution: i6eal compilation of officially published AI-related enforcement actions with primary sources.\n\nReuse: The metadata compilation is licensed under CC BY 4.0. Official source texts and documents remain subject to the notices of their respective primary sources.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-durchsetzungsmonitor",
+                "methodology.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "e3e5de2a-04be-41bf-8e57-38a21e69d553",
+              "name": "Methodology of AI Enforcement Monitor Germany & EU.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-durchsetzungsmonitor",
+                    "methodology.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"key_0\": 2606.6903008247687,\n  \"key_1\": 6889.014227603646,\n  \"key_2\": 2194,\n  \"key_3\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "ceae0431-3cc1-4eab-9011-2b5a98f33b9b",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-durchsetzungsmonitor",
+                    "methodology.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://i6eal.de",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "f6aa2317-4028-4d45-831f-971db1d06fed",
+    "name": "i6eal Open AI Data AI Enforcement Monitor Germany & EU API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Open datasets on artificial intelligence in Germany and the EU — public procurement, federal budget lines, case law, supervision, standardisation, medical devices, enforcement and more.\n\n**No authentication, no registration, no rate limit, no quota.** Every endpoint is a static file served from a CDN and answers plain `GET` requests. Cross-origin requests are permitted (`Access-Control-Allow-Origin: *`), so the data can be fetched directly from a browser.\n\nEach dataset publishes a full JSON index, one or more CSV tables, and — where the dataset tracks change over time — an Atom change feed. `methodology.json` states how a dataset is collected and what it does and does not claim.\n\nStart at the [DCAT-AP catalogue](https://i6eal.de/data/catalog/dcat.jsonld) to discover everything programmatically.\n\n### Licensing\n\nThe i6eal compilation, structure and original descriptions are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). This is **not** a blanket licence over the data itself: underlying records remain subject to the rights and reuse terms of each named official source. Every dataset carries its own source list and rights statement — see the per-operation descriptions and `dct:rights` in the catalogue.\n\nFull terms: https://i6eal.de/tools/daten/\n\n### Stability\n\nDistribution URLs are treated as permanent. Payload shapes are versioned per dataset through the `schemaVersion` field in each index.\n\nContact Support:\n Name: i6eal\n Email: ai@i6eal.de",
+      "type": "text/plain"
+    }
+  }
+}

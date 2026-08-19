@@ -1,0 +1,51 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "i6eal Open AI Data German State AI Evidence Layers API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "German State AI Evidence Layers",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Full index — German State AI Evidence Layers",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-laender-lagebild/index.json"
+          },
+          "docs": "State dossiers assembled from three separate evidence layers: infrastructure, public systems and procurement signals.\n\nAttribution: i6eal state dossiers assembled from BNetzA, MaKI and official procurement data.\n\nReuse: The three evidence layers have separate rights: broadband data identifies DL-DE/BY-2.0, procurement sources have their own terms, and MaKI redistribution has not been verified."
+        },
+        {
+          "info": {
+            "name": "Methodology — German State AI Evidence Layers",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-laender-lagebild/methodology.json"
+          },
+          "docs": "State dossiers assembled from three separate evidence layers: infrastructure, public systems and procurement signals.\n\nAttribution: i6eal state dossiers assembled from BNetzA, MaKI and official procurement data.\n\nReuse: The three evidence layers have separate rights: broadband data identifies DL-DE/BY-2.0, procurement sources have their own terms, and MaKI redistribution has not been verified."
+        },
+        {
+          "info": {
+            "name": "Data schema — German State AI Evidence Layers",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-laender-lagebild/schema.json"
+          },
+          "docs": "State dossiers assembled from three separate evidence layers: infrastructure, public systems and procurement signals.\n\nAttribution: i6eal state dossiers assembled from BNetzA, MaKI and official procurement data.\n\nReuse: The three evidence layers have separate rights: broadband data identifies DL-DE/BY-2.0, procurement sources have their own terms, and MaKI redistribution has not been verified."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

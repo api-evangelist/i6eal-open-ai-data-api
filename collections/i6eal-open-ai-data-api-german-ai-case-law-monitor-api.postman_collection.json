@@ -1,0 +1,557 @@
+{
+  "item": [
+    {
+      "id": "cb746453-e390-4a7a-8555-fdb90036a58d",
+      "name": "German AI Case-Law Monitor",
+      "description": {
+        "content": "Observed official federal corpus with decisions, exact passages and a material-change chronicle.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "1b8bdc40-6f3f-4f8f-b99d-092d9c23244f",
+          "name": "Full index — German AI Case-Law Monitor",
+          "request": {
+            "name": "Full index — German AI Case-Law Monitor",
+            "description": {
+              "content": "Observed official federal corpus with decisions, exact passages and a material-change chronicle.\n\nAttribution: i6eal compilation based on the Federal Legal Information API preview.\n\nReuse: Decision texts and metadata remain subject to the official preview corpus terms; coverage is incomplete.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-rechtsprechungsmonitor",
+                "index.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "56216bce-4151-480d-b620-253a7c37d5e5",
+              "name": "Full index of German AI Case-Law Monitor.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-rechtsprechungsmonitor",
+                    "index.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"schemaVersion\": \"string\",\n  \"generatedAt\": \"1981-11-30T09:18:32.214Z\",\n  \"trackingSince\": \"string\",\n  \"methodology\": {},\n  \"downloads\": {\n    \"key_0\": \"string\",\n    \"key_1\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "5e1fa85a-8431-45cc-9ce2-00b8cd1009ca",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-rechtsprechungsmonitor",
+                    "index.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "5a1a8b92-eeb7-46eb-8585-1be986380435",
+          "name": "Decisions — German AI Case-Law Monitor",
+          "request": {
+            "name": "Decisions — German AI Case-Law Monitor",
+            "description": {
+              "content": "Observed official federal corpus with decisions, exact passages and a material-change chronicle.\n\nAttribution: i6eal compilation based on the Federal Legal Information API preview.\n\nReuse: Decision texts and metadata remain subject to the official preview corpus terms; coverage is incomplete.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-rechtsprechungsmonitor",
+                "decisions.csv"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/csv"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "e429f0d0-f307-4637-b317-479ad55c6315",
+              "name": "Decisions of German AI Case-Law Monitor.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-rechtsprechungsmonitor",
+                    "decisions.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/csv"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/csv"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "f91c5b91-8794-45a1-ae3e-49e0bb376b2c",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-rechtsprechungsmonitor",
+                    "decisions.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "9e034394-10f7-49d7-9923-d816c15e8343",
+          "name": "Passages — German AI Case-Law Monitor",
+          "request": {
+            "name": "Passages — German AI Case-Law Monitor",
+            "description": {
+              "content": "Observed official federal corpus with decisions, exact passages and a material-change chronicle.\n\nAttribution: i6eal compilation based on the Federal Legal Information API preview.\n\nReuse: Decision texts and metadata remain subject to the official preview corpus terms; coverage is incomplete.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-rechtsprechungsmonitor",
+                "passages.csv"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/csv"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f7c29f33-fff4-4109-a84d-608cdfecce38",
+              "name": "Passages of German AI Case-Law Monitor.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-rechtsprechungsmonitor",
+                    "passages.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/csv"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/csv"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "35d1b64e-4439-4476-97d2-8d28e09a2762",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-rechtsprechungsmonitor",
+                    "passages.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "6a5cd049-e1b6-468b-8f5c-9f8c1141b318",
+          "name": "Change feed — German AI Case-Law Monitor",
+          "request": {
+            "name": "Change feed — German AI Case-Law Monitor",
+            "description": {
+              "content": "Observed official federal corpus with decisions, exact passages and a material-change chronicle.\n\nAttribution: i6eal compilation based on the Federal Legal Information API preview.\n\nReuse: Decision texts and metadata remain subject to the official preview corpus terms; coverage is incomplete.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-rechtsprechungsmonitor",
+                "atom.xml"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/atom+xml"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "0d9f79ef-919d-461c-ab60-7323f1db9e12",
+              "name": "Change feed of German AI Case-Law Monitor.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-rechtsprechungsmonitor",
+                    "atom.xml"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/atom+xml"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/atom+xml"
+                }
+              ],
+              "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<element>(string)</element>",
+              "cookie": [],
+              "_postman_previewlanguage": "xml"
+            },
+            {
+              "id": "1dddfcd5-33c9-4f6b-83a1-ae7bdff47354",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-rechtsprechungsmonitor",
+                    "atom.xml"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "ee22df49-39b1-455f-9c57-b9a1ab4b2e3e",
+          "name": "Methodology — German AI Case-Law Monitor",
+          "request": {
+            "name": "Methodology — German AI Case-Law Monitor",
+            "description": {
+              "content": "Observed official federal corpus with decisions, exact passages and a material-change chronicle.\n\nAttribution: i6eal compilation based on the Federal Legal Information API preview.\n\nReuse: Decision texts and metadata remain subject to the official preview corpus terms; coverage is incomplete.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-rechtsprechungsmonitor",
+                "methodology.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "e6e548de-cfe4-4d12-b226-742fee6d06dc",
+              "name": "Methodology of German AI Case-Law Monitor.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-rechtsprechungsmonitor",
+                    "methodology.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"key_0\": 1657.9975666850012,\n  \"key_1\": true\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "085d46c1-fff4-4257-8b28-fe4b27ff081e",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-rechtsprechungsmonitor",
+                    "methodology.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://i6eal.de",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "29d4bcad-0b27-4f5c-8d0f-d6cc1db25e31",
+    "name": "i6eal Open AI Data German AI Case-Law Monitor API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Open datasets on artificial intelligence in Germany and the EU — public procurement, federal budget lines, case law, supervision, standardisation, medical devices, enforcement and more.\n\n**No authentication, no registration, no rate limit, no quota.** Every endpoint is a static file served from a CDN and answers plain `GET` requests. Cross-origin requests are permitted (`Access-Control-Allow-Origin: *`), so the data can be fetched directly from a browser.\n\nEach dataset publishes a full JSON index, one or more CSV tables, and — where the dataset tracks change over time — an Atom change feed. `methodology.json` states how a dataset is collected and what it does and does not claim.\n\nStart at the [DCAT-AP catalogue](https://i6eal.de/data/catalog/dcat.jsonld) to discover everything programmatically.\n\n### Licensing\n\nThe i6eal compilation, structure and original descriptions are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). This is **not** a blanket licence over the data itself: underlying records remain subject to the rights and reuse terms of each named official source. Every dataset carries its own source list and rights statement — see the per-operation descriptions and `dct:rights` in the catalogue.\n\nFull terms: https://i6eal.de/tools/daten/\n\n### Stability\n\nDistribution URLs are treated as permanent. Payload shapes are versioned per dataset through the `schemaVersion` field in each index.\n\nContact Support:\n Name: i6eal\n Email: ai@i6eal.de",
+      "type": "text/plain"
+    }
+  }
+}

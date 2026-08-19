@@ -1,0 +1,62 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "i6eal Open AI Data German AI Evidence Network API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "German AI Evidence Network",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Full index — German AI Evidence Network",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-evidenznetz/index.json"
+          },
+          "docs": "Source-evidenced edges between actors, projects, outputs, systems, repositories, packages, procurements and budget titles.\n\nAttribution: i6eal evidence network assembled from separately identified public datasets.\n\nReuse: The network combines datasets with different or, in some cases, unverified source rights. The referenced source terms remain decisive for every edge."
+        },
+        {
+          "info": {
+            "name": "Entities — German AI Evidence Network",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-evidenznetz/entities.csv"
+          },
+          "docs": "Source-evidenced edges between actors, projects, outputs, systems, repositories, packages, procurements and budget titles.\n\nAttribution: i6eal evidence network assembled from separately identified public datasets.\n\nReuse: The network combines datasets with different or, in some cases, unverified source rights. The referenced source terms remain decisive for every edge."
+        },
+        {
+          "info": {
+            "name": "Evidence edges — German AI Evidence Network",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-evidenznetz/edges.csv"
+          },
+          "docs": "Source-evidenced edges between actors, projects, outputs, systems, repositories, packages, procurements and budget titles.\n\nAttribution: i6eal evidence network assembled from separately identified public datasets.\n\nReuse: The network combines datasets with different or, in some cases, unverified source rights. The referenced source terms remain decisive for every edge."
+        },
+        {
+          "info": {
+            "name": "Methodology — German AI Evidence Network",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-evidenznetz/methodology.json"
+          },
+          "docs": "Source-evidenced edges between actors, projects, outputs, systems, repositories, packages, procurements and budget titles.\n\nAttribution: i6eal evidence network assembled from separately identified public datasets.\n\nReuse: The network combines datasets with different or, in some cases, unverified source rights. The referenced source terms remain decisive for every edge."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

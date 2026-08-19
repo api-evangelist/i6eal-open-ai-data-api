@@ -1,0 +1,347 @@
+{
+  "item": [
+    {
+      "id": "de81505e-11bb-45bf-ac8b-452fa7569903",
+      "name": "German State AI Evidence Layers",
+      "description": {
+        "content": "State dossiers assembled from three separate evidence layers: infrastructure, public systems and procurement signals.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "5a93f42e-33f5-4cc5-af50-88c8eba8d07d",
+          "name": "Full index — German State AI Evidence Layers",
+          "request": {
+            "name": "Full index — German State AI Evidence Layers",
+            "description": {
+              "content": "State dossiers assembled from three separate evidence layers: infrastructure, public systems and procurement signals.\n\nAttribution: i6eal state dossiers assembled from BNetzA, MaKI and official procurement data.\n\nReuse: The three evidence layers have separate rights: broadband data identifies DL-DE/BY-2.0, procurement sources have their own terms, and MaKI redistribution has not been verified.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-laender-lagebild",
+                "index.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9de98423-b74e-4c26-9949-ae540747d64b",
+              "name": "Full index of German State AI Evidence Layers.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-laender-lagebild",
+                    "index.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"schemaVersion\": \"string\",\n  \"generatedAt\": \"1987-10-11T00:31:56.496Z\",\n  \"trackingSince\": \"string\",\n  \"methodology\": {},\n  \"downloads\": {\n    \"key_0\": \"string\",\n    \"key_1\": \"string\",\n    \"key_2\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "9ef760b3-81d9-4bd8-aaf0-f12abee560b5",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-laender-lagebild",
+                    "index.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "91c73b0f-3241-452c-b3fe-d9f65d255965",
+          "name": "Methodology — German State AI Evidence Layers",
+          "request": {
+            "name": "Methodology — German State AI Evidence Layers",
+            "description": {
+              "content": "State dossiers assembled from three separate evidence layers: infrastructure, public systems and procurement signals.\n\nAttribution: i6eal state dossiers assembled from BNetzA, MaKI and official procurement data.\n\nReuse: The three evidence layers have separate rights: broadband data identifies DL-DE/BY-2.0, procurement sources have their own terms, and MaKI redistribution has not been verified.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-laender-lagebild",
+                "methodology.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "7a795763-c8d7-444a-98a1-8cfcb92fea93",
+              "name": "Methodology of German State AI Evidence Layers.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-laender-lagebild",
+                    "methodology.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"key_0\": 3827.581086715751,\n  \"key_1\": \"string\",\n  \"key_2\": 60.60292102954223\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "6311c781-7aa5-48ce-a176-2e7a17cd86f1",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-laender-lagebild",
+                    "methodology.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "7c48064f-729f-40cb-9ade-d982df7e83de",
+          "name": "Data schema — German State AI Evidence Layers",
+          "request": {
+            "name": "Data schema — German State AI Evidence Layers",
+            "description": {
+              "content": "State dossiers assembled from three separate evidence layers: infrastructure, public systems and procurement signals.\n\nAttribution: i6eal state dossiers assembled from BNetzA, MaKI and official procurement data.\n\nReuse: The three evidence layers have separate rights: broadband data identifies DL-DE/BY-2.0, procurement sources have their own terms, and MaKI redistribution has not been verified.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "data",
+                "ki-laender-lagebild",
+                "schema.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5ad1addb-fecf-464e-8107-8f4983397971",
+              "name": "Data schema of German State AI Evidence Layers.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-laender-lagebild",
+                    "schema.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"key_0\": 3827.581086715751,\n  \"key_1\": \"string\",\n  \"key_2\": 60.60292102954223\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "f09562f6-949d-4f8b-86b8-db53ee6bf134",
+              "name": "No distribution exists at this path.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "data",
+                    "ki-laender-lagebild",
+                    "schema.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://i6eal.de",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "5c748538-6fbd-48a0-a68d-3e4351a6cfbd",
+    "name": "i6eal Open AI Data German State AI Evidence Layers API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Open datasets on artificial intelligence in Germany and the EU — public procurement, federal budget lines, case law, supervision, standardisation, medical devices, enforcement and more.\n\n**No authentication, no registration, no rate limit, no quota.** Every endpoint is a static file served from a CDN and answers plain `GET` requests. Cross-origin requests are permitted (`Access-Control-Allow-Origin: *`), so the data can be fetched directly from a browser.\n\nEach dataset publishes a full JSON index, one or more CSV tables, and — where the dataset tracks change over time — an Atom change feed. `methodology.json` states how a dataset is collected and what it does and does not claim.\n\nStart at the [DCAT-AP catalogue](https://i6eal.de/data/catalog/dcat.jsonld) to discover everything programmatically.\n\n### Licensing\n\nThe i6eal compilation, structure and original descriptions are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). This is **not** a blanket licence over the data itself: underlying records remain subject to the rights and reuse terms of each named official source. Every dataset carries its own source list and rights statement — see the per-operation descriptions and `dct:rights` in the catalogue.\n\nFull terms: https://i6eal.de/tools/daten/\n\n### Stability\n\nDistribution URLs are treated as permanent. Payload shapes are versioned per dataset through the `schemaVersion` field in each index.\n\nContact Support:\n Name: i6eal\n Email: ai@i6eal.de",
+      "type": "text/plain"
+    }
+  }
+}

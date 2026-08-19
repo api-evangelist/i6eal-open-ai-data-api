@@ -1,0 +1,95 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "i6eal Open AI Data EU Platform Automation Monitor API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "EU Platform Automation Monitor",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Full index — EU Platform Automation Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/plattformautomationsmonitor/index.json"
+          },
+          "docs": "Monthly DSA statements on automated detection, decision automation and reported restrictions by platform; automation is not relabelled as AI.\n\nAttribution: i6eal analysis of the European Commission DSA Transparency Database monthly aggregated-simple data.\n\nReuse: The DSA Transparency Database is licensed under CC BY 4.0. The i6eal compilation attributes the European Commission and documents each transformation."
+        },
+        {
+          "info": {
+            "name": "Platforms — EU Platform Automation Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/plattformautomationsmonitor/platforms.csv"
+          },
+          "docs": "Monthly DSA statements on automated detection, decision automation and reported restrictions by platform; automation is not relabelled as AI.\n\nAttribution: i6eal analysis of the European Commission DSA Transparency Database monthly aggregated-simple data.\n\nReuse: The DSA Transparency Database is licensed under CC BY 4.0. The i6eal compilation attributes the European Commission and documents each transformation."
+        },
+        {
+          "info": {
+            "name": "Automation flows — EU Platform Automation Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/plattformautomationsmonitor/flows.csv"
+          },
+          "docs": "Monthly DSA statements on automated detection, decision automation and reported restrictions by platform; automation is not relabelled as AI.\n\nAttribution: i6eal analysis of the European Commission DSA Transparency Database monthly aggregated-simple data.\n\nReuse: The DSA Transparency Database is licensed under CC BY 4.0. The i6eal compilation attributes the European Commission and documents each transformation."
+        },
+        {
+          "info": {
+            "name": "Monthly timeline — EU Platform Automation Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/plattformautomationsmonitor/timeline.csv"
+          },
+          "docs": "Monthly DSA statements on automated detection, decision automation and reported restrictions by platform; automation is not relabelled as AI.\n\nAttribution: i6eal analysis of the European Commission DSA Transparency Database monthly aggregated-simple data.\n\nReuse: The DSA Transparency Database is licensed under CC BY 4.0. The i6eal compilation attributes the European Commission and documents each transformation."
+        },
+        {
+          "info": {
+            "name": "Revisions — EU Platform Automation Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/plattformautomationsmonitor/revisions.csv"
+          },
+          "docs": "Monthly DSA statements on automated detection, decision automation and reported restrictions by platform; automation is not relabelled as AI.\n\nAttribution: i6eal analysis of the European Commission DSA Transparency Database monthly aggregated-simple data.\n\nReuse: The DSA Transparency Database is licensed under CC BY 4.0. The i6eal compilation attributes the European Commission and documents each transformation."
+        },
+        {
+          "info": {
+            "name": "Change feed — EU Platform Automation Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/plattformautomationsmonitor/feed.atom"
+          },
+          "docs": "Monthly DSA statements on automated detection, decision automation and reported restrictions by platform; automation is not relabelled as AI.\n\nAttribution: i6eal analysis of the European Commission DSA Transparency Database monthly aggregated-simple data.\n\nReuse: The DSA Transparency Database is licensed under CC BY 4.0. The i6eal compilation attributes the European Commission and documents each transformation."
+        },
+        {
+          "info": {
+            "name": "Methodology — EU Platform Automation Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/plattformautomationsmonitor/methodology.json"
+          },
+          "docs": "Monthly DSA statements on automated detection, decision automation and reported restrictions by platform; automation is not relabelled as AI.\n\nAttribution: i6eal analysis of the European Commission DSA Transparency Database monthly aggregated-simple data.\n\nReuse: The DSA Transparency Database is licensed under CC BY 4.0. The i6eal compilation attributes the European Commission and documents each transformation."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

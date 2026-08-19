@@ -1,0 +1,73 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "i6eal Open AI Data German Federal AI Budget Monitor API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "German Federal AI Budget Monitor",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Full dataset — German Federal AI Budget Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-haushaltsmonitor/index.json"
+          },
+          "docs": "Machine-readable federal budget titles with explicit AI references, keeping appropriations, supplements, actuals and official revisions separate.\n\nAttribution: i6eal compilation based on official German federal budget data.\n\nReuse: The machine-readable budget documents remain subject to the notices and terms of the federal budget portal."
+        },
+        {
+          "info": {
+            "name": "Budget titles — German Federal AI Budget Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-haushaltsmonitor/titles.csv"
+          },
+          "docs": "Machine-readable federal budget titles with explicit AI references, keeping appropriations, supplements, actuals and official revisions separate.\n\nAttribution: i6eal compilation based on official German federal budget data.\n\nReuse: The machine-readable budget documents remain subject to the notices and terms of the federal budget portal."
+        },
+        {
+          "info": {
+            "name": "Time series — German Federal AI Budget Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-haushaltsmonitor/series.csv"
+          },
+          "docs": "Machine-readable federal budget titles with explicit AI references, keeping appropriations, supplements, actuals and official revisions separate.\n\nAttribution: i6eal compilation based on official German federal budget data.\n\nReuse: The machine-readable budget documents remain subject to the notices and terms of the federal budget portal."
+        },
+        {
+          "info": {
+            "name": "Revisions — German Federal AI Budget Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-haushaltsmonitor/revisions.csv"
+          },
+          "docs": "Machine-readable federal budget titles with explicit AI references, keeping appropriations, supplements, actuals and official revisions separate.\n\nAttribution: i6eal compilation based on official German federal budget data.\n\nReuse: The machine-readable budget documents remain subject to the notices and terms of the federal budget portal."
+        },
+        {
+          "info": {
+            "name": "Methodology — German Federal AI Budget Monitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-haushaltsmonitor/methodology.json"
+          },
+          "docs": "Machine-readable federal budget titles with explicit AI references, keeping appropriations, supplements, actuals and official revisions separate.\n\nAttribution: i6eal compilation based on official German federal budget data.\n\nReuse: The machine-readable budget documents remain subject to the notices and terms of the federal budget portal."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

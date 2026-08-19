@@ -1,0 +1,62 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "i6eal Open AI Data German & EU AI Procurement Chronicle API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "German & EU AI Procurement Chronicle",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Full index — German & EU AI Procurement Chronicle",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-auftragschronik/index.json"
+          },
+          "docs": "Official procurement signals as durable procedure chains, separating exactly linked procedures from isolated notices.\n\nAttribution: i6eal compilation based on the German Public Procurement Data Service and TED.\n\nReuse: Procurement records remain subject to the reuse terms of each official source."
+        },
+        {
+          "info": {
+            "name": "Events — German & EU AI Procurement Chronicle",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-auftragschronik/events.csv"
+          },
+          "docs": "Official procurement signals as durable procedure chains, separating exactly linked procedures from isolated notices.\n\nAttribution: i6eal compilation based on the German Public Procurement Data Service and TED.\n\nReuse: Procurement records remain subject to the reuse terms of each official source."
+        },
+        {
+          "info": {
+            "name": "Change feed — German & EU AI Procurement Chronicle",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-auftragschronik/atom.xml"
+          },
+          "docs": "Official procurement signals as durable procedure chains, separating exactly linked procedures from isolated notices.\n\nAttribution: i6eal compilation based on the German Public Procurement Data Service and TED.\n\nReuse: Procurement records remain subject to the reuse terms of each official source."
+        },
+        {
+          "info": {
+            "name": "Methodology — German & EU AI Procurement Chronicle",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://i6eal.de/data/ki-auftragschronik/methodology.json"
+          },
+          "docs": "Official procurement signals as durable procedure chains, separating exactly linked procedures from isolated notices.\n\nAttribution: i6eal compilation based on the German Public Procurement Data Service and TED.\n\nReuse: Procurement records remain subject to the reuse terms of each official source."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
