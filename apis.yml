@@ -430,6 +430,8 @@ generated:
   confidence: 95
   at: '2026-08-05T13:36:22.361Z'
 common:
+- type: APIsJSON
+  url: https://i6eal.de/apis.json
 - type: MCPServer
   url: mcp/i6eal-open-ai-data-api-mcp.yml
 - type: DomainSecurity
