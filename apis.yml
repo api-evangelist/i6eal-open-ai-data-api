@@ -8,6 +8,18 @@ description: >-
   JSON-LD catalogue of 16 datasets and 82 distributions, a provider-published llms.txt, and per-dataset Atom change
   feeds. No authentication, no registration, no published rate limit; CORS is open and responses carry ETag validators.
   The i6eal compilation is CC BY 4.0; underlying official records retain their source-specific rights.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://i6eal.de/publisher-logo.png
 url: https://raw.githubusercontent.com/api-evangelist/i6eal-open-ai-data-api/refs/heads/main/apis.yml
 created: '2026-08-05'
