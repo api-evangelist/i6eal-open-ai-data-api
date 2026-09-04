@@ -20,6 +20,19 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: open
+  trial: false
+  try_now: false
+  public: true
+  label: Open access
+  confidence: low
+  source:
+  - authentication
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://i6eal.de/publisher-logo.png
 url: https://raw.githubusercontent.com/api-evangelist/i6eal-open-ai-data-api/refs/heads/main/apis.yml
 created: '2026-08-05'
@@ -444,8 +457,9 @@ generated:
 common:
 - type: APIsJSON
   url: https://i6eal.de/apis.json
-- type: MCPServer
+- type: X-MCPServerCandidate
   url: mcp/i6eal-open-ai-data-api-mcp.yml
+  note: 'Renamed from MCPServer 2026-09-03 (roadmap#247): the manifest self-describes as status: candidate — a tool list derived from the published API contracts, not an existing server. The scorer already read the manifest and reported mcp_server correctly; the MCPServer type was crediting the artifact-type surfaces with a server that does not exist.'
 - type: DomainSecurity
   url: security/i6eal-open-ai-data-api-domain-security.yml
 - type: Website
