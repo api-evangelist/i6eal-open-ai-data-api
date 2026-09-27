@@ -39,14 +39,14 @@ paths:
         '404':
           $ref: '#/components/responses/NotFound'
 components:
-  responses:
-    NotFound:
-      description: No distribution exists at this path.
   schemas:
     DcatCatalogue:
       type: object
       description: DCAT-AP catalogue in JSON-LD.
       additionalProperties: true
+  responses:
+    NotFound:
+      description: No distribution exists at this path.
 externalDocs:
   description: Open data hub, licensing and citation guidance
   url: https://i6eal.de/tools/daten/
