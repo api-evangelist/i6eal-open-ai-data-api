@@ -93,6 +93,10 @@ paths:
           $ref: '#/components/responses/NotFound'
 components:
   schemas:
+    DatasetResource:
+      type: object
+      description: A dataset-specific JSON document. See the dataset entry in the DCAT catalogue for its shape.
+      additionalProperties: true
     DatasetIndex:
       type: object
       description: Every dataset index shares the envelope below. The remaining top-level keys are dataset-specific — consult the `methodology` block and the dataset entry in the DCAT catalogue.
@@ -119,10 +123,6 @@ components:
           additionalProperties:
             type: string
           description: Named paths of sibling distributions published with this dataset.
-      additionalProperties: true
-    DatasetResource:
-      type: object
-      description: A dataset-specific JSON document. See the dataset entry in the DCAT catalogue for its shape.
       additionalProperties: true
   responses:
     NotFound:
