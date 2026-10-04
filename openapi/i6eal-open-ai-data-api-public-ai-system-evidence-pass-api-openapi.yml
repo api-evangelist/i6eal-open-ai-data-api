@@ -144,6 +144,9 @@ components:
       type: object
       description: A dataset-specific JSON document. See the dataset entry in the DCAT catalogue for its shape.
       additionalProperties: true
+    CsvTable:
+      type: string
+      description: RFC 4180 CSV with a header row, UTF-8 encoded.
     DatasetIndex:
       type: object
       description: Every dataset index shares the envelope below. The remaining top-level keys are dataset-specific — consult the `methodology` block and the dataset entry in the DCAT catalogue.
@@ -171,9 +174,6 @@ components:
             type: string
           description: Named paths of sibling distributions published with this dataset.
       additionalProperties: true
-    CsvTable:
-      type: string
-      description: RFC 4180 CSV with a header row, UTF-8 encoded.
   responses:
     NotFound:
       description: No distribution exists at this path.
