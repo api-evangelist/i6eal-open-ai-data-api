@@ -36,7 +36,7 @@ accessModel:
 image: https://i6eal.de/publisher-logo.png
 url: https://raw.githubusercontent.com/api-evangelist/i6eal-open-ai-data-api/refs/heads/main/apis.yml
 created: '2026-08-05'
-modified: '2026-08-09'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 tags:
   - Artificial Intelligence
@@ -438,6 +438,8 @@ generated:
   confidence: 95
   at: '2026-08-05T13:36:22.361Z'
 common:
+- url: https://i6eal.de/newsroom/rss.xml
+  type: BlogRSS
 - type: APIsJSON
   url: https://i6eal.de/apis.json
 - type: X-MCPServerCandidate
