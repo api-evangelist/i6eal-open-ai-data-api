@@ -130,3 +130,9 @@ components:
 externalDocs:
   description: Open data hub, licensing and citation guidance
   url: https://i6eal.de/tools/daten/
+x-provenance:
+  method: harvested
+  publisher: i6eal Open AI Data API
+  source: https://i6eal.de/openapi.json
+  note: split by refine-openapis from the provider's own published document, verified by fetch (openapi/_original/*.fetch.json);
+    stamped by stamp-openapi-provenance.py (roadmap#793)
