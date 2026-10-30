@@ -1,4 +1,4 @@
-# i6eal Open AI Data API (i6eal-open-ai-data-api)
+# i6eal Open AI Data API
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,435 +66,154 @@
 
 A free, no-authentication open-data REST API from i6eal (a German AI studio operated by Syka Ventures UG) exposing 16 AI-related datasets and monitors for Germany and the EU as static JSON/CSV/JSON-LD/Atom files served over HTTPS from CloudFront. Coverage spans public procurement, federal budget lines, case law, supervisory authorities, standardisation work items, EU AI Act transparency evidence, medical devices, clinical trials, platform automation, enforcement actions and adoption statistics. Backed by a live OpenAPI 3.0.3 contract with 83 GET operations, a DCAT JSON-LD catalogue of 16 datasets and 82 distributions, a provider-published llms.txt, and per-dataset Atom change feeds. No authentication, no registration, no published rate limit; CORS is open and responses carry ETag validators. The i6eal compilation is CC BY 4.0; underlying official records retain their source-specific rights.
 
-**APIs.json:** [https://i6eal-open-ai-data-api.apievangelist.com/apis.yml](https://i6eal-open-ai-data-api.apievangelist.com/apis.yml)
+**Areas:** Artificial Intelligence · Open Data · Public Policy · Regulations · Compliance · EU AI Act · Government · Public Sector · Legal · Case Law · Public Procurement · Germany
 
-## Tags
+## i6eal Open AI Data API on APIs.io
 
-- Artificial Intelligence
-- Open Data
-- Public Policy
-- Regulation
-- Compliance
-- EU AI Act
-- Government
-- Public Sector
-- Legal
-- Case Law
-- Public Procurement
-- Germany
-- European Union
+Everything profiled for i6eal Open AI Data API is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/i6eal-open-ai-data-api/](https://apis.io/providers/i6eal-open-ai-data-api/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (17)
 
-- **Created:** 2026-08-05
-- **Modified:** 2026-08-09
+- [i6eal Open AI Data API AI Enforcement Monitor Germany & EU API](https://apis.io/apis/i6eal-open-ai-data-api/i6eal-open-ai-data-api-ai-enforcement-monitor-germany-eu-api/) — Officially published AI-related investigations, orders, fines and remedies with separate procedural stages and exact technology evidence.
+- [i6eal Open AI Data API AI Parliamentary Accountability Monitor API](https://apis.io/apis/i6eal-open-ai-data-api/i6eal-open-ai-data-api-ai-parliamentary-accountability-monitor-api/) — Parliamentary questions, answers and exactly linked proceedings from the Bundestag documentation system.
+- [i6eal Open AI Data API Catalogue API](https://apis.io/apis/i6eal-open-ai-data-api/i6eal-open-ai-data-api-catalogue-api/) — Machine-readable index of every published dataset.
+- [i6eal Open AI Data API EU AI Medical-Device Lifecycle Monitor API](https://apis.io/apis/i6eal-open-ai-data-api/i6eal-open-ai-data-api-eu-ai-medical-device-lifecycle-monitor-api/) — Exact AI text evidence from the public EUDAMED software corpus with manufacturer, risk, version and registry attributes; software alone is never treated as…
+- [i6eal Open AI Data API EU AI Studies Monitor API](https://apis.io/apis/i6eal-open-ai-data-api/i6eal-open-ai-data-api-eu-ai-studies-monitor-api/) — Official CTIS lifecycles of medicinal clinical trials with exact AI text evidence and separate application, country-status, recruitment, safety and results…
+- [i6eal Open AI Data API EU AI Transparency Evidence Monitor API](https://apis.io/apis/i6eal-open-ai-data-api/i6eal-open-ai-data-api-eu-ai-transparency-evidence-monitor-api/) — Provider and document evidence for Articles 50 and 53; visibility and review progress remain explicitly separate from conformity.
+- [i6eal Open AI Data API EU Platform Automation Monitor API](https://apis.io/apis/i6eal-open-ai-data-api/i6eal-open-ai-data-api-eu-platform-automation-monitor-api/) — Monthly DSA statements on automated detection, decision automation and reported restrictions by platform; automation is not relabelled as AI.
+- [i6eal Open AI Data API German AI Case-Law Monitor API](https://apis.io/apis/i6eal-open-ai-data-api/i6eal-open-ai-data-api-german-ai-case-law-monitor-api/) — Observed official federal corpus with decisions, exact passages and a material-change chronicle.
+- [i6eal Open AI Data API German AI Evidence Network API](https://apis.io/apis/i6eal-open-ai-data-api/i6eal-open-ai-data-api-german-ai-evidence-network-api/) — Source-evidenced edges between actors, projects, outputs, systems, repositories, packages, procurements and budget titles.
+- [i6eal Open AI Data API German & EU AI Adoption Atlas API](https://apis.io/apis/i6eal-open-ai-data-api/i6eal-open-ai-data-api-german-eu-ai-adoption-atlas-api/) — Official Eurostat observations of AI adoption by enterprises and individuals; statistical universes remain separate.
+- [i6eal Open AI Data API German & EU AI Procurement Chronicle API](https://apis.io/apis/i6eal-open-ai-data-api/i6eal-open-ai-data-api-german-eu-ai-procurement-chronicle-api/) — Official procurement signals as durable procedure chains, separating exactly linked procedures from isolated notices.
+- [i6eal Open AI Data API German & EU AI Standardisation Monitor API](https://apis.io/apis/i6eal-open-ai-data-api/i6eal-open-ai-data-api-german-eu-ai-standardisation-monitor-api/) — Standardisation request, work items, lifecycle events and EU references as separate inspectable evidence lanes.
+- [i6eal Open AI Data API German & EU AI Supervision Monitor API](https://apis.io/apis/i6eal-open-ai-data-api/i6eal-open-ai-data-api-german-eu-ai-supervision-monitor-api/) — Officially evidenced responsibilities, legal instruments and observations, without a compliance or effectiveness score.
+- [i6eal Open AI Data API German Federal AI Budget Monitor API](https://apis.io/apis/i6eal-open-ai-data-api/i6eal-open-ai-data-api-german-federal-ai-budget-monitor-api/) — Machine-readable federal budget titles with explicit AI references, keeping appropriations, supplements, actuals and official revisions separate.
+- [i6eal Open AI Data API German State AI Evidence Layers API](https://apis.io/apis/i6eal-open-ai-data-api/i6eal-open-ai-data-api-german-state-ai-evidence-layers-api/) — State dossiers assembled from three separate evidence layers: infrastructure, public systems and procurement signals.
+- [i6eal Open AI Data API Observed AI Procurement Changes API](https://apis.io/apis/i6eal-open-ai-data-api/i6eal-open-ai-data-api-observed-ai-procurement-changes-api/) — Revision trail for newly published and materially changed procedure dossiers; retrieval timestamps alone never create an event.
+- [i6eal Open AI Data API Public AI System Evidence Pass API](https://apis.io/apis/i6eal-open-ai-data-api/i6eal-open-ai-data-api-public-ai-system-evidence-pass-api/) — Inspectable system profiles and source-evidenced links to repositories and technical inventories only.
 
-## APIs
+### Published properties
 
-### i6eal Open AI Data API AI Enforcement Monitor Germany & EU API
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Officially published AI-related investigations, orders, fines and remedies with separate procedural stages and exact technology evidence.
+#### MCP servers (1)
 
-- **Human URL:** [https://i6eal.de/en/tools/data/](https://i6eal.de/en/tools/data/)
-- **Base URL:** `https://i6eal.de`
+Model Context Protocol servers that expose the API to agents.
 
-#### Tags
+- [i6eal-open-ai-data](https://apis.io/servers/i6eal-open-ai-data-api/i6eal-open-ai-data/)
 
-- AI Enforcement Monitor Germany & EU
+#### JSON-LD (1)
 
-#### Properties
+Linked-data contexts for the provider's vocabulary.
 
-- [OpenAPI](openapi/i6eal-open-ai-data-api-ai-enforcement-monitor-germany-eu-api-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/i6eal-open-ai-data-api-ai-enforcement-monitor-germany-eu-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/i6eal-open-ai-data-api-ai-enforcement-monitor-germany-eu-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [OpenAPI](https://i6eal.de/openapi.json) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Documentation](https://i6eal.de/en/tools/data/)
-- [JSON-LD](https://i6eal.de/data/catalog/dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [JSON-LD](json-ld/i6eal-open-ai-data-api-dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [Examples](examples/i6eal-open-ai-data-api-examples.yml)
-- [Data Model](data-model/i6eal-open-ai-data-api-data-model.yml)
+- [I6Eal Open Ai Data Api Dcat Context](https://apis.io/jsonld/i6eal-open-ai-data-api/i6eal-open-ai-data-api-dcat/)
 
-### i6eal Open AI Data API AI Parliamentary Accountability Monitor API
+#### Examples (2)
 
-Parliamentary questions, answers and exactly linked proceedings from the Bundestag documentation system.
+Example requests and responses.
 
-- **Human URL:** [https://i6eal.de/en/tools/data/](https://i6eal.de/en/tools/data/)
-- **Base URL:** `https://i6eal.de`
+- [I6Eal Open Ai Data Api State Layers Schema](https://apis.io/examples/i6eal-open-ai-data-api/i6eal-open-ai-data-api-state-layers-schema/)
+- [I6Eal Open Ai Data Api Supervision Methodology](https://apis.io/examples/i6eal-open-ai-data-api/i6eal-open-ai-data-api-supervision-methodology/)
 
-#### Tags
+#### Collections (17)
 
-- AI Parliamentary Accountability Monitor
+Postman and Open Collection request collections.
 
-#### Properties
+- [i6eal Open AI Data AI Enforcement Monitor Germany & EU API](https://apis.io/collections/i6eal-open-ai-data-api/open-i6eal-open-ai-data-api-ai-enforcement-monitor-germany-eu-api/)
+- [i6eal Open AI Data AI Parliamentary Accountability Monitor API](https://apis.io/collections/i6eal-open-ai-data-api/open-i6eal-open-ai-data-api-ai-parliamentary-accountability-monitor-api/)
+- [i6eal Open AI Data Catalogue API](https://apis.io/collections/i6eal-open-ai-data-api/open-i6eal-open-ai-data-api-catalogue-api/)
+- [i6eal Open AI Data EU AI Medical-Device Lifecycle Monitor API](https://apis.io/collections/i6eal-open-ai-data-api/open-i6eal-open-ai-data-api-eu-ai-medical-device-lifecycle-monitor-api/)
+- [i6eal Open AI Data EU AI Studies Monitor API](https://apis.io/collections/i6eal-open-ai-data-api/open-i6eal-open-ai-data-api-eu-ai-studies-monitor-api/)
+- [i6eal Open AI Data EU AI Transparency Evidence Monitor API](https://apis.io/collections/i6eal-open-ai-data-api/open-i6eal-open-ai-data-api-eu-ai-transparency-evidence-monitor-api/)
+- [i6eal Open AI Data EU Platform Automation Monitor API](https://apis.io/collections/i6eal-open-ai-data-api/open-i6eal-open-ai-data-api-eu-platform-automation-monitor-api/)
+- [i6eal Open AI Data German AI Case-Law Monitor API](https://apis.io/collections/i6eal-open-ai-data-api/open-i6eal-open-ai-data-api-german-ai-case-law-monitor-api/)
+- [i6eal Open AI Data German AI Evidence Network API](https://apis.io/collections/i6eal-open-ai-data-api/open-i6eal-open-ai-data-api-german-ai-evidence-network-api/)
+- [i6eal Open AI Data German & EU AI Adoption Atlas API](https://apis.io/collections/i6eal-open-ai-data-api/open-i6eal-open-ai-data-api-german-eu-ai-adoption-atlas-api/)
+- [i6eal Open AI Data German & EU AI Procurement Chronicle API](https://apis.io/collections/i6eal-open-ai-data-api/open-i6eal-open-ai-data-api-german-eu-ai-procurement-chronicle-api/)
+- [i6eal Open AI Data German & EU AI Standardisation Monitor API](https://apis.io/collections/i6eal-open-ai-data-api/open-i6eal-open-ai-data-api-german-eu-ai-standardisation-monitor-api/)
+- [i6eal Open AI Data German & EU AI Supervision Monitor API](https://apis.io/collections/i6eal-open-ai-data-api/open-i6eal-open-ai-data-api-german-eu-ai-supervision-monitor-api/)
+- [i6eal Open AI Data German Federal AI Budget Monitor API](https://apis.io/collections/i6eal-open-ai-data-api/open-i6eal-open-ai-data-api-german-federal-ai-budget-monitor-api/)
+- [i6eal Open AI Data German State AI Evidence Layers API](https://apis.io/collections/i6eal-open-ai-data-api/open-i6eal-open-ai-data-api-german-state-ai-evidence-layers-api/)
+- [i6eal Open AI Data Observed AI Procurement Changes API](https://apis.io/collections/i6eal-open-ai-data-api/open-i6eal-open-ai-data-api-observed-ai-procurement-changes-api/)
+- [i6eal Open AI Data Public AI System Evidence Pass API](https://apis.io/collections/i6eal-open-ai-data-api/open-i6eal-open-ai-data-api-public-ai-system-evidence-pass-api/)
 
-- [OpenAPI](openapi/i6eal-open-ai-data-api-ai-parliamentary-accountability-monitor-api-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/i6eal-open-ai-data-api-ai-parliamentary-accountability-monitor-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/i6eal-open-ai-data-api-ai-parliamentary-accountability-monitor-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [Documentation](https://i6eal.de/en/tools/data/)
-- [JSON-LD](https://i6eal.de/data/catalog/dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [JSON-LD](json-ld/i6eal-open-ai-data-api-dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [Examples](examples/i6eal-open-ai-data-api-examples.yml)
-- [Data Model](data-model/i6eal-open-ai-data-api-data-model.yml)
+#### Overlays (1)
 
-### i6eal Open AI Data API Catalogue API
+OpenAPI overlays, including conversational phrasing for each operation.
 
-Machine-readable index of every published dataset.
+- [I6Eal Open Ai Data Api Overlay](https://apis.io/overlays/i6eal-open-ai-data-api/i6eal-open-ai-data-api-overlay/)
 
-- **Human URL:** [https://i6eal.de/en/tools/data/](https://i6eal.de/en/tools/data/)
-- **Base URL:** `https://i6eal.de`
+#### Security (2)
 
-#### Tags
+Authentication, trust centre, and vulnerability disclosure.
 
-- Catalogue
+- [I6Eal Open Ai Data Api Authentication](https://apis.io/security/i6eal-open-ai-data-api/i6eal-open-ai-data-api-authentication/)
+- [I6Eal Open Ai Data Api Domain Security](https://apis.io/security/i6eal-open-ai-data-api/i6eal-open-ai-data-api-domain-security/)
 
-#### Properties
+## Where to find this API
 
-- [OpenAPI](openapi/i6eal-open-ai-data-api-catalogue-api-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/i6eal-open-ai-data-api-catalogue-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/i6eal-open-ai-data-api-catalogue-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [Documentation](https://i6eal.de/en/tools/data/)
-- [JSON-LD](https://i6eal.de/data/catalog/dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [JSON-LD](json-ld/i6eal-open-ai-data-api-dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [Examples](examples/i6eal-open-ai-data-api-examples.yml)
-- [Data Model](data-model/i6eal-open-ai-data-api-data-model.yml)
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-### i6eal Open AI Data API EU AI Medical-Device Lifecycle Monitor API
-
-Exact AI text evidence from the public EUDAMED software corpus with manufacturer, risk, version and registry attributes; software alone is never treated as AI evidence.
-
-- **Human URL:** [https://i6eal.de/en/tools/data/](https://i6eal.de/en/tools/data/)
-- **Base URL:** `https://i6eal.de`
-
-#### Tags
-
-- EU AI Medical-Device Lifecycle Monitor
-
-#### Properties
-
-- [OpenAPI](openapi/i6eal-open-ai-data-api-eu-ai-medical-device-lifecycle-monitor-api-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/i6eal-open-ai-data-api-eu-ai-medical-device-lifecycle-monitor-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/i6eal-open-ai-data-api-eu-ai-medical-device-lifecycle-monitor-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [Documentation](https://i6eal.de/en/tools/data/)
-- [JSON-LD](https://i6eal.de/data/catalog/dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [JSON-LD](json-ld/i6eal-open-ai-data-api-dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [Examples](examples/i6eal-open-ai-data-api-examples.yml)
-- [Data Model](data-model/i6eal-open-ai-data-api-data-model.yml)
-
-### i6eal Open AI Data API EU AI Studies Monitor API
-
-Official CTIS lifecycles of medicinal clinical trials with exact AI text evidence and separate application, country-status, recruitment, safety and results events.
-
-- **Human URL:** [https://i6eal.de/en/tools/data/](https://i6eal.de/en/tools/data/)
-- **Base URL:** `https://i6eal.de`
-
-#### Tags
-
-- EU AI Studies Monitor
-
-#### Properties
-
-- [OpenAPI](openapi/i6eal-open-ai-data-api-eu-ai-studies-monitor-api-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/i6eal-open-ai-data-api-eu-ai-studies-monitor-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/i6eal-open-ai-data-api-eu-ai-studies-monitor-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [Documentation](https://i6eal.de/en/tools/data/)
-- [JSON-LD](https://i6eal.de/data/catalog/dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [JSON-LD](json-ld/i6eal-open-ai-data-api-dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [Examples](examples/i6eal-open-ai-data-api-examples.yml)
-- [Data Model](data-model/i6eal-open-ai-data-api-data-model.yml)
-
-### i6eal Open AI Data API EU AI Transparency Evidence Monitor API
-
-Provider and document evidence for Articles 50 and 53; visibility and review progress remain explicitly separate from conformity.
-
-- **Human URL:** [https://i6eal.de/en/tools/data/](https://i6eal.de/en/tools/data/)
-- **Base URL:** `https://i6eal.de`
-
-#### Tags
-
-- EU AI Transparency Evidence Monitor
-
-#### Properties
-
-- [OpenAPI](openapi/i6eal-open-ai-data-api-eu-ai-transparency-evidence-monitor-api-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/i6eal-open-ai-data-api-eu-ai-transparency-evidence-monitor-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/i6eal-open-ai-data-api-eu-ai-transparency-evidence-monitor-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [Documentation](https://i6eal.de/en/tools/data/)
-- [JSON-LD](https://i6eal.de/data/catalog/dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [JSON-LD](json-ld/i6eal-open-ai-data-api-dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [Examples](examples/i6eal-open-ai-data-api-examples.yml)
-- [Data Model](data-model/i6eal-open-ai-data-api-data-model.yml)
-
-### i6eal Open AI Data API EU Platform Automation Monitor API
-
-Monthly DSA statements on automated detection, decision automation and reported restrictions by platform; automation is not relabelled as AI.
-
-- **Human URL:** [https://i6eal.de/en/tools/data/](https://i6eal.de/en/tools/data/)
-- **Base URL:** `https://i6eal.de`
-
-#### Tags
-
-- EU Platform Automation Monitor
-
-#### Properties
-
-- [OpenAPI](openapi/i6eal-open-ai-data-api-eu-platform-automation-monitor-api-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/i6eal-open-ai-data-api-eu-platform-automation-monitor-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/i6eal-open-ai-data-api-eu-platform-automation-monitor-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [Documentation](https://i6eal.de/en/tools/data/)
-- [JSON-LD](https://i6eal.de/data/catalog/dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [JSON-LD](json-ld/i6eal-open-ai-data-api-dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [Examples](examples/i6eal-open-ai-data-api-examples.yml)
-- [Data Model](data-model/i6eal-open-ai-data-api-data-model.yml)
-
-### i6eal Open AI Data API German AI Case-Law Monitor API
-
-Observed official federal corpus with decisions, exact passages and a material-change chronicle.
-
-- **Human URL:** [https://i6eal.de/en/tools/data/](https://i6eal.de/en/tools/data/)
-- **Base URL:** `https://i6eal.de`
-
-#### Tags
-
-- German AI Case-Law Monitor
-
-#### Properties
-
-- [OpenAPI](openapi/i6eal-open-ai-data-api-german-ai-case-law-monitor-api-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/i6eal-open-ai-data-api-german-ai-case-law-monitor-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/i6eal-open-ai-data-api-german-ai-case-law-monitor-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [Documentation](https://i6eal.de/en/tools/data/)
-- [JSON-LD](https://i6eal.de/data/catalog/dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [JSON-LD](json-ld/i6eal-open-ai-data-api-dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [Examples](examples/i6eal-open-ai-data-api-examples.yml)
-- [Data Model](data-model/i6eal-open-ai-data-api-data-model.yml)
-
-### i6eal Open AI Data API German AI Evidence Network API
-
-Source-evidenced edges between actors, projects, outputs, systems, repositories, packages, procurements and budget titles.
-
-- **Human URL:** [https://i6eal.de/en/tools/data/](https://i6eal.de/en/tools/data/)
-- **Base URL:** `https://i6eal.de`
-
-#### Tags
-
-- German AI Evidence Network
-
-#### Properties
-
-- [OpenAPI](openapi/i6eal-open-ai-data-api-german-ai-evidence-network-api-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/i6eal-open-ai-data-api-german-ai-evidence-network-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/i6eal-open-ai-data-api-german-ai-evidence-network-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [Documentation](https://i6eal.de/en/tools/data/)
-- [JSON-LD](https://i6eal.de/data/catalog/dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [JSON-LD](json-ld/i6eal-open-ai-data-api-dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [Examples](examples/i6eal-open-ai-data-api-examples.yml)
-- [Data Model](data-model/i6eal-open-ai-data-api-data-model.yml)
-
-### i6eal Open AI Data API German & EU AI Adoption Atlas API
-
-Official Eurostat observations of AI adoption by enterprises and individuals; statistical universes remain separate.
-
-- **Human URL:** [https://i6eal.de/en/tools/data/](https://i6eal.de/en/tools/data/)
-- **Base URL:** `https://i6eal.de`
-
-#### Tags
-
-- German & EU AI Adoption Atlas
-
-#### Properties
-
-- [OpenAPI](openapi/i6eal-open-ai-data-api-german-eu-ai-adoption-atlas-api-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/i6eal-open-ai-data-api-german-eu-ai-adoption-atlas-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/i6eal-open-ai-data-api-german-eu-ai-adoption-atlas-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [Documentation](https://i6eal.de/en/tools/data/)
-- [JSON-LD](https://i6eal.de/data/catalog/dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [JSON-LD](json-ld/i6eal-open-ai-data-api-dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [Examples](examples/i6eal-open-ai-data-api-examples.yml)
-- [Data Model](data-model/i6eal-open-ai-data-api-data-model.yml)
-
-### i6eal Open AI Data API German & EU AI Procurement Chronicle API
-
-Official procurement signals as durable procedure chains, separating exactly linked procedures from isolated notices.
-
-- **Human URL:** [https://i6eal.de/en/tools/data/](https://i6eal.de/en/tools/data/)
-- **Base URL:** `https://i6eal.de`
-
-#### Tags
-
-- German & EU AI Procurement Chronicle
-
-#### Properties
-
-- [OpenAPI](openapi/i6eal-open-ai-data-api-german-eu-ai-procurement-chronicle-api-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/i6eal-open-ai-data-api-german-eu-ai-procurement-chronicle-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/i6eal-open-ai-data-api-german-eu-ai-procurement-chronicle-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [Documentation](https://i6eal.de/en/tools/data/)
-- [JSON-LD](https://i6eal.de/data/catalog/dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [JSON-LD](json-ld/i6eal-open-ai-data-api-dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [Examples](examples/i6eal-open-ai-data-api-examples.yml)
-- [Data Model](data-model/i6eal-open-ai-data-api-data-model.yml)
-
-### i6eal Open AI Data API German & EU AI Standardisation Monitor API
-
-Standardisation request, work items, lifecycle events and EU references as separate inspectable evidence lanes.
-
-- **Human URL:** [https://i6eal.de/en/tools/data/](https://i6eal.de/en/tools/data/)
-- **Base URL:** `https://i6eal.de`
-
-#### Tags
-
-- German & EU AI Standardisation Monitor
-
-#### Properties
-
-- [OpenAPI](openapi/i6eal-open-ai-data-api-german-eu-ai-standardisation-monitor-api-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/i6eal-open-ai-data-api-german-eu-ai-standardisation-monitor-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/i6eal-open-ai-data-api-german-eu-ai-standardisation-monitor-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [Documentation](https://i6eal.de/en/tools/data/)
-- [JSON-LD](https://i6eal.de/data/catalog/dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [JSON-LD](json-ld/i6eal-open-ai-data-api-dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [Examples](examples/i6eal-open-ai-data-api-examples.yml)
-- [Data Model](data-model/i6eal-open-ai-data-api-data-model.yml)
-
-### i6eal Open AI Data API German & EU AI Supervision Monitor API
-
-Officially evidenced responsibilities, legal instruments and observations, without a compliance or effectiveness score.
-
-- **Human URL:** [https://i6eal.de/en/tools/data/](https://i6eal.de/en/tools/data/)
-- **Base URL:** `https://i6eal.de`
-
-#### Tags
-
-- German & EU AI Supervision Monitor
-
-#### Properties
-
-- [OpenAPI](openapi/i6eal-open-ai-data-api-german-eu-ai-supervision-monitor-api-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/i6eal-open-ai-data-api-german-eu-ai-supervision-monitor-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/i6eal-open-ai-data-api-german-eu-ai-supervision-monitor-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [Documentation](https://i6eal.de/en/tools/data/)
-- [JSON-LD](https://i6eal.de/data/catalog/dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [JSON-LD](json-ld/i6eal-open-ai-data-api-dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [Examples](examples/i6eal-open-ai-data-api-examples.yml)
-- [Data Model](data-model/i6eal-open-ai-data-api-data-model.yml)
-
-### i6eal Open AI Data API German Federal AI Budget Monitor API
-
-Machine-readable federal budget titles with explicit AI references, keeping appropriations, supplements, actuals and official revisions separate.
-
-- **Human URL:** [https://i6eal.de/en/tools/data/](https://i6eal.de/en/tools/data/)
-- **Base URL:** `https://i6eal.de`
-
-#### Tags
-
-- German Federal AI Budget Monitor
-
-#### Properties
-
-- [OpenAPI](openapi/i6eal-open-ai-data-api-german-federal-ai-budget-monitor-api-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/i6eal-open-ai-data-api-german-federal-ai-budget-monitor-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/i6eal-open-ai-data-api-german-federal-ai-budget-monitor-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [Documentation](https://i6eal.de/en/tools/data/)
-- [JSON-LD](https://i6eal.de/data/catalog/dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [JSON-LD](json-ld/i6eal-open-ai-data-api-dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [Examples](examples/i6eal-open-ai-data-api-examples.yml)
-- [Data Model](data-model/i6eal-open-ai-data-api-data-model.yml)
-
-### i6eal Open AI Data API German State AI Evidence Layers API
-
-State dossiers assembled from three separate evidence layers: infrastructure, public systems and procurement signals.
-
-- **Human URL:** [https://i6eal.de/en/tools/data/](https://i6eal.de/en/tools/data/)
-- **Base URL:** `https://i6eal.de`
-
-#### Tags
-
-- German State AI Evidence Layers
-
-#### Properties
-
-- [OpenAPI](openapi/i6eal-open-ai-data-api-german-state-ai-evidence-layers-api-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/i6eal-open-ai-data-api-german-state-ai-evidence-layers-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/i6eal-open-ai-data-api-german-state-ai-evidence-layers-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [Documentation](https://i6eal.de/en/tools/data/)
-- [JSON-LD](https://i6eal.de/data/catalog/dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [JSON-LD](json-ld/i6eal-open-ai-data-api-dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [Examples](examples/i6eal-open-ai-data-api-examples.yml)
-- [Data Model](data-model/i6eal-open-ai-data-api-data-model.yml)
-
-### i6eal Open AI Data API Observed AI Procurement Changes API
-
-Revision trail for newly published and materially changed procedure dossiers; retrieval timestamps alone never create an event.
-
-- **Human URL:** [https://i6eal.de/en/tools/data/](https://i6eal.de/en/tools/data/)
-- **Base URL:** `https://i6eal.de`
-
-#### Tags
-
-- Observed AI Procurement Changes
-
-#### Properties
-
-- [OpenAPI](openapi/i6eal-open-ai-data-api-observed-ai-procurement-changes-api-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/i6eal-open-ai-data-api-observed-ai-procurement-changes-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/i6eal-open-ai-data-api-observed-ai-procurement-changes-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [Documentation](https://i6eal.de/en/tools/data/)
-- [JSON-LD](https://i6eal.de/data/catalog/dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [JSON-LD](json-ld/i6eal-open-ai-data-api-dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [Examples](examples/i6eal-open-ai-data-api-examples.yml)
-- [Data Model](data-model/i6eal-open-ai-data-api-data-model.yml)
-
-### i6eal Open AI Data API Public AI System Evidence Pass API
-
-Inspectable system profiles and source-evidenced links to repositories and technical inventories only.
-
-- **Human URL:** [https://i6eal.de/en/tools/data/](https://i6eal.de/en/tools/data/)
-- **Base URL:** `https://i6eal.de`
-
-#### Tags
-
-- Public AI System Evidence Pass
-
-#### Properties
-
-- [OpenAPI](openapi/i6eal-open-ai-data-api-public-ai-system-evidence-pass-api-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/i6eal-open-ai-data-api-public-ai-system-evidence-pass-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/i6eal-open-ai-data-api-public-ai-system-evidence-pass-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [Documentation](https://i6eal.de/en/tools/data/)
-- [JSON-LD](https://i6eal.de/data/catalog/dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [JSON-LD](json-ld/i6eal-open-ai-data-api-dcat.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [Examples](examples/i6eal-open-ai-data-api-examples.yml)
-- [Data Model](data-model/i6eal-open-ai-data-api-data-model.yml)
-
-## Common Properties
-
-- [M C P Server](mcp/i6eal-open-ai-data-api-mcp.yml)
-- [Domain Security](security/i6eal-open-ai-data-api-domain-security.yml)
 - [Website](https://i6eal.de/)
-- [Developer Portal](https://i6eal.de/en/tools/data/)
 - [Documentation](https://i6eal.de/en/tools/data/)
-- [API Reference](https://i6eal.de/openapi.json)
+- [API reference](https://i6eal.de/openapi.json)
 - [Support](https://i6eal.de/kontakt/)
 - [Blog](https://i6eal.de/newsroom/)
-- [GitHub Organization](https://github.com/i6eal)
-- [Terms of Service](https://i6eal.de/nutzungsbedingungen/)
-- [Privacy Policy](https://i6eal.de/datenschutz/)
-- [License](https://i6eal.de/tools/daten/)
-- [About](https://i6eal.de/ueber-uns/)
-- [L L Ms Txt](llms/i6eal-open-ai-data-api-llms.txt)
-- [Authentication](authentication/i6eal-open-ai-data-api-authentication.yml)
-- [Conventions](conventions/i6eal-open-ai-data-api-conventions.yml)
-- [Error Catalog](errors/i6eal-open-ai-data-api-problem-types.yml)
-- [Lifecycle](lifecycle/i6eal-open-ai-data-api-lifecycle.yml)
-- [Conformance](conformance/i6eal-open-ai-data-api-conformance.yml)
-- [Data Model](data-model/i6eal-open-ai-data-api-data-model.yml)
-- [Examples](examples/i6eal-open-ai-data-api-examples.yml)
-- [Packages](packages/i6eal-open-ai-data-api-packages.yml)
-- [Overlay](overlays/i6eal-open-ai-data-api-overlay.yaml)
-- [Agent Skill](skills/_index.yml)
+- [Terms of service](https://i6eal.de/nutzungsbedingungen/)
+- [Privacy policy](https://i6eal.de/datenschutz/)
+- [GitHub](https://github.com/i6eal)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** i6eal
-**Email:** ai@i6eal.de
-**URL:** https://i6eal.de/kontakt/
+**Kin Score 42.7** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 52.7 |
+| Contract governance | 4.5 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 47.0 |
+| Access clarity | 57.1 |
+
+**Agent readiness 23.2** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | na |
+| Error Semantics | derived (partial credit) |
+| OpenAPI Examples | documented (partial credit) |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | derived (partial credit) |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 22.7** — Government & Public Sector
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/i6eal-open-ai-data-api/](https://apis.io/providers/i6eal-open-ai-data-api/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for i6eal Open AI Data API: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/i6eal-open-ai-data-api/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
