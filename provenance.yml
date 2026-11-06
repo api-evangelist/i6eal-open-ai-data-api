@@ -140,6 +140,9 @@ artifacts:
   heartbeat/2026-11-02.yml:
     method: unknown
     evidence: no authorship recorded
+  heartbeat/2026-11-06.yml:
+    method: unknown
+    evidence: no authorship recorded
   json-ld/i6eal-open-ai-data-api-dcat.jsonld:
     method: unknown
     evidence: no authorship recorded
